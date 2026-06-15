@@ -71,12 +71,12 @@ The broader purpose is to connect **AI agents and vibe coding** with my existing
 # 🧭 Quick Navigation
 
 * [`00-course-overview/`](./00-course-overview/) — course context, roadmap, setup checklist, and learning objectives
-* [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/) — Day 1 notes, podcast/whitepaper reflections, Antigravity and AI Studio codelab work
-* [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) — tool use, APIs, external integrations, and agent capability expansion
-* [`03-day-3-context-engineering-sessions-skills-memory/`](./03-day-3-context-engineering-sessions-skills-memory/) — context engineering, memory, sessions, agent skills, and reusable workflows
-* [`04-day-4-agent-security-observability-and-evaluation/`](./04-day-4-agent-security-observability-and-evaluation/) — agent safety, evaluation, security thinking, observability, and testing
-* [`05-day-5-production-agent-deployment/`](./05-day-5-production-agent-deployment/) — production development, deployment notes, Cloud Run, and final course wrap-up
-* [`capstone-project/`](./capstone-project/) — capstone idea, architecture, implementation, screenshots, and final submission evidence
+* [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/) — Day 1 notes, podcast/whitepaper reflections, Antigravity, AI Studio, and Cloud Run codelab work
+* [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) — Day 2 agent tools, APIs, external integrations, and workflow interoperability
+* [`03-day-3-context-engineering-skills-memory/`](./03-day-3-context-engineering-skills-memory/) — Day 3 context engineering, sessions, skills, memory, and reusable agent workflows
+* [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) — Day 4 agent security, observability, testing, safety, and evaluation
+* [`05-day-5-production-agent-deployment/`](./05-day-5-production-agent-deployment/) — Day 5 production development, deployment notes, Cloud Run, and final course wrap-up
+* [`capstone-project/`](./capstone-project/) — final applied AI agents capstone project, architecture, implementation, and submission evidence
 * [`docs/`](./docs/) — setup guides, troubleshooting logs, deployment notes, and reusable documentation
 * [`assets/`](./assets/) — screenshots, diagrams, badges, and visual evidence
 * [`resources/`](./resources/) — official course links, references, and useful learning resources
@@ -148,17 +148,17 @@ That is why this repository includes not only code and notes, but also reflectio
 
 # 📈 Current Progress Snapshot
 
-| Area                        | Status         | Notes                                                                      |
-| --------------------------- | -------------- | -------------------------------------------------------------------------- |
-| Course enrollment           | ✅ Done         | Joined the Kaggle/Google AI Agents Intensive course                        |
-| Community setup             | ✅ Done         | Discord introduction and course participation setup completed              |
-| LinkedIn announcement       | ✅ Prepared     | Professional course announcement strategy created                          |
-| Antigravity setup           | ✅ Done         | Antigravity IDE/CLI setup completed on local system                        |
-| Day 1 podcast               | ✅ Done         | Unit 1 podcast completed                                                   |
-| Day 1 whitepaper            | ✅ Done         | Unit 1 whitepaper reading completed                                        |
-| GitHub portfolio foundation | 🟡 In Progress | Repository name, description, architecture, and README being prepared      |
-| Day 1 codelabs              | ⬜ Pending      | To be started after repository foundation is ready                         |
-| Capstone project            | ⬜ Not Started  | Will be planned after official requirements and course direction are clear |
+| Course Stage          | Status         | Focus                                                               |
+| --------------------- | -------------- | ------------------------------------------------------------------- |
+| Repository Foundation | 🟡 In Progress | GitHub portfolio setup and documentation structure                  |
+| Day 0 / Setup         | ✅ Completed    | Course onboarding, community setup, and environment preparation     |
+| Day 1                 | 🟡 In Progress | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs |
+| Day 2                 | ⬜ Pending      | Agent tools, APIs, interoperability, and workflow integration       |
+| Day 3                 | ⬜ Pending      | Context engineering, sessions, skills, and memory                   |
+| Day 4                 | ⬜ Pending      | Security, observability, testing, and agent evaluation              |
+| Day 5                 | ⬜ Pending      | Production deployment, final learning wrap-up, and documentation    |
+| Capstone Project      | ⬜ Pending      | Final applied AI agents project                                     |
+
 
 ---
 
@@ -238,8 +238,8 @@ Expected coverage includes:
 📂 Planned folders:
 
 * [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
-* [`03-day-3-context-engineering-sessions-skills-memory/`](./03-day-3-context-engineering-sessions-skills-memory/)
-* [`04-day-4-agent-security-observability-and-evaluation/`](./04-day-4-agent-security-observability-and-evaluation/)
+* [`03-day-3-context-engineering-skills-memory/`](./03-day-3-context-engineering-skills-memory/)
+* [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
 
 ---
 
@@ -274,78 +274,22 @@ This roadmap will be updated as the course progresses. Some sections are intenti
 
 This section documents the initial preparation needed before hands-on development.
 
-Planned and completed coverage:
+Coverage:
 
 * Kaggle course onboarding
 * Google AI Studio access
 * Antigravity IDE setup
 * Antigravity CLI setup
 * Discord/community setup
-* GitHub repository preparation
+* GitHub repository setup
 * local development readiness
 * troubleshooting notes
 
 Primary goal:
 
-> Prepare the environment and repository foundation before starting hands-on codelabs.
+> Establish a clean course workspace, development environment, and documentation structure for the full 5-day AI agents learning journey.
 
 📂 Folder: [`00-course-overview/`](./00-course-overview/)
-
----
-
-## Day 1 — Introduction to Agents and Vibe Coding
-
-This section focuses on the first conceptual and practical layer of the course.
-
-Planned coverage:
-
-* what AI agents are
-* how vibe coding changes the development workflow
-* human-AI collaboration in software building
-* podcast notes
-* whitepaper reflection
-* Google Antigravity codelab notes
-* AI Studio to Cloud Run codelab notes
-* first application code and screenshots
-
-Expected artifacts:
-
-* Day 1 README
-* podcast summary
-* whitepaper notes
-* codelab code files
-* screenshots
-* deployment notes
-* reflection on natural-language-driven development
-
-📂 Folder: [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/)
-
----
-
-## Day 2 — Agent Tools and Interoperability
-
-This section will focus on how agents interact with external systems, APIs, tools, and execution environments.
-
-Planned coverage:
-
-* tool-using agents
-* external API integration
-* function/tool calling concepts
-* agent interoperability
-* workflow design
-* code execution patterns
-* security boundaries around tool access
-
-Expected artifacts:
-
-* Day 2 README
-* notes
-* codelab files
-* screenshots
-* tool integration observations
-* security reflection
-
-📂 Folder: [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
 
 ---
 
@@ -372,7 +316,7 @@ Expected artifacts:
 * screenshots
 * reflection on context and memory design
 
-📂 Folder: [`03-day-3-context-engineering-sessions-skills-memory/`](./03-day-3-context-engineering-sessions-skills-memory/)
+📂 Folder: [`03-day-3-context-engineering-skills-memory/`](./03-day-3-context-engineering-skills-memory/)
 
 ---
 
@@ -401,7 +345,7 @@ Expected artifacts:
 * lessons learned
 * SOC/security automation reflection
 
-📂 Folder: [`04-day-4-agent-security-observability-and-evaluation/`](./04-day-4-agent-security-observability-and-evaluation/)
+📂 Folder: [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
 
 ---
 
@@ -456,81 +400,21 @@ Planned coverage:
 
 ```text
 Kaggle-AI-Agents-Vibe-Coding-Portfolio/
-├── README.md
-├── .gitignore
-├── LICENSE
+├── README.md                                      # Main portfolio overview and navigation
+├── .gitignore                                    # Files and secrets excluded from Git tracking
+├── LICENSE                                       # Repository license
 │
-├── 00-course-overview/
-│   ├── README.md
-│   ├── course-roadmap.md
-│   ├── setup-checklist.md
-│   └── learning-objectives.md
+├── 00-course-overview/                           # Course roadmap, setup checklist, and learning objectives
+├── 01-day-1-intro-to-agents-and-vibe-coding/     # Day 1 notes, codelabs, screenshots, and reflections
+├── 02-day-2-agent-tools-and-interoperability/    # Day 2 agent tools, APIs, integrations, and workflows
+├── 03-day-3-context-engineering-skills-memory/   # Day 3 context engineering, sessions, skills, and memory
+├── 04-day-4-agent-security-evaluation/           # Day 4 security, observability, testing, and evaluation
+├── 05-day-5-production-agent-deployment/         # Day 5 deployment, production readiness, and wrap-up
 │
-├── 01-day-1-intro-to-agents-and-vibe-coding/
-│   ├── README.md
-│   ├── notes/
-│   │   ├── unit-1-podcast-notes.md
-│   │   └── vibe-coding-whitepaper-notes.md
-│   ├── codelabs/
-│   │   ├── antigravity-getting-started/
-│   │   └── ai-studio-to-cloud-run/
-│   ├── screenshots/
-│   └── reflections/
-│       └── day-1-reflection.md
-│
-├── 02-day-2-agent-tools-and-interoperability/
-│   ├── README.md
-│   ├── notes/
-│   ├── codelabs/
-│   ├── screenshots/
-│   └── reflections/
-│
-├── 03-day-3-context-engineering-sessions-skills-memory/
-│   ├── README.md
-│   ├── notes/
-│   ├── codelabs/
-│   ├── screenshots/
-│   └── reflections/
-│
-├── 04-day-4-agent-security-observability-and-evaluation/
-│   ├── README.md
-│   ├── notes/
-│   ├── codelabs/
-│   ├── screenshots/
-│   └── reflections/
-│
-├── 05-day-5-production-agent-deployment/
-│   ├── README.md
-│   ├── notes/
-│   ├── codelabs/
-│   ├── screenshots/
-│   └── reflections/
-│
-├── capstone-project/
-│   ├── README.md
-│   ├── problem-statement.md
-│   ├── architecture.md
-│   ├── implementation/
-│   ├── screenshots/
-│   ├── evaluation/
-│   └── final-submission/
-│
-├── docs/
-│   ├── antigravity-setup.md
-│   ├── ai-studio-setup.md
-│   ├── cloud-run-deployment-notes.md
-│   ├── troubleshooting-log.md
-│   └── security-and-secrets-handling.md
-│
-├── assets/
-│   ├── screenshots/
-│   ├── diagrams/
-│   └── badges/
-│
-└── resources/
-    ├── official-links.md
-    ├── useful-links.md
-    └── references.md
+├── capstone-project/                             # Final applied capstone project and submission evidence
+├── docs/                                         # Setup guides, troubleshooting logs, and deployment notes
+├── assets/                                       # Screenshots, diagrams, badges, and visual evidence
+└── resources/                                    # Official links, references, and useful learning material
 ```
 
 ---
@@ -789,24 +673,24 @@ This repository is currently in the early setup and documentation phase.
 Completed so far:
 
 * course enrollment
-* initial setup work
-* Antigravity setup
+* initial course setup
+* Antigravity IDE/CLI setup
 * Discord/community introduction
 * LinkedIn course announcement planning
 * Day 1 podcast
 * Day 1 whitepaper
-* GitHub portfolio planning
+* GitHub repository creation
 * root README preparation
 
-Pending next:
+Next steps:
 
-* create repository on GitHub
 * add initial folder structure
 * add `.gitignore`
-* add setup documentation
+* add `LICENSE`
+* create the `00-course-overview/` documentation
 * start Day 1 codelab work
-* document Antigravity and AI Studio work
-* add screenshots and implementation files
+* document Antigravity and AI Studio workflows
+* add screenshots, notes, and implementation files as the course progresses
 
 ---
 
