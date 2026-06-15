@@ -1,0 +1,270 @@
+# Kaggle AI Agents Vibe Coding Portfolio
+
+# Ignore local files, secrets, dependencies, caches, and builds.
+
+# Keep documentation, screenshots, codelab source code, and notes tracked.
+
+# ============================================================
+
+# ------------------------------------------------------------
+
+# Secrets and environment variables
+
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+*.env
+*.secret
+*.secrets
+secrets/
+private/
+credentials/
+keys/
+
+# API keys, tokens, and credential files
+
+api_key.txt
+api-keys.txt
+tokens.txt
+token.json
+credentials.json
+client_secret*.json
+service-account*.json
+*service-account*.json
+*gcp-key*.json
+*google-cloud-key*.json
+
+# Local config files that may contain secrets
+
+config.local.json
+config.local.yaml
+config.local.yml
+settings.local.json
+settings.local.yaml
+settings.local.yml
+
+# ------------------------------------------------------------
+
+# Google Cloud / deployment local state
+
+# ------------------------------------------------------------
+
+.gcloud/
+.firebase/
+.vercel/
+.netlify/
+.cloudrun/
+deploy.local.*
+deployment.local.*
+
+# ------------------------------------------------------------
+
+# Python
+
+# ------------------------------------------------------------
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+build/
+dist/
+site/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+
+# Node.js / JavaScript / frontend codelabs
+
+# ------------------------------------------------------------
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+.pnpm-store/
+
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+.cache/
+.parcel-cache/
+
+build/
+dist/
+out/
+
+# ------------------------------------------------------------
+
+# Logs and runtime files
+
+# ------------------------------------------------------------
+
+*.log
+logs/
+debug.log
+error.log
+
+*.pid
+*.seed
+*.pid.lock
+
+# ------------------------------------------------------------
+
+# OS generated files
+
+# ------------------------------------------------------------
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+$RECYCLE.BIN/
+
+# ------------------------------------------------------------
+
+# IDE and editor files
+
+# ------------------------------------------------------------
+
+.vscode/
+!.vscode/extensions.json
+
+.idea/
+*.swp
+*.swo
+*.swn
+
+.project
+.classpath
+.settings/
+
+# ------------------------------------------------------------
+
+# Temporary and backup files
+
+# ------------------------------------------------------------
+
+tmp/
+temp/
+.tmp/
+.cache/
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+~$*
+.~lock.*
+
+# ------------------------------------------------------------
+
+# Archives and compressed files
+
+# Keep source files in the repo, not large packaged archives.
+
+# ------------------------------------------------------------
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ------------------------------------------------------------
+
+# Large local data files
+
+# Keep only small sample datasets or documented artifacts if needed.
+
+# ------------------------------------------------------------
+
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+
+!sample*.csv
+!example*.csv
+
+# ------------------------------------------------------------
+
+# Model files and heavy ML artifacts
+
+# ------------------------------------------------------------
+
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.onnx
+*.pt
+*.pth
+*.safetensors
+models/
+checkpoints/
+
+# ------------------------------------------------------------
+
+# Local course scratch space
+
+# ------------------------------------------------------------
+
+scratch/
+experiments/local/
+local-notes/
+personal-notes/
+
+# ------------------------------------------------------------
+
+# Keep these portfolio folders tracked
+
+# ------------------------------------------------------------
+
+!assets/
+!assets/**
+!docs/
+!docs/**
+!resources/
+!resources/**
+!capstone-project/
+!capstone-project/**
