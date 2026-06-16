@@ -221,6 +221,21 @@ Success criteria:
 
 ---
 
+## ✅ Day 1 Objective Progress
+
+Day 1 produced the first concrete evidence toward these objectives:
+
+- I used Antigravity to explore an agent-oriented development workspace.
+- I preserved a generated Node.js CLI project instead of only describing it from memory.
+- I documented a custom code-review skill demo using an intentionally broken Python file.
+- I used AI Studio to guide a browser-only app from prompt to working frontend code.
+- I tested the AI Studio app through Cloud Run and documented the cleanup/cost decision.
+- I organized screenshots, notes, source files, and reflections so the work can be reviewed from durable repository artifacts.
+
+This turns the initial learning objective into a documented implementation baseline for the rest of the course.
+
+---
+
 ## ⭐ Final Learning Outcome
 
 The final outcome I want from this course portfolio is:

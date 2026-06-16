@@ -10,9 +10,9 @@ Detailed notes, codelab outputs, screenshots, and reflections should be stored i
 
 | Stage | Status | Evidence Location | Notes |
 |------|--------|------------------|-------|
-| Repository Foundation | 🟡 In Progress | [`../README.md`](../README.md) | Main README, `.gitignore`, `LICENSE`, and overview folder are being established |
+| Repository Foundation | ✅ Completed | [`../README.md`](../README.md) | Main README, `.gitignore`, `LICENSE`, and overview folder are established; updates continue as the course progresses |
 | Day 0 / Setup | ✅ Completed | [`./setup-checklist.md`](./setup-checklist.md) | Course onboarding, community setup, and local readiness work documented |
-| Day 1 | 🟡 In Progress | [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/) | Podcast and whitepaper completed; codelab documentation pending |
+| Day 1 | ✅ Completed | [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/) | Notes, Antigravity codelab, AI Studio codelab, Cloud Run notes, screenshots, source code, and reflection added |
 | Day 2 | ⬜ Pending | [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/) | Not started |
 | Day 3 | ⬜ Pending | [`../03-day-3-context-engineering-skills-memory/`](../03-day-3-context-engineering-skills-memory/) | Not started |
 | Day 4 | ⬜ Pending | [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/) | Not started |
@@ -34,16 +34,16 @@ Detailed notes, codelab outputs, screenshots, and reflections should be stored i
 
 ## 🧭 Current Repository Phase
 
-The repository is currently in the **foundation and Day 1 preparation phase**.
+The repository is currently moving from the **foundation and Day 1 documentation phase** into the **Day 2 preparation phase**.
 
 Current focus:
 
 - keep folder naming consistent
-- create the overview documentation
-- prepare the repository for codelab files
+- preserve the completed Day 1 evidence without mixing it into overview files
 - protect secrets through `.gitignore`
-- document setup readiness
-- start Day 1 codelab work after the structure is ready
+- review screenshots before public use
+- keep the resources folder available for official links
+- continue into Day 2 agent tools and interoperability work
 
 ---
 
@@ -59,6 +59,11 @@ Current focus:
 - root README drafting and refinement
 - `.gitignore` and `LICENSE` preparation
 - course overview planning
+- Day 1 folder added to the repository
+- Antigravity codelab source and notes documented
+- AI Studio to Cloud Run app source and notes documented
+- Day 1 screenshots organized as evidence
+- Day 1 reflection and resources added
 
 ---
 
@@ -66,12 +71,12 @@ Current focus:
 
 | Priority | Task | Target Location |
 |---------|------|----------------|
-| 1 | Create Day 1 folder structure | `01-day-1-intro-to-agents-and-vibe-coding/` |
-| 2 | Create Day 1 README | `01-day-1-intro-to-agents-and-vibe-coding/README.md` |
-| 3 | Add podcast and whitepaper notes | `01-day-1-intro-to-agents-and-vibe-coding/notes/` |
-| 4 | Start Antigravity codelab documentation | `01-day-1-intro-to-agents-and-vibe-coding/codelabs/` |
-| 5 | Start AI Studio to Cloud Run documentation | `01-day-1-intro-to-agents-and-vibe-coding/codelabs/` |
-| 6 | Create setup/troubleshooting docs | `docs/` |
+| 1 | Review Day 1 screenshots for any private account/project details | `01-day-1-intro-to-agents-and-vibe-coding/screenshots/` |
+| 2 | Add/update official course links resources | `resources/` |
+| 3 | Continue Day 2 learning and codelab work | `02-day-2-agent-tools-and-interoperability/` |
+| 4 | Create Day 2 README after real Day 2 work starts | `02-day-2-agent-tools-and-interoperability/README.md` |
+| 5 | Document Day 2 screenshots and implementation evidence | `02-day-2-agent-tools-and-interoperability/` |
+| 6 | Keep setup/troubleshooting docs updated only when new issues appear | `docs/` |
 
 ---
 

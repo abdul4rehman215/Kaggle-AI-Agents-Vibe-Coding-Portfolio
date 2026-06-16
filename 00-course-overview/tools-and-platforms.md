@@ -25,7 +25,8 @@ Kaggle-related work will be documented through:
 ### Documentation Location
 
 - [`course-roadmap.md`](./course-roadmap.md)
-- future: [`../resources/official-links.md`](../resources/official-links.md)
+- [`../resources/official-links.md`](../resources/official-links.md)
+- [`../resources/official-course-links.md`](../resources/official-course-links.md)
 
 ---
 
@@ -49,7 +50,7 @@ Antigravity work may include:
 ### Documentation Location
 
 - future: [`../docs/antigravity-setup.md`](../docs/antigravity-setup.md)
-- future: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/)
+- completed Day 1 codelab: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/)
 
 ---
 
@@ -72,6 +73,7 @@ IDE usage should be documented with:
 ### Documentation Location
 
 - future: [`../docs/antigravity-setup.md`](../docs/antigravity-setup.md)
+- completed Day 1 evidence: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/)
 
 ---
 
@@ -117,7 +119,7 @@ AI Studio work may include:
 
 ### Documentation Location
 
-- future: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/ai-studio-to-cloud-run/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/ai-studio-to-cloud-run/)
+- completed Day 1 codelab: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/)
 
 ---
 
@@ -142,7 +144,8 @@ Cloud Run work should be documented with:
 ### Documentation Location
 
 - future: [`../docs/cloud-run-deployment-notes.md`](../docs/cloud-run-deployment-notes.md)
-- future: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/ai-studio-to-cloud-run/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/ai-studio-to-cloud-run/)
+- completed Day 1 deployment note: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md)
+- future: deployment notes inside relevant day folders
 
 ---
 
@@ -266,6 +269,17 @@ token outputs
 | GitHub | Portfolio and code hosting | Full repository |
 | Discord | Community participation | Progress notes if relevant |
 | Local Terminal / Git | Local workflow and version control | Setup and troubleshooting docs |
+
+---
+
+## ✅ Day 1 Tooling Update
+
+Day 1 confirmed the practical role of the first toolchain:
+
+- **Antigravity** was used for workspace exploration, generated source code, and a custom skill demo.
+- **AI Studio** was used for prompt-to-app development.
+- **Cloud Run** was used for deployment testing and then cleaned up to avoid cost.
+- **GitHub** now stores the Day 1 source, notes, screenshots, and reflections in a reviewable portfolio structure.
 
 ---
 

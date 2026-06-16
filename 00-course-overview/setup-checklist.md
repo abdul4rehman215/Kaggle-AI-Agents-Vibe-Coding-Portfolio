@@ -14,7 +14,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | Course enrollment/access | ✅ Done | Course workspace is available |
 | Discord/community access | ✅ Done | Community setup and introduction completed |
 | Course announcement planning | ✅ Done | LinkedIn announcement strategy prepared |
-| Course links saved | ⬜ Pending | Official links will be organized in `resources/official-links.md` |
+| Course links saved | ✅ Done | Official links are organized in `resources/official-links.md` and `resources/official-course-links.md` |
 
 ---
 
@@ -37,12 +37,12 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 
 | Item | Status | Notes |
 |------|--------|-------|
-| Google AI Studio access | ⬜ Verify | Required for AI Studio codelab work |
-| Gemini/API access readiness | ⬜ Verify | Do not expose API keys in commits or screenshots |
-| Google Cloud access | ⬜ Verify | Required for Cloud Run deployment workflows |
-| Cloud Run deployment readiness | ⬜ Pending | Will be validated during the deployment codelab |
-| Billing/cost awareness reviewed | ⬜ Pending | Important before cloud deployment steps |
-| Deployment cleanup process understood | ⬜ Pending | Required to avoid unused cloud resources |
+| Google AI Studio access | ✅ Done | Used for the Day 1 AI Studio codelab and Snowflakes & Balloons app build |
+| Gemini/API access readiness | 🔁 Verify | Day 1 app was kept browser-only; continue avoiding API keys in commits or screenshots |
+| Google Cloud access | ✅ Done | Used for the Day 1 Cloud Run deployment test |
+| Cloud Run deployment readiness | ✅ Done | Validated during the Day 1 AI Studio to Cloud Run codelab |
+| Billing/cost awareness reviewed | ✅ Done | Day 1 Cloud Run app was unpublished/cleaned up to avoid unnecessary cost |
+| Deployment cleanup process understood | ✅ Done | Cleanup/unpublish decision documented after the Day 1 deployment test |
 
 ---
 
@@ -52,7 +52,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 |------|--------|-------|
 | Root `README.md` created | ✅ Done | Main portfolio landing page |
 | `00-course-overview/` created | ✅ Done | Course-level planning and tracking folder |
-| Day 1 folder created | ⬜ Pending | Will store Day 1 notes, codelabs, screenshots, and reflections |
+| Day 1 folder created | ✅ Done | Stores Day 1 notes, codelabs, screenshots, source code, and reflections |
 | Day 2 folder created | ⬜ Pending | Will store Day 2 work |
 | Day 3 folder created | ⬜ Pending | Will store Day 3 work |
 | Day 4 folder created | ⬜ Pending | Will store Day 4 work |
@@ -60,7 +60,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | `capstone-project/` created | ⬜ Pending | Will store final applied project |
 | `docs/` created | ⬜ Pending | Will store setup guides and troubleshooting logs |
 | `assets/` created | ⬜ Pending | Will store screenshots, diagrams, and visual evidence |
-| `resources/` created | ⬜ Pending | Will store official links and references |
+| `resources/` created | ✅ Done | Stores official links and course references |
 
 ---
 
@@ -73,7 +73,19 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | Credential JSON files ignored | ✅ Done | Service account and token files should stay local |
 | Screenshots reviewed before upload | ⬜ Ongoing | Remove private account details, billing info, keys, or tokens |
 | Terminal outputs reviewed before upload | ⬜ Ongoing | Avoid exposing usernames, keys, private paths, or sensitive logs |
-| Cloud resources cleaned after testing | ⬜ Pending | Important after deployment codelabs |
+| Cloud resources cleaned after testing | ✅ Done | Day 1 Cloud Run test was unpublished/cleaned up to avoid unnecessary cost |
+
+---
+
+## ✅ Day 1 Setup Update
+
+The Day 1 work confirmed that the main development path is usable:
+
+- Antigravity was used for the first agentic development codelab.
+- AI Studio was used for a browser-only app build.
+- Cloud Run deployment was tested and then cleaned up.
+- Source code and screenshots were organized into the Day 1 folder.
+- No real `.env` file or API key is required for the documented Snowflakes & Balloons app.
 
 ---
 
