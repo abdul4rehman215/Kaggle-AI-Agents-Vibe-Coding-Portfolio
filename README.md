@@ -150,9 +150,9 @@ That is why this repository includes not only code and notes, but also reflectio
 
 | Course Stage          | Status         | Focus                                                               |
 | --------------------- | -------------- | ------------------------------------------------------------------- |
-| Repository Foundation | 🟡 In Progress | GitHub portfolio setup and documentation structure                  |
+| Repository Foundation | ✅ Completed    | Core GitHub portfolio setup and documentation structure established |
 | Day 0 / Setup         | ✅ Completed    | Course onboarding, community setup, and environment preparation     |
-| Day 1                 | 🟡 In Progress | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs |
+| Day 1                 | ✅ Completed    | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs documented |
 | Day 2                 | ⬜ Pending      | Agent tools, APIs, interoperability, and workflow integration       |
 | Day 3                 | ⬜ Pending      | Context engineering, sessions, skills, and memory                   |
 | Day 4                 | ⬜ Pending      | Security, observability, testing, and agent evaluation              |
@@ -183,6 +183,8 @@ Expected documentation includes:
 
 📂 Planned folder: [`docs/antigravity-setup.md`](./docs/antigravity-setup.md)
 
+**Day 1 update:** The first Antigravity hands-on work is now documented inside [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/). It includes the generated Google News CLI source, the custom `code-review` skill, the intentionally broken demo file used for review, implementation notes, and screenshot evidence.
+
 ---
 
 ## 2) AI Studio Vibe Coding Codelab
@@ -201,6 +203,8 @@ Expected artifacts include:
 
 📂 Planned folder: [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/)
 
+**Day 1 update:** The AI Studio codelab output is now stored in [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/). The documented build is a browser-only **Snowflakes & Balloons** React/Vite app with prompt logs, implementation notes, source code, screenshots, and reflection notes.
+
 ---
 
 ## 3) Cloud Run Deployment Work
@@ -218,6 +222,8 @@ Expected artifacts include:
 * troubleshooting observations
 
 📂 Planned folder: [`docs/cloud-run-deployment-notes.md`](./docs/cloud-run-deployment-notes.md)
+
+**Day 1 update:** The Snowflakes & Balloons app was tested through Cloud Run during the codelab and then unpublished/cleaned up to avoid unnecessary cloud cost. The deployment record is documented in [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md).
 
 ---
 
@@ -290,6 +296,60 @@ Primary goal:
 > Establish a clean course workspace, development environment, and documentation structure for the full 5-day AI agents learning journey.
 
 📂 Folder: [`00-course-overview/`](./00-course-overview/)
+
+---
+
+## Day 1 — Introduction to Agents and Vibe Coding
+
+This section documents the first full hands-on course day.
+
+Coverage completed:
+
+* Day 1 livestream and course framing notes
+* introduction to AI agents and vibe coding
+* agent = model + harness concept
+* specification and verification as new bottlenecks
+* Google Antigravity exploration
+* Antigravity-generated Google News CLI
+* custom code-review skill demo
+* Google AI Studio prompt-to-app workflow
+* Snowflakes & Balloons browser app
+* Cloud Run deployment test and cleanup note
+* screenshots and implementation evidence
+
+Primary goal:
+
+> Capture the move from learning the concept of agentic development to completing the first practical prompt-to-code and prompt-to-deployment workflows.
+
+📂 Folder: [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/)
+
+---
+
+## Day 2 — Agent Tools and Interoperability
+
+This section will focus on how agents connect with external systems, tools, APIs, and interoperability layers.
+
+Planned coverage:
+
+* tool-using agents
+* external API interaction
+* MCP concepts
+* A2A/interoperability concepts
+* agent workflow integration
+* practical codelab artifacts
+* screenshots and implementation notes
+* security observations around tool permissions
+
+Expected artifacts:
+
+* Day 2 README
+* notes
+* hands-on files
+* screenshots
+* troubleshooting notes
+* reflection on tool use and interoperability
+
+📂 Folder: [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
 
 ---
 
@@ -681,16 +741,21 @@ Completed so far:
 * Day 1 whitepaper
 * GitHub repository creation
 * root README preparation
+* `00-course-overview/` documentation foundation
+* `.gitignore` and `LICENSE` preparation
+* Day 1 folder structure added
+* Antigravity codelab documented
+* AI Studio to Cloud Run codelab documented
+* Day 1 screenshots and source artifacts organized
 
 Next steps:
 
-* add initial folder structure
-* add `.gitignore`
-* add `LICENSE`
-* create the `00-course-overview/` documentation
-* start Day 1 codelab work
-* document Antigravity and AI Studio workflows
-* add screenshots, notes, and implementation files as the course progresses
+* review Day 1 screenshots for any private account/project details before long-term public use
+* add or update root/course-overview links after each completed day
+* continue into Day 2 agent tools and interoperability work
+* document Day 2 notes, codelabs, screenshots, and implementation evidence
+* keep cloud cost, secret handling, and human-review notes visible throughout the remaining course
+* add final capstone planning and implementation files when the capstone work begins
 
 ---
 
