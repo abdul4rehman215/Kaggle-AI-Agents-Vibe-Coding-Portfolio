@@ -1,0 +1,12 @@
+{
+  "name": "google-news-cli",
+  "version": "1.0.0",
+  "description": "Retrieve and display recent news related to Google.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
