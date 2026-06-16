@@ -28,12 +28,15 @@
   <img src="https://img.shields.io/badge/GitHub-Portfolio%20Documentation-24292F?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
+<!--
 <p>
   <img src="https://img.shields.io/github/repo-size/abdul4rehman215/Kaggle-AI-Agents-Vibe-Coding-Portfolio?style=for-the-badge" />
   <img src="https://img.shields.io/github/last-commit/abdul4rehman215/Kaggle-AI-Agents-Vibe-Coding-Portfolio?style=for-the-badge" />
   <img src="https://img.shields.io/github/stars/abdul4rehman215/Kaggle-AI-Agents-Vibe-Coding-Portfolio?style=for-the-badge" />
   <img src="https://img.shields.io/github/forks/abdul4rehman215/Kaggle-AI-Agents-Vibe-Coding-Portfolio?style=for-the-badge" />
 </p>
+
+-->
 
 </div>
 
