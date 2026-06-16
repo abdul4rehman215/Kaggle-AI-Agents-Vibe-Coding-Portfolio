@@ -762,6 +762,22 @@ Next steps:
 
 ---
 
+# ⭐ Final Note
+
+This repository is being built as a serious AI agents learning portfolio.
+
+It is not just a folder for course files.
+
+It is a structured record of how I am learning, building, testing, documenting, and thinking about AI agents in the context of modern software development, cloud deployment, and security automation.
+
+The main idea behind this portfolio is:
+
+> **Natural language can accelerate development, but strong engineering judgment, documentation, testing, and security thinking still decide the quality of the final system.**
+
+As the course progresses, this repository will evolve from a setup and documentation foundation into a complete portfolio of hands-on AI agent work.
+
+---
+
 # 👨‍💻 Author
 
 **Abdul Rehman**
@@ -783,17 +799,3 @@ I use GitHub as a place to document technical learning in a structured, practica
 </p>
 
 ---
-
-# ⭐ Final Note
-
-This repository is being built as a serious AI agents learning portfolio.
-
-It is not just a folder for course files.
-
-It is a structured record of how I am learning, building, testing, documenting, and thinking about AI agents in the context of modern software development, cloud deployment, and security automation.
-
-The main idea behind this portfolio is:
-
-> **Natural language can accelerate development, but strong engineering judgment, documentation, testing, and security thinking still decide the quality of the final system.**
-
-As the course progresses, this repository will evolve from a setup and documentation foundation into a complete portfolio of hands-on AI agent work.
