@@ -270,6 +270,22 @@ Avoid:
 
 ---
 
+## ✅ Day 1 Documentation Pattern Applied
+
+The Day 1 folder now applies this documentation plan in practice.
+
+The completed structure separates:
+
+- concept notes from codelab implementation details
+- source code from screenshots
+- selected evidence from raw screenshot storage
+- deployment notes from general reflection
+- intentionally broken review-demo code from production-style app code
+
+This pattern should be reused for the remaining course days, but only after real work exists for those days. Placeholder folders are not required unless they serve an immediate documentation purpose.
+
+---
+
 ## 🔄 Update Rule
 
 This documentation plan should be used as the standard for future work.

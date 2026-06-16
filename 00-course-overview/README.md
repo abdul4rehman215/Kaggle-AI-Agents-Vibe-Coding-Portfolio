@@ -20,6 +20,7 @@ The purpose of this folder is simple:
 | [`progress-tracker.md`](./progress-tracker.md) | Compact status tracker for each course stage |
 | [`documentation-plan.md`](./documentation-plan.md) | Documentation standards for daily notes, codelabs, screenshots, and reflections |
 | [`tools-and-platforms.md`](./tools-and-platforms.md) | Role of each platform/tool used during the course |
+| [`../resources/`](../resources/) | Official course links and supporting references kept outside the overview folder |
 
 ---
 
@@ -30,12 +31,12 @@ This folder is not meant to store daily codelab code or screenshots.
 Those artifacts belong in the day-wise folders:
 
 ```text
-01-day-1-intro-to-agents-and-vibe-coding/
-02-day-2-agent-tools-and-interoperability/
-03-day-3-context-engineering-skills-memory/
-04-day-4-agent-security-evaluation/
-05-day-5-production-agent-deployment/
-capstone-project/
+01-day-1-intro-to-agents-and-vibe-coding/     # Day 1 work now added
+02-day-2-agent-tools-and-interoperability/    # planned for Day 2
+03-day-3-context-engineering-skills-memory/   # planned for Day 3
+04-day-4-agent-security-evaluation/           # planned for Day 4
+05-day-5-production-agent-deployment/         # planned for Day 5
+capstone-project/                             # planned final build
 ```
 
 Instead, `00-course-overview/` defines the structure and direction for the entire repository.
@@ -109,6 +110,26 @@ As the course progresses, the files here can be updated with:
 - additional tool references
 
 The folder should remain clean and high-level. Detailed implementation work should stay inside the day-wise folders and `capstone-project/`.
+
+
+---
+
+## ✅ Day 1 Documentation Update
+
+Day 1 has now moved from planning into documented implementation work.
+
+The Day 1 folder contains:
+
+- livestream and concept notes
+- Antigravity codelab documentation
+- Antigravity-generated Google News CLI source
+- custom code-review skill demo files
+- AI Studio to Cloud Run codelab documentation
+- Snowflakes & Balloons React/Vite app source
+- screenshots organized by codelab
+- implementation notes, deployment notes, prompt notes, and reflection
+
+This keeps the overview folder focused on course-level tracking while the actual evidence stays inside the Day 1 folder.
 
 ---
 

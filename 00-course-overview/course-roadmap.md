@@ -60,8 +60,8 @@ This stage proves that the course work is being organized from the beginning, no
 ## 🧠 Day 1 — Introduction to Agents and Vibe Coding
 
 **Folder:** [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/)  
-**Status:** In Progress  
-**Main purpose:** Understand the starting concepts of AI agents and natural-language-driven development.
+**Status:** Completed  
+**Main purpose:** Understand the starting concepts of AI agents and natural-language-driven development, then capture the first hands-on agentic/vibe-coding workflows with source code and evidence.
 
 ### Focus Areas
 
@@ -77,14 +77,30 @@ This stage proves that the course work is being organized from the beginning, no
 - Day 1 README
 - podcast notes
 - whitepaper notes
+- livestream notes
 - Antigravity codelab documentation
-- AI Studio to Cloud Run codelab files
-- screenshots and output evidence
-- reflection on the first hands-on workflow
+- Antigravity Google News CLI source
+- custom code-review skill demo
+- AI Studio codelab documentation
+- Snowflakes & Balloons app source
+- Cloud Run deployment notes
+- screenshots
+- reflection
 
 ### Portfolio Value
 
-Day 1 should show the transition from course theory into practical agent-assisted software building.
+Day 1 should show the transition from course theory into practical agent-assisted software building. It now also proves that the first Day 1 implementations were documented with durable source artifacts, screenshot evidence, notes, and reflections.
+
+---
+
+### ✅ Day 1 Completion Notes
+
+The completed Day 1 module now includes two practical codelab tracks:
+
+1. **Antigravity Getting Started** — workspace exploration, agent settings, generated Google News CLI, implementation evidence, and code-review skill demo.
+2. **AI Studio to Cloud Run** — browser-only Snowflakes & Balloons app, prompt-driven refinements, exported source code, Cloud Run deployment test, and cleanup notes.
+
+The portfolio now documents the Day 1 work through source files, screenshots, prompt notes, deployment notes, and reflection, so the implementation can be reviewed without depending on a separate chat record.
 
 ---
 
@@ -251,8 +267,8 @@ The capstone should become the strongest applied section of the repository. It s
 
 | Stage | Status | Main Output |
 |------|--------|-------------|
-| Day 0 / Setup | Completed / In Progress | Environment and repository foundation |
-| Day 1 | In Progress | First agent/vibe coding codelabs and reflections |
+| Day 0 / Setup | Completed | Environment and repository foundation |
+| Day 1 | Completed | Antigravity, AI Studio, Cloud Run evidence, screenshots, and reflections |
 | Day 2 | Pending | Tool and API-based agent workflow notes |
 | Day 3 | Pending | Context, memory, and agent skill documentation |
 | Day 4 | Pending | Security, evaluation, and observability documentation |
