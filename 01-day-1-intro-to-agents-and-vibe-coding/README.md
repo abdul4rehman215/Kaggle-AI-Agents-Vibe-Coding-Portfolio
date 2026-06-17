@@ -23,7 +23,7 @@ Day 1 connected three layers:
 | Livestream and concept notes | Notes on agentic SDLC, context engineering, model + harness, risks, and Day 1 Q&A |
 | Antigravity codelab | Google News CLI source project, artifact-review evidence, code-review skill demo |
 | AI Studio codelab | Snowflakes & Balloons React/Vite app with refined interaction behavior |
-| Deployment | Cloud Run deployment tested, then unpublished to avoid ongoing cost |
+| Deployment | Cloud Run deployment tested, then unpublished for cost control; Snowflakes & Balloons app currently hosted on Vercel as a public static frontend demo |
 | Evidence | Screenshots organized by codelab with descriptions |
 | Reflection | Personal learning notes connecting Day 1 to security automation and production thinking |
 
@@ -57,10 +57,15 @@ Main result:
 - React + Vite + TypeScript source
 - canvas-based visual effects
 - explicit user-triggered animations
-- no login, backend, API key, paid service, database, analytics, or private data
-- deployment tested through Cloud Run and later unpublished
+- no login, no server-side API requirement, no required API key, no paid service, no database, no analytics, and no private user data
+- deployment tested through Cloud Run and later unpublished for cost control
+- current public demo hosted on Vercel
 
 📂 [`codelabs/02-ai-studio-to-cloud-run/`](./codelabs/02-ai-studio-to-cloud-run/)
+
+🔗 **Live demo:** https://kaggle-ai-agents-vibe-coding-portfo-delta.vercel.app/
+
+> Note: this Vercel link is live at the time of documentation, but it may be removed, paused, redeployed, or replaced later if the hosting setup changes.
 
 ![Final Snowflakes and Balloons app](./screenshots/codelab-2-ai-studio-cloud-run/final-snowflakes-balloons-app.png)
 
@@ -72,6 +77,7 @@ Main result:
 - [`notes/day-1-whitepaper-notes.md`](./notes/day-1-whitepaper-notes.md)
 - [`notes/day-1-key-concepts.md`](./notes/day-1-key-concepts.md)
 - [`reflections/day-1-reflection.md`](./reflections/day-1-reflection.md)
+- [`resources/day-1-links.md`](./resources/day-1-links.md)
 
 ---
 
@@ -92,6 +98,8 @@ The screenshots are included to show actual workflow evidence: prompts, generate
 - No real API keys or private `.env` files are included.
 - The AI Studio app was intentionally kept browser-only.
 - The Cloud Run service was tested and then unpublished to avoid ongoing cost.
+- The current public demo is hosted on Vercel as a static frontend deployment.
+- The Vercel link is treated as a portfolio demo link and may change later if the deployment is removed or redeployed.
 - The broken Python file in the Antigravity source folder is a deliberate demo input for the code-review skill, not production code.
 
 ---
@@ -99,3 +107,18 @@ The screenshots are included to show actual workflow evidence: prompts, generate
 ## 🧠 Main takeaway
 
 Day 1 showed that vibe coding is powerful, but the important engineering work starts after the first generated output. A human still needs to define constraints, review behavior, test edge cases, remove unsafe assumptions, and decide whether the result is maintainable.
+
+
+---
+
+## 🔗 Live demo and resource index
+
+The Day 1 AI Studio app currently has a public Vercel deployment:
+
+🔗 **Snowflakes & Balloons live demo:** https://kaggle-ai-agents-vibe-coding-portfo-delta.vercel.app/
+
+The detailed Day 1 resource index is maintained here:
+
+📂 [`resources/day-1-links.md`](./resources/day-1-links.md)
+
+That file tracks official course links, codelab links, local evidence, source folders, screenshots, deployment status, and the current live demo reference.
