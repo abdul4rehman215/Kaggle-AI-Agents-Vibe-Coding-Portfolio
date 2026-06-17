@@ -239,6 +239,50 @@ The app can be run from the source folder with:
 .venv\Scripts\python.exe app.py
 ```
 
+---
+
+## 12) Render deployment preparation
+
+To deploy the Flask app on Render, I added Gunicorn to the existing dependency file:
+
+```text
+gunicorn
+```
+
+Render Web Service settings used:
+
+```text
+Root Directory:
+02-day-2-agent-tools-and-interoperability/codelabs/01-antigravity-cli/source/bq-release-notes
+
+Build Command:
+pip install -r requirements.txt
+
+Start Command:
+gunicorn app:app
+```
+
+The first deploy attempt failed because the start command was still using a placeholder value:
+
+```text
+gunicorn your_application.wsgi
+```
+
+The fix was to point Gunicorn to the actual Flask app object in `app.py`:
+
+```text
+gunicorn app:app
+```
+
+After updating the start command, the app deployed successfully on Render.
+
+Live URL:
+
+```text
+https://kaggle-day2-bigquery-release-notes.onrender.com/
+```
+
+
 Then open:
 
 ```text

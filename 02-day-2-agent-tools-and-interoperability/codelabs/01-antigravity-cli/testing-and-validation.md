@@ -12,7 +12,7 @@ The goal was to avoid marking the codelab complete just because files were gener
 |---|---|
 | OS | Windows |
 | Terminal | Command Prompt |
-| Browser | Local browser at `http://127.0.0.1:5000` |
+| Browser | Local browser at `http://127.0.0.1:5000` and live Render URL `https://kaggle-day2-bigquery-release-notes.onrender.com/` |
 | App type | Flask + vanilla HTML/CSS/JavaScript |
 | Data source | Google Cloud BigQuery release notes XML feed |
 
@@ -211,6 +211,42 @@ Evidence:
 
 - [`26-final-light-mode-readable-selected-card.png`](../../screenshots/codelab-1-antigravity-cli/26-final-light-mode-readable-selected-card.png)
 
+
+---
+
+## 12) Public Render deployment
+
+### Check
+
+Open the deployed app at:
+
+```text
+https://kaggle-day2-bigquery-release-notes.onrender.com/
+```
+
+### Result
+
+✅ Passed after deployment configuration fix
+
+The Render build succeeded, but the first deploy attempt failed because the service tried to start with a placeholder command:
+
+```text
+gunicorn your_application.wsgi
+```
+
+After changing the Render start command to:
+
+```text
+gunicorn app:app
+```
+
+the app started successfully and loaded publicly.
+
+Evidence:
+
+- Failed first deploy: [`29-render-start-command-failure.png`](../../screenshots/codelab-1-antigravity-cli/29-render-start-command-failure.png)
+- Live app: [`30-render-live-deployment.png`](../../screenshots/codelab-1-antigravity-cli/30-render-live-deployment.png)
+
 ---
 
 ## Final validation result
@@ -224,6 +260,7 @@ Theme toggle: passed
 Tweet text QA: passed
 X/Twitter intent: passed
 Local Git checkpoints: passed
+Public Render deployment: passed
 ```
 
-Codelab 1 is complete from a hands-on perspective. Public deployment is intentionally left for a later phase.
+Codelab 1 is complete from a hands-on and public-deployment perspective. The Google Developer Knowledge MCP codelab remains pending for the next Day 2 hands-on phase.

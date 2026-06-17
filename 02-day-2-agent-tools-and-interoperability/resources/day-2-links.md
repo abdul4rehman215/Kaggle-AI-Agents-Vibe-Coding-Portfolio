@@ -19,7 +19,7 @@ This file keeps the Day 2 official links and supporting references in one place.
 
 | Codelab | Link | Current status |
 |---|---|---|
-| Get started with Antigravity CLI | https://codelabs.developers.google.com/antigravity-cli-hands-on#0 | ✅ Completed and documented in [`../codelabs/01-antigravity-cli/`](../codelabs/01-antigravity-cli/) |
+| Get started with Antigravity CLI | https://codelabs.developers.google.com/antigravity-cli-hands-on#0 | ✅ Completed, documented, and deployed on Render in [`../codelabs/01-antigravity-cli/`](../codelabs/01-antigravity-cli/) |
 | Explore Google Developer Knowledge MCP server in Google Antigravity | https://codelabs.developers.google.com/developer-knowledge-mcp-antigravity | ⏳ Pending |
 
 ---
@@ -58,6 +58,8 @@ These were used during the theory study phase but are not all committed as full 
 | Sanitized inspection scripts | [`../codelabs/01-antigravity-cli/artifacts/inspection-scripts/`](../codelabs/01-antigravity-cli/artifacts/inspection-scripts/) | Feed/parser inspection scripts generated during the codelab. |
 | CSV export sample | [`../codelabs/01-antigravity-cli/exports/bigquery-release-notes.csv`](../codelabs/01-antigravity-cli/exports/bigquery-release-notes.csv) | Proof that the final Export CSV feature worked. |
 | Screenshot evidence | [`../screenshots/codelab-1-antigravity-cli/`](../screenshots/codelab-1-antigravity-cli/) | Visual evidence from setup, build, refinement, and QA. |
+| Live BigQuery Release Notes Hub | https://kaggle-day2-bigquery-release-notes.onrender.com/ | Public Render deployment of the Day 2 Codelab 1 Flask app. |
+
 
 ---
 

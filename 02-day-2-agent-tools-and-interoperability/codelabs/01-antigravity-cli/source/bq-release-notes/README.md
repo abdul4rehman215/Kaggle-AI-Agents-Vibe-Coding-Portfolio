@@ -1,8 +1,12 @@
 # BigQuery Release Notes Hub
 
-A local Flask web app built during the **Day 2 Antigravity CLI codelab** for the Kaggle / Google AI Agents Intensive Vibe Coding Course.
+A Flask web app built during the **Day 2 Antigravity CLI codelab** for the Kaggle / Google AI Agents Intensive Vibe Coding Course.
 
 The app fetches the official Google Cloud BigQuery release notes XML feed, parses the grouped feed entries into individual updates, and presents them in a searchable dashboard with sharing and export utilities.
+
+🔗 **Live demo:** https://kaggle-day2-bigquery-release-notes.onrender.com/
+
+> Note: this live version is hosted on Render for portfolio/demo access. Free Render instances can spin down after inactivity, so the first load may take extra time.
 
 ---
 
@@ -17,6 +21,7 @@ The app fetches the official Google Cloud BigQuery release notes XML feed, parse
 - Exports the currently visible or filtered updates to CSV.
 - Includes a light/dark theme toggle with localStorage persistence.
 - Uses a 5-minute in-memory cache with a manual refresh option.
+- Runs locally with Flask and publicly with Gunicorn on Render.
 
 ---
 
@@ -28,6 +33,7 @@ The app fetches the official Google Cloud BigQuery release notes XML feed, parse
 | Frontend | Vanilla HTML, CSS, JavaScript |
 | UI | Custom CSS variables, responsive layout, Font Awesome icons, Google Fonts |
 | Data source | Google Cloud BigQuery release notes XML feed |
+| Deployment | Render Web Service + Gunicorn |
 
 ---
 
@@ -51,9 +57,9 @@ bq-release-notes/
 
 ## ▶️ Run locally
 
-From this folder:
+From this folder on Windows:
 
-```bash
+```cmd
 python -m venv .venv
 .venv\Scripts\pip install -r requirements.txt
 .venv\Scripts\python.exe app.py
@@ -76,6 +82,25 @@ python app.py
 
 ---
 
+## 🚀 Deploy on Render
+
+This app is deployed as a Render **Web Service**.
+
+Render settings used:
+
+```text
+Runtime: Python
+Root directory: 02-day-2-agent-tools-and-interoperability/codelabs/01-antigravity-cli/source/bq-release-notes
+Build command: pip install -r requirements.txt
+Start command: gunicorn app:app
+```
+
+The app should not be deployed as a Static Site because it needs a Flask backend process.
+
+The `gunicorn app:app` start command points Render to the Flask object named `app` inside `app.py`.
+
+---
+
 ## 🧪 Manual validation checklist
 
 - Release notes load in the sidebar.
@@ -87,18 +112,25 @@ python app.py
 - Theme toggle switches between dark and light mode and persists after refresh.
 - Tweet text stays under 280 characters and does not end with broken ellipses.
 - Tweet on X opens the X/Twitter intent composer.
+- Public Render URL loads the same final app behavior.
 
 ---
 
-## 🚀 Future deployment note
+## 📝 Deployment note
 
-This version is a Flask app. If I later deploy the project publicly, the cleanest route is likely one of these:
+The first Render build succeeded, but deployment initially failed because the service tried to run a placeholder start command:
 
-- deploy the Flask app as-is on a Python web host,
-- convert the parser and dashboard into a Streamlit app,
-- or split the feed parser into a reusable module and build a new frontend around it.
+```text
+gunicorn your_application.wsgi
+```
 
-The current source is kept complete so the parsing logic, UI behavior, and export workflow can be reused later.
+The correct command for this project is:
+
+```text
+gunicorn app:app
+```
+
+After updating the start command, the app deployed successfully.
 
 ---
 

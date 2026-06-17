@@ -40,6 +40,8 @@ Folder: [`codelab-1-antigravity-cli/`](./codelab-1-antigravity-cli/)
 | `26-final-light-mode-readable-selected-card.png` | Final light mode with improved selected-card readability and button contrast. |
 | `27-tweet-on-x-popup-proof.png` | X/Twitter intent popup proof after selecting a release-note update. |
 | `28-final-extension-commit-status.png` | Final local Git checkpoint after extension features and QA refinements. |
+| `29-render-start-command-failure.png` | First Render deployment failed because the start command used a placeholder WSGI module. |
+| `30-render-live-deployment.png` | Public Render deployment running successfully with the final Flask dashboard. |
 
 ---
 
