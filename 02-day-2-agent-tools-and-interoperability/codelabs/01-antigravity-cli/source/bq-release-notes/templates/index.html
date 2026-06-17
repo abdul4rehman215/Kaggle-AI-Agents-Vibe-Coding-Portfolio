@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigQuery Release Notes Dashboard</title>
+    <meta name="description" content="View, search, filter Google Cloud BigQuery release notes and easily share updates on X/Twitter.">
+    <!-- Google Fonts: Outfit and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation / Left Panel -->
+        <header class="app-header">
+            <div class="logo-area">
+                <div class="logo-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="logo-text">
+                    <h1>BigQuery</h1>
+                    <span class="sub-logo">Release Notes Hub</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <span class="cache-status" id="cache-time">Loading...</span>
+                <button id="theme-toggle-btn" class="btn-theme" title="Toggle Theme (Light/Dark)" aria-label="Toggle theme">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+                <button id="export-csv-btn" class="btn btn-outline" title="Export visible notes to CSV">
+                    <i class="fa-solid fa-file-csv"></i>
+                    <span>Export CSV</span>
+                </button>
+                <button id="refresh-btn" class="btn btn-primary" title="Force Refresh Details">
+                    <i class="fa-solid fa-arrows-rotate" id="refresh-icon"></i>
+                    <span>Refresh</span>
+                </button>
+            </div>
+        </header>
+
+        <main class="app-layout">
+            <!-- Master List Column -->
+            <section class="master-column">
+                <div class="search-filter-bar">
+                    <div class="search-wrapper">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="search-input" placeholder="Search updates, features, keywords..." aria-label="Search updates">
+                        <button id="clear-search-btn" class="clear-btn" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="filter-wrapper">
+                        <select id="type-filter" aria-label="Filter by type">
+                            <option value="ALL">All Categories</option>
+                            <option value="FEATURE">Features</option>
+                            <option value="ANNOUNCEMENT">Announcements</option>
+                            <option value="DEPRECATED">Deprecations</option>
+                            <option value="ISSUE">Issues</option>
+                            <option value="CHANGED">Changes</option>
+                            <option value="UPDATE">Other Updates</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="list-stats">
+                    <span id="results-count">0 updates found</span>
+                </div>
+
+                <!-- Scrollable list of updates -->
+                <div class="updates-list-container" id="notes-list">
+                    <!-- Cards will be injected here via JavaScript -->
+                    <div class="loading-state">
+                        <div class="double-spinner"></div>
+                        <p>Fetching the latest BigQuery release notes...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detail Column -->
+            <section class="detail-column" id="detail-panel">
+                <!-- Mobile Back Button -->
+                <button id="mobile-back-btn" class="mobile-back"><i class="fa-solid fa-chevron-left"></i> Back to list</button>
+
+                <!-- Empty State -->
+                <div class="empty-state" id="empty-state">
+                    <div class="empty-icon"><i class="fa-solid fa-newspaper"></i></div>
+                    <h3>No Update Selected</h3>
+                    <p>Select a specific release note from the list to view its full details and draft a tweet.</p>
+                </div>
+
+                <!-- Note Detail Card -->
+                <div class="detail-card-wrapper hidden" id="detail-view">
+                    <article class="detail-card">
+                        <header class="detail-header">
+                            <div class="detail-meta">
+                                <span class="badge" id="detail-badge">FEATURE</span>
+                                <time class="detail-date" id="detail-date"><i class="fa-regular fa-calendar"></i> June 16, 2026</time>
+                            </div>
+                            <h2 class="detail-title" id="detail-title">Announcement</h2>
+                        </header>
+
+                        <div class="detail-body-scroll">
+                            <div class="detail-content html-content" id="note-content">
+                                <!-- HTML content from the feed goes here -->
+                            </div>
+                            
+                            <div class="source-link-container">
+                                <a href="#" target="_blank" id="detail-link" class="source-link">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View on Google Cloud Official Docs
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tweet Composer Card -->
+                    <section class="tweet-composer-card">
+                        <header class="composer-header">
+                            <h3><i class="fa-brands fa-x-twitter"></i> Share Update on X / Twitter</h3>
+                            <span class="character-limit-label" id="char-counter">0 / 280</span>
+                        </header>
+                        <div class="composer-body">
+                            <textarea id="tweet-text" rows="4" placeholder="What would you like to tweet?"></textarea>
+                            <div id="char-warning" class="warning-text hidden">
+                                <i class="fa-solid fa-circle-exclamation"></i> Over the 280-character limit! X might truncate your post.
+                            </div>
+                        </div>
+                        <footer class="composer-footer">
+                            <button id="copy-btn" class="btn btn-secondary">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>Copy Update</span>
+                            </button>
+                            <button id="tweet-btn" class="btn btn-tweet">
+                                <i class="fa-brands fa-x-twitter"></i>
+                                <span>Tweet on X</span>
+                            </button>
+                        </footer>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="toast hidden">
+        <i class="fa-solid fa-circle-check toast-icon" id="toast-icon"></i>
+        <span id="toast-message">Action completed successfully!</span>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
