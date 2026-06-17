@@ -2,7 +2,7 @@
 
 This folder stores screenshots from the Day 2 hands-on work.
 
-Day 2 started as a theory-heavy unit about tools, interoperability, and protocols. The screenshots here capture the practical side: using Antigravity CLI as a local agentic development assistant, reviewing permissions, building a Flask app, refining generated code, and validating the final result in the browser.
+Day 2 started as a theory-heavy unit about tools, interoperability, and protocols. The screenshots here capture the practical side through two hands-on tracks: using Antigravity CLI as a local agentic development assistant, and validating Google Developer Knowledge MCP inside Antigravity as a remote documentation-search tool.
 
 ---
 
@@ -43,6 +43,25 @@ Folder: [`codelab-1-antigravity-cli/`](./codelab-1-antigravity-cli/)
 | `29-render-start-command-failure.png` | First Render deployment failed because the start command used a placeholder WSGI module. |
 | `30-render-live-deployment.png` | Public Render deployment running successfully with the final Flask dashboard. |
 
+
+---
+
+## 🔌 Codelab 2 — Google Developer Knowledge MCP
+
+Folder: [`codelab-2-developer-knowledge-mcp/`](./codelab-2-developer-knowledge-mcp/)
+
+| Screenshot | What it shows |
+|---|---|
+| `01-mcp-server-enabled-tools.png` | Google Developer Knowledge MCP server enabled in Antigravity with `search_documents`, `answer_query`, and `get_documents` visible. |
+| `02-first-query-tool-permission-prompt.png` | Antigravity permission prompt before using `google-developer-knowledge/search_documents` for the first validation query. |
+| `03-first-successful-workspace-mcp-answer.png` | Successful MCP-backed answer about Google Workspace MCP support with Google documentation references. |
+| `04-second-query-tool-permission-prompt.png` | Permission prompt for another Developer Knowledge search query, this time around Google Workspace and Cloud Run API information. |
+| `05-workspace-and-cloud-run-api-results.png` | Successful result summarizing Google Workspace API information and Cloud Run API naming details. |
+| `06-cloud-run-vs-cloud-functions-table.png` | MCP-supported comparison response between Cloud Run and Cloud Functions in a concise Markdown table. |
+| `07-flask-cloud-run-deployment-doc-search.png` | Documentation-backed answer giving concise steps for deploying a Python Flask app to Cloud Run. |
+
+These screenshots show the core MCP validation flow: server enabled, tools visible, permission requested, documentation search used, and grounded developer answers returned.
+
 ---
 
 ## 🔐 Public sharing reminder
@@ -56,4 +75,4 @@ Before pushing screenshots publicly, check for:
 - emails or personal account details,
 - local paths that reveal unnecessary private information.
 
-The screenshots included here are technical evidence for the codelab and should remain safe for public portfolio use.
+The screenshots included here are technical evidence for the codelabs and should remain safe for public portfolio use. For the MCP codelab, I kept the public evidence focused on tool availability, permission review, and documentation-backed results rather than exposing cloud-console credential screens.
