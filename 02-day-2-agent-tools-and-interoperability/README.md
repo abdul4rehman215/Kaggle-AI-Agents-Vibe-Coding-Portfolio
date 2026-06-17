@@ -20,7 +20,7 @@ This folder now includes both the Day 2 theory work and the first completed hand
 | Whitepaper | ✅ Completed | Read through the full paper and converted the main ideas into study notes. |
 | NotebookLM study work | ✅ Completed | Generated study guide, Q&A, quiz review, and visual summaries. |
 | Infographics | ✅ Completed | Added two visual summaries for quick revision. |
-| Antigravity CLI codelab | ✅ Completed | Built, refined, tested, and documented the BigQuery Release Notes Hub app. |
+| Antigravity CLI codelab | ✅ Completed | Built, refined, tested, deployed on Render, and documented the BigQuery Release Notes Hub app. |
 | Google Developer Knowledge MCP codelab | ⏳ Pending | Next practical codelab after this Antigravity CLI work. |
 
 I am intentionally keeping the second Day 2 codelab marked as pending until it is actually completed and verified.
@@ -37,6 +37,10 @@ It fetches the BigQuery release notes XML feed, parses release-note entries into
 
 📂 Codelab folder: [`codelabs/01-antigravity-cli/`](./codelabs/01-antigravity-cli/)
 
+🔗 Live demo: https://kaggle-day2-bigquery-release-notes.onrender.com/
+
+> Note: the live app is hosted on a free Render instance, so the first load after inactivity may be delayed while the service wakes up.
+
 ### Final app highlights
 
 - Flask backend for feed fetching and parsing.
@@ -49,6 +53,7 @@ It fetches the BigQuery release notes XML feed, parses release-note entries into
 - Light/dark theme toggle.
 - Clean tweet text under the 280-character limit.
 - Local Git checkpoints for generated app, UI polish, and final extensions.
+- Public Render deployment using `gunicorn app:app`.
 
 ### Evidence snapshot
 
@@ -56,7 +61,7 @@ It fetches the BigQuery release notes XML feed, parses release-note entries into
 
 ![Final light mode with readable selected card](./screenshots/codelab-1-antigravity-cli/26-final-light-mode-readable-selected-card.png)
 
-This codelab made the Day 2 theory feel practical: the agent was not only producing text, it was using tools, writing files, running commands, generating artifacts, and then improving the app through review and testing.
+This codelab made the Day 2 theory feel practical: the agent was not only producing text, it was using tools, writing files, running commands, generating artifacts, and then improving the app through review and testing. After local validation, I deployed the Flask app publicly on Render and documented the deployment fix in the codelab folder.
 
 ---
 
@@ -107,7 +112,7 @@ AP2  -> agent to authorized payment execution
 | [`notes/day-2-whitepaper-notes.md`](./notes/day-2-whitepaper-notes.md) | Deeper technical notes from the whitepaper. |
 | [`notes/day-2-key-concepts.md`](./notes/day-2-key-concepts.md) | Compact glossary of the main protocols and architecture terms. |
 | [`notes/day-2-study-guide-summary.md`](./notes/day-2-study-guide-summary.md) | Summary of the NotebookLM/NoteGPT study process and quiz review. |
-| [`codelabs/01-antigravity-cli/`](./codelabs/01-antigravity-cli/) | Completed Antigravity CLI hands-on codelab with source, artifacts, prompts, commands, and validation notes. |
+| [`codelabs/01-antigravity-cli/`](./codelabs/01-antigravity-cli/) | Completed Antigravity CLI hands-on codelab with source, artifacts, prompts, commands, validation notes, and Render deployment notes. |
 | [`reflections/day-2-reflection.md`](./reflections/day-2-reflection.md) | Personal reflection on theory plus hands-on learning. |
 | [`resources/day-2-links.md`](./resources/day-2-links.md) | Official links and reference links used for this unit. |
 | [`resources/source-material-note.md`](./resources/source-material-note.md) | Notes on what source materials were used and what was intentionally not committed. |
