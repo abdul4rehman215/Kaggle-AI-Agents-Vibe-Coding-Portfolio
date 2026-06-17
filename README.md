@@ -156,7 +156,7 @@ That is why this repository includes not only code and notes, but also reflectio
 | Repository Foundation | ✅ Completed    | Core GitHub portfolio setup and documentation structure established |
 | Day 0 / Setup         | ✅ Completed    | Course onboarding, community setup, and environment preparation     |
 | Day 1                 | ✅ Completed    | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs documented |
-| Day 2                 | ⬜ Pending      | Agent tools, APIs, interoperability, and workflow integration       |
+| Day 2                 | ✅ Completed    | Agent tools, APIs, MCP validation, interoperability, and hands-on codelabs documented |
 | Day 3                 | ⬜ Pending      | Context engineering, sessions, skills, and memory                   |
 | Day 4                 | ⬜ Pending      | Security, observability, testing, and agent evaluation              |
 | Day 5                 | ⬜ Pending      | Production deployment, final learning wrap-up, and documentation    |
@@ -330,27 +330,30 @@ Primary goal:
 
 ## Day 2 — Agent Tools and Interoperability
 
-This section will focus on how agents connect with external systems, tools, APIs, and interoperability layers.
+This section documents how agents connect with external systems, tools, APIs, and interoperability layers.
 
-Planned coverage:
+Coverage completed:
 
-* tool-using agents
-* external API interaction
-* MCP concepts
+* tool-using agents and external integrations
+* MCP concepts and practical MCP validation
 * A2A/interoperability concepts
-* agent workflow integration
-* practical codelab artifacts
-* screenshots and implementation notes
-* security observations around tool permissions
+* A2UI, UCP, and AP2 protocol notes
+* Antigravity CLI local app-building workflow
+* BigQuery Release Notes Hub Flask app
+* Render deployment evidence for the Codelab 1 app
+* Google Developer Knowledge MCP setup and validation in Antigravity
+* permission-review screenshots for local and remote tool use
+* security observations around credentials, scoped access, and public documentation
 
-Expected artifacts:
+Completed artifacts:
 
 * Day 2 README
-* notes
-* hands-on files
-* screenshots
-* troubleshooting notes
-* reflection on tool use and interoperability
+* theory notes and study guide summaries
+* completed Codelab 1 folder
+* completed Codelab 2 folder
+* screenshot evidence for both codelabs
+* Day 2 reflection with hands-on addenda
+* resource links and safe handling notes
 
 📂 Folder: [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
 
@@ -731,7 +734,7 @@ Additional course links and references will be maintained in:
 
 # 📌 Repository Status
 
-This repository is currently in the early setup and documentation phase.
+This repository has completed the foundation, Day 1, and Day 2 documentation phases, and is ready to continue into the remaining course units.
 
 Completed so far:
 
@@ -750,13 +753,16 @@ Completed so far:
 * Antigravity codelab documented
 * AI Studio to Cloud Run codelab documented
 * Day 1 screenshots and source artifacts organized
+* Day 2 theory notes, study summaries, resources, and reflection documented
+* Day 2 Antigravity CLI codelab documented with source, screenshots, QA notes, and Render deployment evidence
+* Day 2 Google Developer Knowledge MCP codelab documented with setup notes, prompt-result validation, screenshots, and sanitized config template
 
 Next steps:
 
 * review Day 1 screenshots for any private account/project details before long-term public use
 * add or update root/course-overview links after each completed day
-* continue into Day 2 agent tools and interoperability work
-* document Day 2 notes, codelabs, screenshots, and implementation evidence
+* continue into Day 3 context engineering, skills, sessions, and memory work
+* keep Day 2 as the reference point for tool use, MCP validation, permission review, and interoperability documentation
 * keep cloud cost, secret handling, and human-review notes visible throughout the remaining course
 * add final capstone planning and implementation files when the capstone work begins
 
