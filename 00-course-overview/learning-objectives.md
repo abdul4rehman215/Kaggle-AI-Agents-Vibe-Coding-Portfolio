@@ -8,7 +8,7 @@ The course provides the structure, but the portfolio direction is broader: under
 
 ## 🧠 Primary Objective
 
-The main objective is to understand how AI agents can move from simple LLM interactions into more useful systems that can reason, use tools, manage context, support workflows, and produce deployable applications.
+The main objective is to understand how AI agents can move from simple LLM interactions into more useful systems that can reason, use tools, manage context, load reusable skills, support workflows, and produce deployable applications.
 
 This repository should show that learning progression clearly.
 
@@ -18,7 +18,7 @@ The goal is not only:
 
 The stronger goal is:
 
-> Build a structured, evidence-backed portfolio showing how AI agents, vibe coding, cloud deployment, and security-aware automation can fit into practical engineering work.
+> Build a structured, evidence-backed portfolio showing how AI agents, vibe coding, tool interoperability, Agent Skills, cloud deployment, and security-aware automation can fit into practical engineering work.
 
 ---
 
@@ -28,7 +28,7 @@ By the end of this course journey, I want to understand:
 
 - what makes an AI system an agent
 - how agents differ from basic chatbot interactions
-- how agents use models, tools, memory, and orchestration
+- how agents use models, tools, skills, memory, and orchestration
 - how human review fits into agentic workflows
 - where agents are useful and where they can fail
 - how to evaluate agent behavior more carefully
@@ -37,7 +37,7 @@ Success criteria:
 
 - I can explain AI agent workflows in my own words
 - I can identify the components of an agentic system
-- I can document what an agent did, what tools it used, and what evidence was produced
+- I can document what an agent did, what tools or skills it used, and what evidence was produced
 - I can separate useful agent behavior from unreliable or unsafe automation
 
 ---
@@ -75,6 +75,7 @@ My objective is to understand:
 - how the IDE and CLI fit into the workflow
 - how tasks are planned, executed, and reviewed
 - how agent artifacts or evidence can support transparency
+- how skills can extend the agent’s behavior without bloating the main prompt
 - how this type of environment may change developer workflows
 
 Success criteria:
@@ -82,6 +83,7 @@ Success criteria:
 - I can document the setup clearly
 - I can explain the purpose of Antigravity in this course
 - I can capture screenshots and notes from hands-on usage
+- I can explain how Antigravity Skills are installed, triggered, and tested after the Day 3 codelabs
 - I can reflect on where agent-first development is useful and where caution is needed
 
 ---
@@ -109,7 +111,7 @@ Success criteria:
 
 ---
 
-## 🔗 Tool Use, APIs, and Agent Interoperability
+## 🔗 Tool Use, APIs, MCP, and Agent Interoperability
 
 Agents become more useful when they can interact with external tools and systems.
 
@@ -117,6 +119,7 @@ My objective is to understand:
 
 - how agents call tools or functions
 - how APIs expand agent capabilities
+- how MCP connects an agent to external knowledge or systems
 - how tool permissions should be controlled
 - how to document inputs, outputs, and side effects
 - how tool use connects to automation workflows
@@ -124,36 +127,41 @@ My objective is to understand:
 Success criteria:
 
 - I can document tool-using agent workflows clearly
-- I can describe what system or API the agent interacted with
+- I can describe what system, API, or MCP server the agent interacted with
 - I can identify security or reliability concerns around tool access
 - I can explain the value and risk of external integrations
 
 ---
 
-## 🧩 Context Engineering, Skills, and Memory
+## 🧩 Agent Skills, Procedural Memory, and Context Budget
 
-Useful agents need more than one prompt. They need good context, structured instructions, reusable skills, and sometimes memory.
+Useful agents need more than one prompt. They need reusable know-how, clean routing, controlled context, and sometimes memory.
 
 My objective is to learn:
 
-- how context changes agent behavior
-- how sessions and memory support continuity
-- how agent skills can make workflows reusable
-- how to write instructions that reduce ambiguity
-- how to document context strategy and limitations
+- how Agent Skills act as procedural memory for agents
+- how a `SKILL.md` file defines metadata, trigger description, and task instructions
+- how `scripts/`, `references/`, and `assets/` support a skill without forcing everything into the prompt
+- how progressive disclosure reduces active context pressure
+- how context rot and attention dilution affect agent reliability
+- how Skills differ from MCP and `AGENTS.md`
+- how skill descriptions route work and why vague triggers fail
+- how evaluation-driven development can make skills more trustworthy
 
 Success criteria:
 
-- I can describe how context was provided to an agent
-- I can identify when memory or state is useful
-- I can document reusable agent behavior patterns
-- I can reflect on the risks of stale or incorrect context
+- I can explain why bigger context is not automatically better
+- I can describe the anatomy of an Agent Skill in my own words
+- I can explain the difference between know-how, reach, and always-loaded project context
+- I can document reusable agent behavior patterns without repeating the same notes everywhere
+- I can identify trigger failure, execution failure, token budget failure, and regression risk
+- I can connect Day 3 theory to the Antigravity Skills and Agents CLI/ADK codelabs after completing them
 
 ---
 
 ## 🔐 Security, Evaluation, and Reliability
 
-This is one of the most important learning objectives because agentic systems can take actions, use tools, access files, or interact with cloud services.
+This is one of the most important learning objectives because agentic systems can take actions, use tools, access files, invoke scripts, or interact with cloud services.
 
 My objectives are:
 
@@ -164,6 +172,7 @@ My objectives are:
 - avoid committing secrets
 - document risk and reliability concerns
 - connect agent safety to cybersecurity thinking
+- treat skills and MCP configurations as reviewable dependencies
 
 Success criteria:
 
@@ -171,6 +180,7 @@ Success criteria:
 - I can identify failure modes or unsafe assumptions
 - I can explain what was tested and what still needs verification
 - I can treat agent output as something to review, not blindly trust
+- I can separate read-only, draft-only, and action-capable workflows when thinking about agent risk
 
 ---
 
@@ -194,6 +204,7 @@ Success criteria:
 - progress is tracked honestly
 - incomplete items are not presented as completed
 - documentation is readable without needing the original chat history
+- generated study aids are converted into concise personal notes, not pasted directly
 
 ---
 
@@ -232,7 +243,43 @@ Day 1 produced the first concrete evidence toward these objectives:
 - I tested the AI Studio app through Cloud Run and documented the cleanup/cost decision.
 - I organized screenshots, notes, source files, and reflections so the work can be reviewed from durable repository artifacts.
 
-This turns the initial learning objective into a documented implementation baseline for the rest of the course.
+This turned the initial learning objective into a documented implementation baseline for the rest of the course.
+
+---
+
+## ✅ Day 2 Objective Progress
+
+Day 2 extended the learning from app generation into tool-connected agent workflows:
+
+- I documented how agents interact with tools and external systems.
+- I captured Antigravity CLI work as evidence instead of leaving it only in terminal history.
+- I documented the Google Developer Knowledge MCP codelab with setup, security notes, and validation evidence.
+- I treated MCP configuration as something that needs careful handling rather than a casual copy-paste step.
+- I connected tool access to reliability, permissions, troubleshooting, and safe public documentation.
+
+This made the tooling objective more practical: agents are powerful because they can act through tools, but that action surface needs control.
+
+---
+
+## 🟡 Day 3 Objective Progress
+
+Day 3 has started with theory and concept work around Agent Skills.
+
+Current progress:
+
+- I completed the Unit 3 podcast and Agent Skills whitepaper study.
+- I used NoteGPT and NotebookLM for revision, quiz-style review, and explanation support.
+- I created visual study assets for procedural memory, progressive disclosure, and context reduction.
+- I documented the main vocabulary: `SKILL.md`, procedural memory, progressive disclosure, context rot, trigger descriptions, MCP vs Skills, evaluation-driven development, and skill failure modes.
+
+Still pending:
+
+- Antigravity Skills codelab
+- Agents CLI + ADK lifecycle codelab
+- screenshots and command/output evidence
+- final Day 3 reflection
+
+This objective should stay in progress until the hands-on work is completed.
 
 ---
 
