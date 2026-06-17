@@ -20,12 +20,13 @@ The repository should follow these principles:
 8. **Use screenshots only when they add evidence or clarity.**
 9. **Keep the root README high-level and use day folders for details.**
 10. **Make the repository understandable without needing outside chat history.**
+11. **Use generated study aids as references, not as raw pasted documentation.**
 
 ---
 
 ## 🧱 Standard Day Folder Structure
 
-Each day folder should follow this general pattern:
+Each day folder should follow this general pattern after hands-on work exists:
 
 ```text
 day-folder/
@@ -37,6 +38,19 @@ day-folder/
 ```
 
 Some days may need extra folders depending on the actual work, but this base structure should stay consistent.
+
+For theory-first work, it is fine to start smaller:
+
+```text
+day-folder/
+├── README.md
+├── notes/
+├── resources/
+└── assets/
+    └── infographics/
+```
+
+This is the pattern currently used for Day 3 Phase 1. The `codelabs/`, `screenshots/`, and final reflection material should be added only after the hands-on codelabs are completed.
 
 ---
 
@@ -73,6 +87,8 @@ What remains to be completed or improved.
 ```
 
 The day README should not become too long. Detailed notes should go inside `notes/`, and implementation details should go inside codelab folders.
+
+For an in-progress theory folder, the README should say what is done and what is still pending. It should not pretend that codelabs are complete just because the folder exists.
 
 ---
 
@@ -133,6 +149,7 @@ Good screenshot examples:
 - important error message
 - cloud service confirmation
 - final project output
+- skill trigger or routing evidence when working with Agent Skills
 
 Avoid screenshots that show:
 
@@ -158,6 +175,9 @@ antigravity-cli-version-check.png
 ai-studio-generated-app-preview.png
 cloud-run-deployment-success.png
 day-1-codelab-final-output.png
+mcp-server-config-success.png
+agent-skill-trigger-success.png
+agents-cli-playground-test.png
 capstone-architecture-diagram.png
 ```
 
@@ -186,6 +206,8 @@ vibe-coding-whitepaper-notes.md
 cloud-run-deployment-notes.md
 security-and-secrets-handling.md
 day-1-reflection.md
+day-3-key-concepts.md
+agent-skills-codelab-notes.md
 ```
 
 Avoid:
@@ -201,7 +223,7 @@ Day1FinalFinal.md
 
 ## 🔐 Security Documentation Rules
 
-Any documentation involving tools, cloud services, APIs, or deployment should include a short security note.
+Any documentation involving tools, cloud services, APIs, MCP servers, local CLIs, or deployment should include a short security note.
 
 Security notes may cover:
 
@@ -212,6 +234,8 @@ Security notes may cover:
 - whether cloud resources need cleanup
 - whether the agent had access to tools or files
 - what risks were noticed
+- whether a config example is sanitized
+- whether a skill or script can execute actions
 
 This does not need to be dramatic. It just needs to show careful engineering thinking.
 
@@ -219,7 +243,7 @@ This does not need to be dramatic. It just needs to show careful engineering thi
 
 ## 🧠 Reflection Standard
 
-Each day should have a reflection, but it should be specific.
+Each completed day should have a reflection, but it should be specific.
 
 Weak reflection:
 
@@ -237,6 +261,8 @@ Good reflections should mention:
 - what should be improved next
 - how the learning connects to real workflows
 
+For Day 3, the final reflection should wait until the codelabs are completed. Current theory notes can include learning takeaways, but the full reflection should include hands-on evidence too.
+
 ---
 
 ## ✅ Evidence Standard
@@ -250,6 +276,7 @@ A task is considered properly documented only when at least one of these exists:
 - deployment link
 - troubleshooting record
 - reflection
+- source material or resource note explaining what was studied
 
 For major codelabs, aim to include multiple evidence types.
 
@@ -261,18 +288,20 @@ Avoid:
 
 - overclaiming completion
 - copying large course text directly
+- pasting raw NoteGPT, NotebookLM, or chat output without editing
 - dumping raw screenshots without explanation
 - committing secrets or private files
 - using inconsistent folder names
 - writing generic AI-sounding filler
 - creating many empty folders with no purpose
 - mixing unrelated notes into the wrong day folder
+- repeating the same explanation across multiple files with minor wording changes
 
 ---
 
 ## ✅ Day 1 Documentation Pattern Applied
 
-The Day 1 folder now applies this documentation plan in practice.
+The Day 1 folder applies this documentation plan in practice.
 
 The completed structure separates:
 
@@ -283,6 +312,38 @@ The completed structure separates:
 - intentionally broken review-demo code from production-style app code
 
 This pattern should be reused for the remaining course days, but only after real work exists for those days. Placeholder folders are not required unless they serve an immediate documentation purpose.
+
+---
+
+## ✅ Day 2 Documentation Pattern Applied
+
+The Day 2 folder extends the same pattern for tool-oriented agent work.
+
+The completed documentation separates:
+
+- theory notes from implementation records
+- Antigravity CLI work from MCP codelab work
+- configuration examples from sensitive real local configuration
+- screenshots from written validation notes
+- setup decisions from final reflection
+
+This is important because Day 2 involved tool access and MCP configuration. The documentation should preserve what was learned without exposing real secrets, local private paths, or account-specific configuration.
+
+---
+
+## 🟡 Day 3 Phase 1 Documentation Pattern Applied
+
+The Day 3 folder currently documents theory work only.
+
+The current structure intentionally focuses on:
+
+- podcast and whitepaper notes
+- key concepts and vocabulary
+- study workflow summary
+- official links and source material notes
+- personal infographics used for revision
+
+It does not yet include codelab folders or screenshots because the hands-on Antigravity Skills and Agents CLI/ADK work is still pending. Those folders should be added later when real outputs exist.
 
 ---
 

@@ -1,8 +1,8 @@
 # 🗺️ Course Roadmap
 
-This roadmap gives a high-level view of how the 5-day AI agents course work will be documented inside this repository.
+This roadmap gives a high-level view of how the 5-day AI agents course work is documented inside this repository.
 
-The goal is not to over-explain every task here. Detailed notes, codelabs, screenshots, and reflections belong inside each day-wise folder. This file keeps the full course direction visible in one place.
+The goal is not to over-explain every task here. Detailed notes, codelabs, screenshots, source files, and reflections belong inside each day-wise folder. This file keeps the full course direction visible in one place.
 
 ---
 
@@ -26,7 +26,7 @@ The roadmap is organized around the repository structure, not only the course sc
 ## ✅ Day 0 / Setup — Course Readiness and Repository Foundation
 
 **Folder:** [`../00-course-overview/`](../00-course-overview/)  
-**Status:** Completed / In Progress  
+**Status:** Completed / Maintained  
 **Main purpose:** Establish the learning workspace, environment readiness, and repository foundation.
 
 ### Focus Areas
@@ -89,79 +89,109 @@ This stage proves that the course work is being organized from the beginning, no
 
 ### Portfolio Value
 
-Day 1 should show the transition from course theory into practical agent-assisted software building. It now also proves that the first Day 1 implementations were documented with durable source artifacts, screenshot evidence, notes, and reflections.
+Day 1 shows the transition from course theory into practical agent-assisted software building. It proves that the first implementations were documented with durable source artifacts, screenshot evidence, notes, and reflections.
 
----
+### ✅ Completion Notes
 
-### ✅ Day 1 Completion Notes
-
-The completed Day 1 module now includes two practical codelab tracks:
+The completed Day 1 module includes two practical codelab tracks:
 
 1. **Antigravity Getting Started** — workspace exploration, agent settings, generated Google News CLI, implementation evidence, and code-review skill demo.
 2. **AI Studio to Cloud Run** — browser-only Snowflakes & Balloons app, prompt-driven refinements, exported source code, Cloud Run deployment test, and cleanup notes.
 
-The portfolio now documents the Day 1 work through source files, screenshots, prompt notes, deployment notes, and reflection, so the implementation can be reviewed without depending on a separate chat record.
+The portfolio documents the Day 1 work through source files, screenshots, prompt notes, deployment notes, and reflection, so the implementation can be reviewed without depending on a separate chat record.
 
 ---
 
-## 🔗 Day 2 — Agent Tools and Interoperability
+## ✅ Day 2 — Agent Tools and Interoperability
 
 **Folder:** [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)  
-**Status:** Pending  
-**Main purpose:** Document how agents interact with tools, APIs, and external systems.
+**Status:** Completed  
+**Main purpose:** Document how agents interact with tools, CLIs, MCP servers, external systems, and developer workflows.
 
 ### Focus Areas
 
 - tool-using agents
-- API integration
+- Antigravity CLI workflow
+- Google Developer Knowledge MCP
 - external system interaction
-- function or tool calling concepts
+- function/tool calling concepts
 - workflow interoperability
 - boundaries around agent access
+- setup hygiene and safe configuration
 
 ### Expected Artifacts
 
 - Day 2 README
-- notes
-- codelab implementation files
-- tool integration examples
-- screenshots
+- podcast and whitepaper notes
+- study guide summary
+- Antigravity CLI codelab documentation
+- Google Developer Knowledge MCP codelab documentation
+- codelab source/artifacts where relevant
+- screenshots and output evidence
+- Render deployment record where relevant
 - security and workflow reflection
 
 ### Portfolio Value
 
-Day 2 should show that agents are not only chat interfaces. They can become workflow participants when connected safely to tools and systems.
+Day 2 shows that agents are not only chat interfaces. They can become workflow participants when connected safely to tools, command-line environments, MCP servers, and external knowledge systems.
+
+### ✅ Completion Notes
+
+The completed Day 2 module documents both concept learning and hands-on implementation evidence:
+
+1. **Antigravity CLI work** — local CLI workflow, command execution, artifact tracking, screenshots, and troubleshooting notes.
+2. **Google Developer Knowledge MCP codelab** — MCP configuration, security notes, prompt-result validation, sanitized config examples, and evidence screenshots.
+3. **Documentation and reflection** — notes connect tool access with reliability, permission boundaries, deployment thinking, and responsible repository hygiene.
+
+The main lesson from Day 2 is that agent power increases with tool access, but so does the need for controlled permissions, clear setup notes, and careful evidence handling.
 
 ---
 
-## 🧩 Day 3 — Context Engineering, Skills, and Memory
+## 🟡 Day 3 — Agent Skills and Procedural Memory
 
-**Folder:** [`../03-day-3-context-engineering-skills-memory/`](../03-day-3-context-engineering-skills-memory/)  
-**Status:** Pending  
-**Main purpose:** Explore how agents manage context, reusable capabilities, sessions, and memory.
+**Folder:** [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)  
+**Status:** In Progress — Phase 1 theory documented; codelabs pending  
+**Main purpose:** Understand how Agent Skills give agents reusable procedural memory without bloating the active context window.
 
 ### Focus Areas
 
-- context engineering
-- session handling
-- memory concepts
-- agent skills
-- reusable task patterns
-- maintaining continuity across tasks
-- prompt structure and instruction quality
+- Agent Skills as reusable procedural memory
+- `SKILL.md` as the central skill primitive
+- skill folder anatomy: `scripts/`, `references/`, and `assets/`
+- progressive disclosure
+- context rot and active context budget
+- trigger descriptions and routing quality
+- Skill vs MCP vs `AGENTS.md`
+- single agent with skills vs multi-agent architectures
+- evaluation-driven skill design
+- trajectory scoring, token budget failure, and regression risk
 
-### Expected Artifacts
+### Current Artifacts
 
 - Day 3 README
-- notes
-- hands-on files
-- agent skill examples
-- screenshots
-- reflection on context and memory design
+- podcast and whitepaper notes
+- Agent Skills key concepts
+- study guide summary
+- source material note
+- official resource links
+- personal infographics for visual revision
+
+### Pending Artifacts
+
+- Antigravity Skills codelab documentation
+- Agents CLI + ADK lifecycle codelab documentation
+- codelab screenshots
+- command/output notes
+- testing observations
+- final Day 3 reflection
 
 ### Portfolio Value
 
-Day 3 should demonstrate that useful agents need more than a single prompt. They need structured context, reusable capabilities, and good task framing.
+Day 3 demonstrates that useful agents need more than a single prompt or a long tool list. They need reusable know-how, clean routing, small active context, and testable skill behavior.
+
+### 🟡 Phase 1 Notes
+
+The theory work is already captured. The folder should remain marked as in progress until the hands-on codelabs are completed and added with evidence.
 
 ---
 
@@ -267,10 +297,10 @@ The capstone should become the strongest applied section of the repository. It s
 
 | Stage | Status | Main Output |
 |------|--------|-------------|
-| Day 0 / Setup | Completed | Environment and repository foundation |
+| Day 0 / Setup | Completed / Maintained | Environment and repository foundation |
 | Day 1 | Completed | Antigravity, AI Studio, Cloud Run evidence, screenshots, and reflections |
-| Day 2 | Pending | Tool and API-based agent workflow notes |
-| Day 3 | Pending | Context, memory, and agent skill documentation |
+| Day 2 | Completed | Agent tools, Antigravity CLI, MCP notes, screenshots, security notes, and reflection |
+| Day 3 | In Progress | Agent Skills theory documented; Antigravity Skills and Agents CLI/ADK codelabs pending |
 | Day 4 | Pending | Security, evaluation, and observability documentation |
 | Day 5 | Pending | Production deployment and final course wrap-up |
 | Capstone | Pending | Final applied AI agents project |
