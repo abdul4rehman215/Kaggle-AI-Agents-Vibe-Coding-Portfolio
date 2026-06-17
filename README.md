@@ -5,7 +5,7 @@
 ### Covering **AI Agents, Vibe Coding, Google Antigravity, AI Studio, Cloud Run, Agent Workflows, Tool Use, Evaluation, Production Deployment, and Security-Focused AI Automation Thinking**
 
 <div align="center">
-
+   
 <p>
   <img src="https://img.shields.io/badge/Portfolio-AI%20Agents%20Learning%20Portfolio-7B61FF?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Course-Google%20%2B%20Kaggle%205--Day%20AI%20Agents-111827?style=for-the-badge" />
