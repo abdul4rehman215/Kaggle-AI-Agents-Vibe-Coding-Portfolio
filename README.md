@@ -5,7 +5,7 @@
 ### Covering **AI Agents, Vibe Coding, Google Antigravity, AI Studio, Cloud Run, Agent Workflows, Tool Use, Evaluation, Production Deployment, and Security-Focused AI Automation Thinking**
 
 <div align="center">
-   
+
 <p>
   <img src="https://img.shields.io/badge/Portfolio-AI%20Agents%20Learning%20Portfolio-7B61FF?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Course-Google%20%2B%20Kaggle%205--Day%20AI%20Agents-111827?style=for-the-badge" />
@@ -76,7 +76,7 @@ The broader purpose is to connect **AI agents and vibe coding** with my existing
 * [`00-course-overview/`](./00-course-overview/) — course context, roadmap, setup checklist, and learning objectives
 * [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/) — Day 1 notes, podcast/whitepaper reflections, Antigravity, AI Studio, and Cloud Run codelab work
 * [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) — Day 2 agent tools, APIs, external integrations, and workflow interoperability
-* [`03-day-3-context-engineering-skills-memory/`](./03-day-3-context-engineering-skills-memory/) — Day 3 context engineering, sessions, skills, memory, and reusable agent workflows
+* [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) — Day 3 Agent Skills, procedural memory, context rot, progressive disclosure, and reusable agent workflows
 * [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) — Day 4 agent security, observability, testing, safety, and evaluation
 * [`05-day-5-production-agent-deployment/`](./05-day-5-production-agent-deployment/) — Day 5 production development, deployment notes, Cloud Run, and final course wrap-up
 * [`capstone-project/`](./capstone-project/) — final applied AI agents capstone project, architecture, implementation, and submission evidence
@@ -157,7 +157,7 @@ That is why this repository includes not only code and notes, but also reflectio
 | Day 0 / Setup         | ✅ Completed    | Course onboarding, community setup, and environment preparation     |
 | Day 1                 | ✅ Completed    | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs documented |
 | Day 2                 | ✅ Completed    | Agent tools, APIs, MCP validation, interoperability, and hands-on codelabs documented |
-| Day 3                 | ⬜ Pending      | Context engineering, sessions, skills, and memory                   |
+| Day 3                 | 🟡 In Progress  | Agent Skills theory completed; Antigravity and Agents CLI codelabs pending |
 | Day 4                 | ⬜ Pending      | Security, observability, testing, and agent evaluation              |
 | Day 5                 | ⬜ Pending      | Production deployment, final learning wrap-up, and documentation    |
 | Capstone Project      | ⬜ Pending      | Final applied AI agents project                                     |
@@ -247,7 +247,7 @@ Expected coverage includes:
 📂 Planned folders:
 
 * [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
-* [`03-day-3-context-engineering-skills-memory/`](./03-day-3-context-engineering-skills-memory/)
+* [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/)
 * [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
 
 ---
@@ -359,30 +359,31 @@ Completed artifacts:
 
 ---
 
-## Day 3 — Context Engineering, Sessions, Skills, and Memory
+## Day 3 — Agent Skills, Procedural Memory, and Context Control
 
-This section will focus on how agents manage context, reusable capabilities, and longer-running interaction patterns.
+This section focuses on how agents package reusable procedural knowledge through Agent Skills, reduce context bloat through progressive disclosure, and load specialist workflows only when needed.
 
 Planned coverage:
 
-* context engineering
-* session handling
-* memory concepts
-* agent skills
-* reusable workflow design
-* prompt structure and instruction design
-* maintaining continuity across agent tasks
+* Agent Skills and `SKILL.md` anatomy
+* procedural memory
+* progressive disclosure
+* context rot and active context budget
+* skill triggering and routing descriptions
+* Skills vs MCP vs `AGENTS.md`
+* evaluation-driven skill development
 
 Expected artifacts:
 
 * Day 3 README
-* notes
-* hands-on files
-* agent skill examples
-* screenshots
-* reflection on context and memory design
+* theory notes
+* key concept glossary
+* study-guide summary
+* hands-on codelab files later
+* screenshots after implementation
+* reflection on skills, context, and workflow design
 
-📂 Folder: [`03-day-3-context-engineering-skills-memory/`](./03-day-3-context-engineering-skills-memory/)
+📂 Folder: [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/)
 
 ---
 
@@ -473,7 +474,7 @@ Kaggle-AI-Agents-Vibe-Coding-Portfolio/
 ├── 00-course-overview/                           # Course roadmap, setup checklist, and learning objectives
 ├── 01-day-1-intro-to-agents-and-vibe-coding/     # Day 1 notes, codelabs, screenshots, and reflections
 ├── 02-day-2-agent-tools-and-interoperability/    # Day 2 agent tools, APIs, integrations, and workflows
-├── 03-day-3-context-engineering-skills-memory/   # Day 3 context engineering, sessions, skills, and memory
+├── 03-day-3-agent-skills-procedural-memory/   # Day 3 Agent Skills, procedural memory, and context control
 ├── 04-day-4-agent-security-evaluation/           # Day 4 security, observability, testing, and evaluation
 ├── 05-day-5-production-agent-deployment/         # Day 5 deployment, production readiness, and wrap-up
 │
