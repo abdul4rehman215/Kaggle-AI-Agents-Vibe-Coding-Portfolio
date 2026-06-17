@@ -2,7 +2,7 @@
 
 This folder is the course-level control hub for the **Kaggle AI Agents Vibe Coding Portfolio**.
 
-The root `README.md` introduces the full repository as a public portfolio. This folder goes one level deeper. It explains how the course journey will be organized, how progress will be tracked, what setup is required, what learning outcomes matter, and how each future codelab or project should be documented.
+The root `README.md` introduces the full repository as a public portfolio. This folder goes one level deeper. It explains how the course journey is organized, how progress is tracked, what setup is required, what learning outcomes matter, and how each codelab or project should be documented.
 
 The purpose of this folder is simple:
 
@@ -26,17 +26,17 @@ The purpose of this folder is simple:
 
 ## 🎯 Folder Role in the Repository
 
-This folder is not meant to store daily codelab code or screenshots.
+This folder is not meant to store daily codelab code, screenshots, generated apps, or local setup artifacts.
 
 Those artifacts belong in the day-wise folders:
 
 ```text
-01-day-1-intro-to-agents-and-vibe-coding/     # Day 1 work now added
-02-day-2-agent-tools-and-interoperability/    # planned for Day 2
-03-day-3-context-engineering-skills-memory/   # planned for Day 3
-04-day-4-agent-security-evaluation/           # planned for Day 4
-05-day-5-production-agent-deployment/         # planned for Day 5
-capstone-project/                             # planned final build
+01-day-1-intro-to-agents-and-vibe-coding/        # completed and documented
+02-day-2-agent-tools-and-interoperability/       # completed and documented
+03-day-3-agent-skills-procedural-memory/         # in progress: theory documented, codelabs pending
+04-day-4-agent-security-evaluation/              # planned for Day 4
+05-day-5-production-agent-deployment/            # planned for Day 5
+capstone-project/                                # planned final build
 ```
 
 Instead, `00-course-overview/` defines the structure and direction for the entire repository.
@@ -59,9 +59,9 @@ This repository is being built as more than a place to store files.
 
 The direction is:
 
-**AI Agents + Vibe Coding + Cloud Deployment + Security-Aware Automation Thinking**
+**AI Agents + Vibe Coding + Tool Interoperability + Agent Skills + Cloud Deployment + Security-Aware Automation Thinking**
 
-The course work will be documented through a practical lens:
+The course work is documented through a practical lens:
 
 - learn the concept
 - apply it through codelabs
@@ -83,7 +83,7 @@ The following folder names are the current repository standard:
 00-course-overview/
 01-day-1-intro-to-agents-and-vibe-coding/
 02-day-2-agent-tools-and-interoperability/
-03-day-3-context-engineering-skills-memory/
+03-day-3-agent-skills-procedural-memory/
 04-day-4-agent-security-evaluation/
 05-day-5-production-agent-deployment/
 capstone-project/
@@ -98,9 +98,9 @@ Any links, README references, screenshots, notes, or future documentation should
 
 ## ✅ Current Use of This Folder
 
-At this stage, this folder provides the initial planning layer for the repository.
+At this stage, this folder provides the planning and tracking layer for the repository.
 
-As the course progresses, the files here can be updated with:
+As the course progresses, the files here should be updated with:
 
 - revised progress status
 - completed codelab evidence locations
@@ -111,12 +111,11 @@ As the course progresses, the files here can be updated with:
 
 The folder should remain clean and high-level. Detailed implementation work should stay inside the day-wise folders and `capstone-project/`.
 
-
 ---
 
 ## ✅ Day 1 Documentation Update
 
-Day 1 has now moved from planning into documented implementation work.
+Day 1 has moved from planning into documented implementation work.
 
 The Day 1 folder contains:
 
@@ -130,6 +129,50 @@ The Day 1 folder contains:
 - implementation notes, deployment notes, prompt notes, and reflection
 
 This keeps the overview folder focused on course-level tracking while the actual evidence stays inside the Day 1 folder.
+
+---
+
+## ✅ Day 2 Documentation Update
+
+Day 2 is now documented as completed work.
+
+The Day 2 folder captures:
+
+- theory notes around agent tools and interoperability
+- podcast and whitepaper learning notes
+- Antigravity CLI codelab documentation
+- Google Developer Knowledge MCP codelab documentation
+- MCP setup/security notes and sanitized config examples
+- screenshots and output evidence
+- Render deployment record where relevant
+- implementation notes, troubleshooting notes, and reflection
+
+The key portfolio point from Day 2 is that agents become more useful when they can safely connect to tools, commands, external systems, and developer workflows.
+
+---
+
+## 🟡 Day 3 Phase 1 Documentation Update
+
+Day 3 has started, but it is not fully complete yet.
+
+The current Day 3 folder is:
+
+[`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+
+Phase 1 is documented with:
+
+- Unit 3 podcast and whitepaper study notes
+- Agent Skills key concept notes
+- study workflow summary using NoteGPT and NotebookLM
+- source material notes
+- two personal infographics used for revision
+
+The hands-on codelabs are still pending:
+
+- Antigravity Skills codelab
+- Agents CLI + ADK lifecycle codelab
+
+This status should stay as **in progress** until the codelabs, screenshots, implementation evidence, and final reflection are added.
 
 ---
 
