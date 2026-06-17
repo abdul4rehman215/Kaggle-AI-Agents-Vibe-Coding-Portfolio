@@ -86,6 +86,9 @@ For that reason:
 
 ---
 
+
+<!--
+
 ## 📝 Useful reminder for future updates
 
 If the Vercel deployment is removed, paused, or replaced later, update these files together:
@@ -95,3 +98,5 @@ If the Vercel deployment is removed, paused, or replaced later, update these fil
 - [`../codelabs/02-ai-studio-to-cloud-run/README.md`](../codelabs/02-ai-studio-to-cloud-run/README.md)
 - [`../codelabs/02-ai-studio-to-cloud-run/deployment-notes.md`](../codelabs/02-ai-studio-to-cloud-run/deployment-notes.md)
 - this `day-1-links.md` file
+
+-->
