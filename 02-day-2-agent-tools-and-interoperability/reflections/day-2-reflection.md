@@ -107,21 +107,18 @@ and what should block it.
 
 ---
 
-## ⚠️ What still feels incomplete
+## ⚠️ What became clearer after the hands-on work
 
-The theory is much clearer now, but I do not want to overstate the hands-on part yet.
+The theory made sense on paper, but the hands-on work showed where the real engineering responsibility sits.
 
-I still need to complete:
+Two things became clearer:
 
-- Antigravity CLI setup/usage,
-- MCP config in the actual environment,
-- Google Developer Knowledge MCP server connection,
-- verification through real prompts,
-- and screenshot-based documentation.
+- local agentic development needs careful review because the agent can create files, run commands, and change project state,
+- remote MCP usage needs careful review because the agent can call external tools and retrieve information outside the prompt context.
 
-Until those are done, this folder should remain marked as theory complete and codelabs pending.
+That means the practical skill is not only writing better prompts. The practical skill is learning when to approve a tool call, how to scope the workspace, how to keep secrets out of the repo, how to test the result, and how to document the evidence without exaggerating.
 
-That is intentional. I want the repo to show real progress, not pretend that every step is finished.
+I also learned that screenshot evidence should be treated like part of the technical record. It should show the important moments clearly: setup, permission review, successful output, and final validation. It should not expose secrets or private cloud details.
 
 ---
 
@@ -152,7 +149,7 @@ My main takeaway from Day 2:
 
 > The future of useful agents is not one huge model doing everything. It is a network of specialized systems connected through safe, standard, and inspectable protocols.
 
-The codelabs will be the next test. I understand the protocol map conceptually now. The next step is to configure and use MCP inside Antigravity so the concept becomes practical.
+The codelabs became the practical test of that idea. The Antigravity CLI work showed local tool-using development, and the Developer Knowledge MCP codelab showed remote documentation retrieval through a visible tool boundary inside Antigravity.
 
 ---
 
@@ -183,4 +180,35 @@ My current takeaway after the hands-on phase:
 
 > Agentic development is not about replacing engineering judgment. It shifts more of the work into planning, reviewing, testing, and steering tool-using systems safely.
 
-The next practical step is the Google Developer Knowledge MCP codelab. That should connect the theory of MCP to actual tool discovery and use inside Antigravity.
+The next practical step was the Google Developer Knowledge MCP codelab, and completing it connected the theory of MCP to actual tool discovery and tool use inside Antigravity.
+
+---
+
+## 🔌 Hands-on addendum — after the Developer Knowledge MCP codelab
+
+The Google Developer Knowledge MCP codelab made MCP feel real in a different way from the Antigravity CLI build.
+
+In the CLI codelab, the agent was useful because it could act inside a project folder. In this MCP codelab, the agent was useful because it could connect to an official documentation source and use a documentation-search tool during the conversation.
+
+That distinction matters.
+
+A normal assistant answer can sound confident even when the information is old, incomplete, or too generic. With the Developer Knowledge MCP server enabled, Antigravity could search Google developer documentation when the task needed product-specific details. I tested this with prompts about Google Workspace MCP support, API names, Cloud Run versus Cloud Functions, and deploying a Flask app to Cloud Run.
+
+The permission prompt was the most important screenshot for me. It showed that the tool boundary was visible. Antigravity did not just silently reach into an external source. It showed the tool name and asked for approval before calling it.
+
+That is exactly the habit I want to keep for future agent workflows:
+
+- know which tool the agent wants to use,
+- check what query or action is being sent,
+- approve only when it matches the task,
+- keep credentials out of public documentation,
+- and verify the answer instead of assuming the tool made it automatically correct.
+
+This codelab also strengthened the security side of Day 2. An MCP documentation server is not as risky as a tool that can modify infrastructure, but it still teaches the same design pattern: scoped access, explicit permission, safe credential handling, and audit-friendly evidence.
+
+My final takeaway after completing both Day 2 codelabs:
+
+> Tool-connected agents become useful when they are connected carefully. The connection layer matters as much as the model response.
+
+Day 2 now feels complete from both sides: I practiced local agentic app-building through Antigravity CLI, and I validated remote documentation retrieval through Developer Knowledge MCP.
+

@@ -20,7 +20,7 @@ This file keeps the Day 2 official links and supporting references in one place.
 | Codelab | Link | Current status |
 |---|---|---|
 | Get started with Antigravity CLI | https://codelabs.developers.google.com/antigravity-cli-hands-on#0 | ✅ Completed, documented, and deployed on Render in [`../codelabs/01-antigravity-cli/`](../codelabs/01-antigravity-cli/) |
-| Explore Google Developer Knowledge MCP server in Google Antigravity | https://codelabs.developers.google.com/developer-knowledge-mcp-antigravity | ⏳ Pending |
+| Explore Google Developer Knowledge MCP server in Google Antigravity | https://codelabs.developers.google.com/developer-knowledge-mcp-antigravity | ✅ Completed and documented in [`../codelabs/02-google-developer-knowledge-mcp/`](../codelabs/02-google-developer-knowledge-mcp/) |
 
 ---
 
@@ -28,7 +28,7 @@ This file keeps the Day 2 official links and supporting references in one place.
 
 | Resource | Link | Why it matters |
 |---|---|---|
-| Developer Knowledge MCP docs | https://developers.google.com/knowledge/mcp | Main reference for the next MCP codelab. |
+| Developer Knowledge MCP docs | https://developers.google.com/knowledge/mcp | Main reference for the completed MCP codelab, including tool capabilities, API-key setup, and verification guidance. |
 | Google Antigravity site | https://antigravity.google/ | Official product site. |
 | Google Antigravity download | https://antigravity.google/download | Installation reference. |
 
@@ -57,7 +57,9 @@ These were used during the theory study phase but are not all committed as full 
 | Antigravity project summary artifact | [`../codelabs/01-antigravity-cli/artifacts/release-notes-app-summary.md`](../codelabs/01-antigravity-cli/artifacts/release-notes-app-summary.md) | Cleaned generated artifact summary. |
 | Sanitized inspection scripts | [`../codelabs/01-antigravity-cli/artifacts/inspection-scripts/`](../codelabs/01-antigravity-cli/artifacts/inspection-scripts/) | Feed/parser inspection scripts generated during the codelab. |
 | CSV export sample | [`../codelabs/01-antigravity-cli/exports/bigquery-release-notes.csv`](../codelabs/01-antigravity-cli/exports/bigquery-release-notes.csv) | Proof that the final Export CSV feature worked. |
-| Screenshot evidence | [`../screenshots/codelab-1-antigravity-cli/`](../screenshots/codelab-1-antigravity-cli/) | Visual evidence from setup, build, refinement, and QA. |
+| Codelab 1 screenshot evidence | [`../screenshots/codelab-1-antigravity-cli/`](../screenshots/codelab-1-antigravity-cli/) | Visual evidence from setup, build, refinement, QA, and Render deployment. |
+| Developer Knowledge MCP docs | [`../codelabs/02-google-developer-knowledge-mcp/`](../codelabs/02-google-developer-knowledge-mcp/) | MCP codelab documentation, prompt-result validation, setup/security notes, and sanitized config template. |
+| Codelab 2 screenshot evidence | [`../screenshots/codelab-2-developer-knowledge-mcp/`](../screenshots/codelab-2-developer-knowledge-mcp/) | Visual evidence from MCP server enablement, tool permission review, and successful documentation-backed answers. |
 | Live BigQuery Release Notes Hub | https://kaggle-day2-bigquery-release-notes.onrender.com/ | Public Render deployment of the Day 2 Codelab 1 Flask app. |
 
 
@@ -77,15 +79,16 @@ For that reason:
 
 ---
 
-## 📝 Useful reminder before the MCP codelab
+## 📝 MCP codelab evidence now included
 
-The remaining practical Day 2 codelab should produce evidence for:
+The Developer Knowledge MCP codelab is now documented with evidence for:
 
-- MCP config location,
-- Google Developer Knowledge MCP connection,
-- successful tool discovery,
-- example prompts,
-- screenshots,
-- errors and fixes,
-- safe placeholder config templates,
-- and security cleanup notes.
+- Google Developer Knowledge MCP connection inside Antigravity,
+- visible MCP tools,
+- permission prompts before tool use,
+- successful documentation-backed prompts,
+- a safe placeholder config template,
+- credential-handling notes,
+- and screenshot evidence from the validation stage.
+
+The real API key and any raw local credential configuration are intentionally excluded from the repository.

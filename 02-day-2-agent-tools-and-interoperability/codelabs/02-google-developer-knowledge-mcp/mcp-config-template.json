@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "google-developer-knowledge": {
+      "url": "https://developerknowledge.googleapis.com/mcp",
+      "headers": {
+        "X-Goog-Api-Key": "YOUR_API_KEY_HERE"
+      }
+    }
+  }
+}

@@ -254,5 +254,5 @@ Extension features: completed
 Manual QA: completed
 Local Git checkpoints: completed
 Public deployment: completed on Render
-Google Developer Knowledge MCP codelab: pending
+Google Developer Knowledge MCP codelab: completed and documented separately
 ```

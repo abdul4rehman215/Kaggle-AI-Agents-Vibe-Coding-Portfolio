@@ -8,7 +8,7 @@ Day 1 helped me understand how agents can assist with building and refining soft
 
 The answer from this unit is not "make one giant agent smarter." The answer is **standardized interoperability**. Instead of every model, tool, API, and specialist agent needing custom glue code, protocols such as **MCP, A2A, A2UI, UCP, and AP2** create shared connection layers.
 
-This folder now includes both the Day 2 theory work and the first completed hands-on codelab.
+This folder now includes the Day 2 theory work and both completed Day 2 hands-on codelabs.
 
 ---
 
@@ -21,9 +21,9 @@ This folder now includes both the Day 2 theory work and the first completed hand
 | NotebookLM study work | ✅ Completed | Generated study guide, Q&A, quiz review, and visual summaries. |
 | Infographics | ✅ Completed | Added two visual summaries for quick revision. |
 | Antigravity CLI codelab | ✅ Completed | Built, refined, tested, deployed on Render, and documented the BigQuery Release Notes Hub app. |
-| Google Developer Knowledge MCP codelab | ⏳ Pending | Next practical codelab after this Antigravity CLI work. |
+| Google Developer Knowledge MCP codelab | ✅ Completed | Configured and validated the Google Developer Knowledge MCP server in Antigravity using documentation-backed prompts and screenshot evidence. |
 
-I am intentionally keeping the second Day 2 codelab marked as pending until it is actually completed and verified.
+Both Day 2 hands-on codelabs are now documented. Codelab 1 focused on agent-assisted local app development, while Codelab 2 focused on MCP server configuration, permission review, and documentation retrieval through Antigravity.
 
 ---
 
@@ -62,6 +62,34 @@ It fetches the BigQuery release notes XML feed, parses release-note entries into
 ![Final light mode with readable selected card](./screenshots/codelab-1-antigravity-cli/26-final-light-mode-readable-selected-card.png)
 
 This codelab made the Day 2 theory feel practical: the agent was not only producing text, it was using tools, writing files, running commands, generating artifacts, and then improving the app through review and testing. After local validation, I deployed the Flask app publicly on Render and documented the deployment fix in the codelab folder.
+
+---
+
+## 🔌 Hands-on Codelab 2 update
+
+The second Day 2 hands-on codelab used **Google Developer Knowledge MCP** inside **Google Antigravity**.
+
+This codelab was not an app-building exercise. Its purpose was to configure and validate an MCP connection so Antigravity could use an official documentation-search tool during a development conversation.
+
+📂 Codelab folder: [`codelabs/02-google-developer-knowledge-mcp/`](./codelabs/02-google-developer-knowledge-mcp/)
+
+### Final validation highlights
+
+- Developer Knowledge API and API-key setup completed.
+- Google Developer Knowledge MCP server enabled in Antigravity.
+- MCP tools visible: `search_documents`, `answer_query`, and `get_documents`.
+- Tool-use permission prompt captured before documentation search.
+- Successful MCP-backed answers captured for Google Workspace, Cloud Run, Cloud Functions, and Flask deployment questions.
+- Sanitized config template included without committing real credentials.
+- Screenshot evidence organized in [`screenshots/codelab-2-developer-knowledge-mcp/`](./screenshots/codelab-2-developer-knowledge-mcp/).
+
+### Evidence snapshot
+
+![Google Developer Knowledge MCP server enabled in Antigravity](./screenshots/codelab-2-developer-knowledge-mcp/01-mcp-server-enabled-tools.png)
+
+![Permission prompt before using Developer Knowledge MCP search](./screenshots/codelab-2-developer-knowledge-mcp/02-first-query-tool-permission-prompt.png)
+
+This codelab made the MCP theory concrete. The agent could move beyond general model memory, ask permission to call a documentation tool, retrieve Google developer documentation, and return a grounded answer inside the Antigravity workflow.
 
 ---
 
@@ -113,10 +141,11 @@ AP2  -> agent to authorized payment execution
 | [`notes/day-2-key-concepts.md`](./notes/day-2-key-concepts.md) | Compact glossary of the main protocols and architecture terms. |
 | [`notes/day-2-study-guide-summary.md`](./notes/day-2-study-guide-summary.md) | Summary of the NotebookLM/NoteGPT study process and quiz review. |
 | [`codelabs/01-antigravity-cli/`](./codelabs/01-antigravity-cli/) | Completed Antigravity CLI hands-on codelab with source, artifacts, prompts, commands, validation notes, and Render deployment notes. |
+| [`codelabs/02-google-developer-knowledge-mcp/`](./codelabs/02-google-developer-knowledge-mcp/) | Completed Google Developer Knowledge MCP codelab with setup notes, prompt-result validation, sanitized config template, and screenshot evidence. |
 | [`reflections/day-2-reflection.md`](./reflections/day-2-reflection.md) | Personal reflection on theory plus hands-on learning. |
 | [`resources/day-2-links.md`](./resources/day-2-links.md) | Official links and reference links used for this unit. |
 | [`resources/source-material-note.md`](./resources/source-material-note.md) | Notes on what source materials were used and what was intentionally not committed. |
-| [`screenshots/`](./screenshots/) | Screenshot evidence from the Day 2 hands-on codelab. |
+| [`screenshots/`](./screenshots/) | Screenshot evidence from both Day 2 hands-on codelabs. |
 | [`assets/infographics/`](./assets/infographics/) | Visual study assets generated during the Day 2 learning process. |
 
 ---
@@ -167,22 +196,20 @@ This connects directly to my cybersecurity interest because agentic systems will
 
 ---
 
-## 🧪 Next hands-on work
+## 🧪 Hands-on work completed
 
-The next remaining Day 2 practical task is:
+The Day 2 practical work now has two different kinds of evidence:
 
-1. Complete the **Google Developer Knowledge MCP server in Google Antigravity** codelab.
-2. Configure MCP safely.
-3. Test tool discovery and responses.
-4. Capture screenshot evidence.
-5. Document setup notes, prompts, results, and security boundaries.
+1. **Antigravity CLI app build** — an agent used local development tools to create, test, refine, and deploy a Flask app.
+2. **Developer Knowledge MCP validation** — Antigravity used an MCP server to search Google developer documentation after a visible permission prompt.
 
-Planned folder:
+Together, these codelabs show the two sides of Day 2 clearly:
 
 ```text
-codelabs/
-  02-google-developer-knowledge-mcp/
+local tool-using agent workflow + remote documentation-search MCP workflow
 ```
+
+The next course work can now move into Day 3 while keeping Day 2 as the reference point for agent tooling, permission boundaries, and interoperability.
 
 ---
 
@@ -190,4 +217,6 @@ codelabs/
 
 Day 2 made me realize that useful agents are not only about model intelligence. They also depend on the system around the model: tool access, protocol boundaries, security policies, UI rendering, commerce rules, and collaboration patterns.
 
-The Antigravity CLI codelab reinforced that lesson in practice. A tool-using agent can build useful software quickly, but the work only becomes reliable when the human reviews permissions, tests the output, catches edge cases, and documents what actually happened.
+The Antigravity CLI codelab reinforced that lesson through local app development. A tool-using agent can build useful software quickly, but the work only becomes reliable when the human reviews permissions, tests the output, catches edge cases, and documents what actually happened.
+
+The Developer Knowledge MCP codelab added the second half of the lesson. A connected agent can retrieve official documentation when it needs it, but the human still needs to check the tool call, understand what data source is being used, and keep credentials out of the public repo.
