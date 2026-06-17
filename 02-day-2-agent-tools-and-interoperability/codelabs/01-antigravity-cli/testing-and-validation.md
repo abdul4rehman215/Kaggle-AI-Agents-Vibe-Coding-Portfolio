@@ -263,4 +263,4 @@ Local Git checkpoints: passed
 Public Render deployment: passed
 ```
 
-Codelab 1 is complete from a hands-on and public-deployment perspective. The Google Developer Knowledge MCP codelab remains pending for the next Day 2 hands-on phase.
+Codelab 1 is complete from a hands-on and public-deployment perspective. The separate Google Developer Knowledge MCP codelab is now also completed and documented in `../02-google-developer-knowledge-mcp/`.
