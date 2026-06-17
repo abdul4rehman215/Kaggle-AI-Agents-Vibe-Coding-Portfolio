@@ -115,4 +115,4 @@ The goal is to keep this repository honest and evidence-based.
 If something is completed, it should be documented clearly.
 If something is still pending, it should be marked as pending.
 
-That is why the Antigravity CLI codelab is now marked completed, while the Google Developer Knowledge MCP codelab remains pending until it is actually done.
+That is why the Antigravity CLI codelab and the Google Developer Knowledge MCP codelab are both marked completed only after their documentation and evidence were added to the Day 2 folder.

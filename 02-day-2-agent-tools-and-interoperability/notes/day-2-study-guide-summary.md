@@ -97,11 +97,9 @@ An agent making a payment is a high-risk action. AP2's mandate idea is useful be
 
 ---
 
-## ⚠️ Things that still need hands-on validation
+## ✅ Hands-on validation questions from the theory phase
 
-I understand the theory now, but some parts will only become real after the codelabs.
-
-Questions I still want to answer practically:
+At the theory stage, I understood the protocol ideas, but some parts still needed real codelab validation. These were the questions I wanted the hands-on work to answer:
 
 - What does the Antigravity CLI workflow feel like in daily use?
 - How does MCP configuration look in the actual config file?
@@ -109,7 +107,7 @@ Questions I still want to answer practically:
 - What happens when an MCP server fails or returns an unclear response?
 - How should I document commands and screenshots without exposing secrets?
 
-These questions will guide the next phase.
+These questions guided the hands-on phase. The Antigravity CLI codelab answered the local agent-workflow questions, and the Google Developer Knowledge MCP codelab answered the tool-discovery, permission-review, and documentation-search questions. Some failure-mode testing is still something I want to explore more deeply in future work, but the main Day 2 validation is now complete.
 
 ---
 
