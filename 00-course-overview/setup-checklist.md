@@ -25,14 +25,14 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | Google Antigravity IDE installed | ✅ Done | IDE setup completed locally |
 | Antigravity CLI installed | ✅ Done | CLI setup completed locally and used during Day 2 work |
 | Local terminal ready | ✅ Done | Required for Git and local repository work |
-| Git installed/configured | 🔁 Verify | Confirm before first local push from the working machine |
+| Git installed/configured | ✅ Done | Verified during local codelab work; final push should still be reviewed intentionally |
 | GitHub repository created | ✅ Done | Main portfolio repository has been created |
-| Local repository cloned | 🔁 Verify | Needed before pushing updated generated folders/files |
+| Local repository cloned | ✅ Done | Local repository workflow was used while organizing completed day folders and README updates |
 | `.gitignore` added | ✅ Done | Protects secrets, caches, builds, and local artifacts |
 | `LICENSE` added | ✅ Done | MIT License selected for repository code/docs |
-| Python version ready for Day 3 codelabs | 🔁 Verify | Agents CLI/ADK codelab should verify version before running commands |
-| Node.js/npm ready for Day 3 codelabs | 🔁 Verify | Needed for some CLI/skills workflows; verify before codelab execution |
-| `uv` package manager ready | 🔁 Verify | Needed for the Agents CLI setup command in the Day 3 lifecycle codelab |
+| Python version ready for Day 3 codelabs | ✅ Done | Verified during Day 3 environment audit and used with ADK/Agents CLI projects |
+| Node.js/npm ready for Day 3 codelabs | ✅ Done | Verified during Day 3 environment audit for local tooling readiness |
+| `uv` package manager ready | ✅ Done | Verified and used for Agents CLI/ADK dependency installation during Day 3 |
 
 ---
 
@@ -41,7 +41,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | Item | Status | Notes |
 |------|--------|-------|
 | Google AI Studio access | ✅ Done | Used for the Day 1 AI Studio codelab and Snowflakes & Balloons app build |
-| Gemini/API access readiness | 🔁 Verify | Day 1 app was kept browser-only; continue avoiding API keys in commits or screenshots |
+| Gemini/API access readiness | ✅ Done | Local Gemini API key mode was used for Day 3 ADK testing; no real keys should be committed or shown in screenshots |
 | Google Cloud access | ✅ Done | Used for the Day 1 Cloud Run deployment test |
 | Cloud Run deployment readiness | ✅ Done | Validated during the Day 1 AI Studio to Cloud Run codelab |
 | Billing/cost awareness reviewed | ✅ Done | Day 1 Cloud Run app was unpublished/cleaned up to avoid unnecessary cost |
@@ -58,7 +58,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | `00-course-overview/` created | ✅ Done | Course-level planning and tracking folder |
 | Day 1 folder created | ✅ Done | Stores Day 1 notes, codelabs, screenshots, source code, and reflections |
 | Day 2 folder created | ✅ Done | Stores Day 2 notes, codelabs, screenshots, tool/MCP documentation, and reflection |
-| Day 3 folder created | 🟡 In Progress | `03-day-3-agent-skills-procedural-memory/` exists for Phase 1 theory documentation; codelab folders will be added after hands-on work |
+| Day 3 folder created | ✅ Done | Stores Day 3 theory notes, codelabs, screenshots, source snapshots, resources, and reflection |
 | Day 4 folder created | ⬜ Pending | Will store Day 4 work |
 | Day 5 folder created | ⬜ Pending | Will store Day 5 work |
 | `capstone-project/` created | ⬜ Pending | Will store final applied project |
@@ -79,7 +79,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | Screenshots reviewed before upload | ⬜ Ongoing | Remove private account details, billing info, keys, tokens, project IDs, or local paths where needed |
 | Terminal outputs reviewed before upload | ⬜ Ongoing | Avoid exposing usernames, keys, private paths, project IDs, or sensitive logs |
 | Cloud resources cleaned after testing | ✅ Done | Day 1 Cloud Run test was unpublished/cleaned up to avoid unnecessary cost |
-| Skill scripts reviewed before sharing | 🔁 Verify | Needed for Day 3 and later when skills may include executable scripts |
+| Skill scripts reviewed before sharing | ✅ Done | Day 3 skill snapshots were curated; executable/runtime folders and private local files were excluded from public documentation |
 
 ---
 
@@ -107,18 +107,19 @@ The Day 2 work confirmed that local/agent tooling needs careful documentation:
 
 ---
 
-## 🟡 Day 3 Setup Readiness Note
+## ✅ Day 3 Setup Validation Note
 
-Day 3 Phase 1 is theory-complete, but hands-on setup still needs verification before codelabs:
+Day 3 setup was validated through the completed codelabs instead of being guessed in advance:
 
-- confirm Python version
-- confirm Node.js/npm version
-- confirm `uv` availability
-- confirm Antigravity can see installed skills
-- confirm Agents CLI setup path before documenting commands
-- avoid exposing Gemini API keys, local config paths, or account-specific screenshots
+- Python, Node.js, Git, and `uv` were checked during the local environment audit.
+- Antigravity detected the workspace skills and used them during practical tests.
+- Agents CLI setup completed and installed the expected CLI skill set.
+- ADK Web UI launched locally for graph workflow inspection and playground testing.
+- Local Gemini API key mode was used successfully for the `customer-support-agent` codelab.
+- Vertex/Google Cloud billing limitations were documented honestly instead of being forced as a blocker for the whole day.
+- API keys, account-specific values, cloud project IDs, and private runtime files were kept out of public source snapshots.
 
-These checks should be done during the codelab phase, not guessed in advance.
+This keeps Day 3 reproducible while still respecting security and cost boundaries.
 
 ---
 
@@ -126,11 +127,11 @@ These checks should be done during the codelab phase, not guessed in advance.
 
 | Item | Status | Notes |
 |------|--------|-------|
-| Course roadmap drafted | ✅ Done | Stored in `course-roadmap.md` and updated for Day 2/Day 3 status |
+| Course roadmap drafted | ✅ Done | Stored in `course-roadmap.md` and updated through Day 3 completion status |
 | Learning objectives drafted | ✅ Done | Stored in `learning-objectives.md` and updated with Agent Skills objectives |
-| Progress tracker started | ✅ Done | Stored in `progress-tracker.md` and updated with Day 3 Phase 1 status |
-| Documentation plan drafted | ✅ Done | Stored in `documentation-plan.md` and updated with theory-first folder guidance |
-| Tools/platforms overview drafted | ✅ Done | Stored in `tools-and-platforms.md` and updated with MCP, Agent Skills, Agents CLI/ADK, and study-support tools |
+| Progress tracker started | ✅ Done | Stored in `progress-tracker.md` and updated through Day 3 completion status |
+| Documentation plan drafted | ✅ Done | Stored in `documentation-plan.md` and updated with completed Day 3 documentation guidance |
+| Tools/platforms overview drafted | ✅ Done | Stored in `tools-and-platforms.md` and updated with completed Day 3 Agent Skills, Agents CLI, ADK, and study-support tooling notes |
 | Screenshot naming standard defined | ✅ Done | Covered in documentation plan |
 | Evidence strategy defined | ✅ Done | Covered in documentation plan |
 
