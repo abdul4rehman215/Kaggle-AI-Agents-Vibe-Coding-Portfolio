@@ -201,7 +201,7 @@ The Day 3 module is now closed as a documented learning unit. It preserves both 
 ## 🔐 Day 4 — Agent Security and Evaluation
 
 **Folder:** [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)  
-**Status:** Pending  
+**Status:** In progress - theory documented, codelabs pending  
 **Main purpose:** Study agent reliability, testing, observability, and security risks.
 
 ### Focus Areas
@@ -214,13 +214,22 @@ The Day 3 module is now closed as a documented learning unit. It preserves both 
 - guardrails and failure modes
 - secure handling of credentials and permissions
 
-### Expected Artifacts
+### Current Artifacts
 
 - Day 4 README
-- notes
+- podcast and whitepaper notes
+- key-concepts glossary
+- study guide summary
+- official links
+- source material note
+- visual study assets
+
+### Pending After Codelabs
+
 - evaluation examples
 - security testing notes
 - screenshots
+- implementation notes
 - risk observations
 - SOC/security automation reflection
 
@@ -304,7 +313,7 @@ The capstone should become the strongest applied section of the repository. It s
 | Day 1 | Completed | Antigravity, AI Studio, Cloud Run evidence, screenshots, and reflections |
 | Day 2 | Completed | Agent tools, Antigravity CLI, MCP notes, screenshots, security notes, and reflection |
 | Day 3 | Completed | Agent Skills theory, Antigravity Skills, Agents CLI setup, ADK lifecycle codelab, screenshots, source snapshots, troubleshooting notes, and reflection |
-| Day 4 | Pending | Security, evaluation, and observability documentation |
+| Day 4 | In progress | Theory notes and visual study assets added; codelabs pending |
 | Day 5 | Pending | Production deployment and final course wrap-up |
 | Capstone | Pending | Final applied AI agents project |
 
