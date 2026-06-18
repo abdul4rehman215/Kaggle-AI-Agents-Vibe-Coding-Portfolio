@@ -59,7 +59,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | Day 1 folder created | ✅ Done | Stores Day 1 notes, codelabs, screenshots, source code, and reflections |
 | Day 2 folder created | ✅ Done | Stores Day 2 notes, codelabs, screenshots, tool/MCP documentation, and reflection |
 | Day 3 folder created | ✅ Done | Stores Day 3 theory notes, codelabs, screenshots, source snapshots, resources, and reflection |
-| Day 4 folder created | ⬜ Pending | Will store Day 4 work |
+| Day 4 folder created | 🟡 In Progress | Theory documentation added; codelabs pending |
 | Day 5 folder created | ⬜ Pending | Will store Day 5 work |
 | `capstone-project/` created | ⬜ Pending | Will store final applied project |
 | `docs/` created | ⬜ Pending | Will store setup guides and troubleshooting logs when needed |
