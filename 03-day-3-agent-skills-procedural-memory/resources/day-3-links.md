@@ -1,6 +1,6 @@
 # 🔗 Day 3 Links - Agent Skills
 
-This file keeps the official Day 3 learning links in one place.
+This file keeps the official Day 3 learning links and supporting references in one place.
 
 ---
 
@@ -16,22 +16,29 @@ This file keeps the official Day 3 learning links in one place.
 
 ---
 
-## 🧪 Codelabs
+## 🧪 Codelabs completed
 
-- Explore how Skills work in Antigravity: https://codelabs.developers.google.com/getting-started-with-antigravity-skills?hl=en#4
-- Build agents in Antigravity with Agents CLI and ADK: https://codelabs.developers.google.com/agents-cli-adk-lifecycle
+- Authoring / Exploring Google Antigravity Skills: https://codelabs.developers.google.com/getting-started-with-antigravity-skills
+- Agents CLI + ADK lifecycle: https://codelabs.developers.google.com/agents-cli-adk-lifecycle
 
 ---
 
-## 🧰 Related references for later
-
-These are not the main Day 3 assignment links, but they may be useful during the codelabs or follow-up review.
+## 🧰 Related references
 
 - Agents CLI documentation: https://google.github.io/agents-cli/
-- Google Agent Development Kit documentation: https://google.github.io/adk-docs/
+- Agents CLI getting started: https://google.github.io/agents-cli/guide/getting-started/
+- Agents CLI authentication guide: https://google.github.io/agents-cli/guide/authentication/
+- Agents CLI command reference: https://google.github.io/agents-cli/cli/
+- Agents CLI GitHub repository: https://github.com/google/agents-cli
+- Google Antigravity: https://antigravity.google/
+- Antigravity documentation: https://antigravity.google/docs
 
 ---
 
-## Note
+## Local documentation in this folder
 
-The codelab links will become more important in the next phase. For now, this folder only documents the podcast and whitepaper learning work.
+| Local file | Purpose |
+|---|---|
+| [`../codelabs/01-antigravity-skills/README.md`](../codelabs/01-antigravity-skills/README.md) | Codelab 1 implementation notes and evidence. |
+| [`../codelabs/02-agents-cli-adk-lifecycle/README.md`](../codelabs/02-agents-cli-adk-lifecycle/README.md) | Codelab 2 implementation notes and evidence. |
+| [`commands-index.md`](./commands-index.md) | Pointers to command logs for each codelab. |
