@@ -50,7 +50,7 @@ day-folder/
     └── infographics/
 ```
 
-This is the pattern currently used for Day 3 Phase 1. The `codelabs/`, `screenshots/`, and final reflection material should be added only after the hands-on codelabs are completed.
+This smaller pattern is useful for an early theory-first stage. After hands-on work exists, the folder should expand into the completed-day pattern with codelabs, screenshots, testing notes, source snapshots, and reflection material. Day 3 now follows that completed pattern.
 
 ---
 
@@ -261,7 +261,7 @@ Good reflections should mention:
 - what should be improved next
 - how the learning connects to real workflows
 
-For Day 3, the final reflection should wait until the codelabs are completed. Current theory notes can include learning takeaways, but the full reflection should include hands-on evidence too.
+Day 3 now shows this standard in practice: the theory notes explain the ideas first, while the final reflection connects those ideas to the Antigravity Skills and Agents CLI/ADK codelabs.
 
 ---
 
@@ -331,19 +331,24 @@ This is important because Day 2 involved tool access and MCP configuration. The 
 
 ---
 
-## 🟡 Day 3 Phase 1 Documentation Pattern Applied
+## ✅ Day 3 Documentation Pattern Applied
 
-The Day 3 folder currently documents theory work only.
+The Day 3 folder now documents a completed theory-to-practice workflow.
 
-The current structure intentionally focuses on:
+The completed structure separates:
 
 - podcast and whitepaper notes
 - key concepts and vocabulary
 - study workflow summary
 - official links and source material notes
 - personal infographics used for revision
+- Antigravity Skills codelab documentation
+- Agents CLI + ADK lifecycle codelab documentation
+- source snapshots for reusable skill and agent artifacts
+- screenshots renamed and organized by codelab
+- command records, validation notes, troubleshooting notes, and reflection
 
-It does not yet include codelab folders or screenshots because the hands-on Antigravity Skills and Agents CLI/ADK work is still pending. Those folders should be added later when real outputs exist.
+This is important because Day 3 includes both reusable procedural memory and executable/local agent tooling. The documentation keeps those pieces reviewable without exposing API keys, private project details, billing information, or unnecessary runtime folders.
 
 ---
 

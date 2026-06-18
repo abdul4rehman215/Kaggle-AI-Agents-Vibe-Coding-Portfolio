@@ -14,7 +14,7 @@ Detailed notes, codelab outputs, screenshots, source files, and reflections shou
 | Day 0 / Setup | ✅ Completed | [`./setup-checklist.md`](./setup-checklist.md) | Course onboarding, community setup, and local readiness work documented |
 | Day 1 | ✅ Completed | [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/) | Notes, Antigravity codelab, AI Studio codelab, Cloud Run notes, screenshots, source code, and reflection added |
 | Day 2 | ✅ Completed | [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/) | Theory notes, Antigravity CLI codelab, Google Developer Knowledge MCP codelab, screenshots, resources, security notes, and reflection documented |
-| Day 3 | 🟡 In Progress | [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/) | Phase 1 podcast/whitepaper documentation, key concepts, resources, and infographics added; codelabs pending |
+| Day 3 | ✅ Completed | [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/) | Agent Skills theory, Antigravity Skills codelab, Agents CLI + ADK lifecycle codelab, screenshots, source snapshots, troubleshooting notes, and reflection documented |
 | Day 4 | ⬜ Pending | [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/) | Not started |
 | Day 5 | ⬜ Pending | [`../05-day-5-production-agent-deployment/`](../05-day-5-production-agent-deployment/) | Not started |
 | Capstone Project | ⬜ Pending | [`../capstone-project/`](../capstone-project/) | Not started |
@@ -34,17 +34,16 @@ Detailed notes, codelab outputs, screenshots, source files, and reflections shou
 
 ## 🧭 Current Repository Phase
 
-The repository has completed the **foundation, Day 1, and Day 2 documentation phases**. Day 3 has started with theory documentation around Agent Skills, but the hands-on codelabs are still pending.
+The repository has completed the **foundation, Day 1, Day 2, and Day 3 documentation phases**. The next major course focus is Day 4, where security, observability, testing, and evaluation become more central.
 
 Current focus:
 
-- keep folder naming consistent across root and overview files
-- preserve completed Day 1 and Day 2 evidence without mixing it into overview files
-- protect secrets through `.gitignore`
-- review screenshots before public use
+- keep folder naming consistent across root, overview, and day-wise files
+- preserve completed Day 1, Day 2, and Day 3 evidence without mixing implementation details into overview files
+- protect secrets through `.gitignore` and careful screenshot review
 - keep official links in the resources area
-- continue Day 3 codelabs inside `03-day-3-agent-skills-procedural-memory/`
-- add screenshots and implementation evidence only after the codelabs are actually completed
+- use Day 3 as the reference point for Agent Skills, procedural memory, progressive disclosure, and ADK graph workflow documentation
+- prepare for Day 4 security/evaluation work without marking it complete before real evidence exists
 
 ---
 
@@ -68,7 +67,10 @@ Current focus:
 - Day 2 Antigravity CLI codelab documented with source, artifacts, screenshots, testing notes, and Render deployment record
 - Day 2 Google Developer Knowledge MCP codelab documented with setup/security notes, prompt-result validation, screenshots, and sanitized config template
 - Day 3 podcast and Agent Skills whitepaper completed
-- Day 3 Phase 1 documentation added with notes, key concepts, study workflow summary, source material note, links, and infographics
+- Day 3 theory documentation added with notes, key concepts, study workflow summary, source material note, links, and infographics
+- Day 3 Antigravity Skills codelab documented with workspace skills, skill tests, screenshots, command evidence, and curated source snapshots
+- Day 3 Agents CLI + ADK lifecycle codelab documented with `customer-support-agent`, lint/import checks, playground testing, response-style refinement, CLI execution, and troubleshooting notes
+- Day 3 final reflection added to connect procedural memory, progressive disclosure, skills, and graph workflow testing
 
 ---
 
@@ -76,12 +78,11 @@ Current focus:
 
 | Priority | Task | Target Location |
 |---------|------|----------------|
-| 1 | Complete Antigravity Skills codelab and document actual workflow evidence | `03-day-3-agent-skills-procedural-memory/` |
-| 2 | Complete Agents CLI + ADK lifecycle codelab and document commands, outputs, and testing notes | `03-day-3-agent-skills-procedural-memory/` |
-| 3 | Add Day 3 codelab screenshots after reviewing for private account/project details | Relevant Day 3 `screenshots/` folder |
-| 4 | Add final Day 3 reflection after both codelabs are complete | `03-day-3-agent-skills-procedural-memory/` |
-| 5 | Keep root and course-overview links updated after each completed stage | `README.md` and `00-course-overview/` |
-| 6 | Keep setup/troubleshooting docs updated only when new issues appear | `docs/` |
+| 1 | Begin Day 4 security, observability, testing, and evaluation documentation when course work starts | `04-day-4-agent-security-evaluation/` |
+| 2 | Continue reviewing public screenshots for private account/project details before long-term sharing | Day-wise `screenshots/` folders |
+| 3 | Keep root and course-overview links updated after each completed stage | `README.md` and `00-course-overview/` |
+| 4 | Keep setup/troubleshooting docs updated only when new issues appear | `docs/` |
+| 5 | Prepare capstone planning only after the course reaches the applied project stage | `capstone-project/` |
 
 ---
 

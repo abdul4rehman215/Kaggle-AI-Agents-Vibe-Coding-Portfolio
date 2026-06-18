@@ -33,7 +33,7 @@ Those artifacts belong in the day-wise folders:
 ```text
 01-day-1-intro-to-agents-and-vibe-coding/        # completed and documented
 02-day-2-agent-tools-and-interoperability/       # completed and documented
-03-day-3-agent-skills-procedural-memory/         # in progress: theory documented, codelabs pending
+03-day-3-agent-skills-procedural-memory/         # completed: theory, Antigravity Skills, Agents CLI, and ADK lifecycle codelabs
 04-day-4-agent-security-evaluation/              # planned for Day 4
 05-day-5-production-agent-deployment/            # planned for Day 5
 capstone-project/                                # planned final build
@@ -151,28 +151,28 @@ The key portfolio point from Day 2 is that agents become more useful when they c
 
 ---
 
-## 🟡 Day 3 Phase 1 Documentation Update
+## ✅ Day 3 Documentation Update
 
-Day 3 has started, but it is not fully complete yet.
+Day 3 is now documented as completed work.
 
-The current Day 3 folder is:
+The completed Day 3 folder is:
 
 [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
 
-Phase 1 is documented with:
+The folder now connects the theory phase with hands-on codelab evidence:
 
-- Unit 3 podcast and whitepaper study notes
-- Agent Skills key concept notes
-- study workflow summary using NoteGPT and NotebookLM
-- source material notes
-- two personal infographics used for revision
+- Unit 3 podcast and Agent Skills whitepaper study notes
+- Agent Skills key concept notes and study-guide summary
+- procedural memory, progressive disclosure, context rot, and routing notes
+- Antigravity Skills codelab documentation
+- workspace skill examples and skill-trigger validation
+- Agents CLI skills installation evidence
+- ADK lifecycle codelab documentation
+- `customer-support-agent` graph workflow source snapshot
+- playground testing, linting, hot-restart validation, and CLI execution evidence
+- Day 3 reflection and practical troubleshooting notes
 
-The hands-on codelabs are still pending:
-
-- Antigravity Skills codelab
-- Agents CLI + ADK lifecycle codelab
-
-This status should stay as **in progress** until the codelabs, screenshots, implementation evidence, and final reflection are added.
+The key portfolio point from Day 3 is that reusable agent behavior is not only about adding more context. It is about packaging task knowledge cleanly, triggering it at the right time, testing the behavior, and keeping secrets or local runtime details out of public documentation.
 
 ---
 

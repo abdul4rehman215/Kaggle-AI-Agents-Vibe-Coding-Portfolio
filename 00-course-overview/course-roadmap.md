@@ -147,17 +147,17 @@ The main lesson from Day 2 is that agent power increases with tool access, but s
 
 ---
 
-## 🟡 Day 3 — Agent Skills and Procedural Memory
+## ✅ Day 3 — Agent Skills and Procedural Memory
 
 **Folder:** [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)  
-**Status:** In Progress — Phase 1 theory documented; codelabs pending  
-**Main purpose:** Understand how Agent Skills give agents reusable procedural memory without bloating the active context window.
+**Status:** Completed  
+**Main purpose:** Understand how Agent Skills give agents reusable procedural memory without bloating the active context window, then validate that idea through Antigravity Skills and ADK lifecycle codelabs.
 
 ### Focus Areas
 
 - Agent Skills as reusable procedural memory
 - `SKILL.md` as the central skill primitive
-- skill folder anatomy: `scripts/`, `references/`, and `assets/`
+- skill folder anatomy: `scripts/`, `resources/`, `examples/`, and source-supporting files
 - progressive disclosure
 - context rot and active context budget
 - trigger descriptions and routing quality
@@ -165,8 +165,10 @@ The main lesson from Day 2 is that agent power increases with tool access, but s
 - single agent with skills vs multi-agent architectures
 - evaluation-driven skill design
 - trajectory scoring, token budget failure, and regression risk
+- Agents CLI skill installation and lifecycle workflow
+- ADK graph workflow design, linting, playground testing, and command-line execution
 
-### Current Artifacts
+### Completed Artifacts
 
 - Day 3 README
 - podcast and whitepaper notes
@@ -175,23 +177,24 @@ The main lesson from Day 2 is that agent power increases with tool access, but s
 - source material note
 - official resource links
 - personal infographics for visual revision
-
-### Pending Artifacts
-
 - Antigravity Skills codelab documentation
+- curated workspace skill source snapshots
+- codelab commands, validation notes, and observations
 - Agents CLI + ADK lifecycle codelab documentation
-- codelab screenshots
-- command/output notes
-- testing observations
+- `customer-support-agent` graph workflow source snapshot
+- screenshots for skill discovery, skill tests, ADK playground testing, and CLI execution
+- troubleshooting notes for API key visibility, Windows ADK behavior, and Google Cloud billing limits
 - final Day 3 reflection
 
 ### Portfolio Value
 
 Day 3 demonstrates that useful agents need more than a single prompt or a long tool list. They need reusable know-how, clean routing, small active context, and testable skill behavior.
 
-### 🟡 Phase 1 Notes
+The completed codelabs make that idea concrete: Antigravity Skills show how procedural memory can be packaged and triggered, while Agents CLI + ADK show how a routed graph workflow can be scaffolded, linted, tested, adjusted, and executed from the command line.
 
-The theory work is already captured. The folder should remain marked as in progress until the hands-on codelabs are completed and added with evidence.
+### ✅ Completion Notes
+
+The Day 3 module is now closed as a documented learning unit. It preserves both the conceptual side of Agent Skills and the hands-on evidence from the Antigravity Skills and ADK lifecycle workflows.
 
 ---
 
@@ -300,7 +303,7 @@ The capstone should become the strongest applied section of the repository. It s
 | Day 0 / Setup | Completed / Maintained | Environment and repository foundation |
 | Day 1 | Completed | Antigravity, AI Studio, Cloud Run evidence, screenshots, and reflections |
 | Day 2 | Completed | Agent tools, Antigravity CLI, MCP notes, screenshots, security notes, and reflection |
-| Day 3 | In Progress | Agent Skills theory documented; Antigravity Skills and Agents CLI/ADK codelabs pending |
+| Day 3 | Completed | Agent Skills theory, Antigravity Skills, Agents CLI setup, ADK lifecycle codelab, screenshots, source snapshots, troubleshooting notes, and reflection |
 | Day 4 | Pending | Security, evaluation, and observability documentation |
 | Day 5 | Pending | Production deployment and final course wrap-up |
 | Capstone | Pending | Final applied AI agents project |

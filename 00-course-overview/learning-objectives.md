@@ -83,7 +83,7 @@ Success criteria:
 - I can document the setup clearly
 - I can explain the purpose of Antigravity in this course
 - I can capture screenshots and notes from hands-on usage
-- I can explain how Antigravity Skills are installed, triggered, and tested after the Day 3 codelabs
+- I can explain how Antigravity Skills are installed, triggered, tested, and documented from the Day 3 codelabs
 - I can reflect on where agent-first development is useful and where caution is needed
 
 ---
@@ -155,7 +155,7 @@ Success criteria:
 - I can explain the difference between know-how, reach, and always-loaded project context
 - I can document reusable agent behavior patterns without repeating the same notes everywhere
 - I can identify trigger failure, execution failure, token budget failure, and regression risk
-- I can connect Day 3 theory to the Antigravity Skills and Agents CLI/ADK codelabs after completing them
+- I can connect Day 3 theory to the completed Antigravity Skills and Agents CLI/ADK codelabs
 
 ---
 
@@ -261,25 +261,23 @@ This made the tooling objective more practical: agents are powerful because they
 
 ---
 
-## 🟡 Day 3 Objective Progress
+## ✅ Day 3 Objective Progress
 
-Day 3 has started with theory and concept work around Agent Skills.
+Day 3 is now complete across both concept study and hands-on codelab work.
 
-Current progress:
+Completed progress:
 
 - I completed the Unit 3 podcast and Agent Skills whitepaper study.
 - I used NoteGPT and NotebookLM for revision, quiz-style review, and explanation support.
 - I created visual study assets for procedural memory, progressive disclosure, and context reduction.
 - I documented the main vocabulary: `SKILL.md`, procedural memory, progressive disclosure, context rot, trigger descriptions, MCP vs Skills, evaluation-driven development, and skill failure modes.
+- I tested Antigravity workspace skills through practical tasks such as commit formatting, license headers, JSON-to-Pydantic conversion, and schema validation.
+- I installed and documented Agents CLI skills as part of the Day 3 tooling workflow.
+- I scaffolded and tested an ADK-based `customer-support-agent` graph workflow with classifier routing, a shipping FAQ path, and an unrelated-query decline path.
+- I captured linting, import validation, ADK playground traces, response-style refinement, and command-line execution evidence.
+- I documented runtime lessons around API key visibility, Windows ADK reload behavior, and Google Cloud billing limitations without exposing secrets.
 
-Still pending:
-
-- Antigravity Skills codelab
-- Agents CLI + ADK lifecycle codelab
-- screenshots and command/output evidence
-- final Day 3 reflection
-
-This objective should stay in progress until the hands-on work is completed.
+This objective moved from theory into practice: Agent Skills became a reusable procedural-memory pattern, and ADK turned routing into a visible workflow that could be tested and reviewed.
 
 ---
 
