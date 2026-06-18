@@ -158,7 +158,7 @@ That is why this repository includes not only code and notes, but also reflectio
 | Day 1                 | ✅ Completed    | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs documented |
 | Day 2                 | ✅ Completed    | Agent tools, APIs, MCP validation, interoperability, and hands-on codelabs documented |
 | Day 3                 | ✅ Completed    | Agent Skills, procedural memory, Antigravity Skills, Agents CLI skills, and ADK graph workflow codelabs documented |
-| Day 4                 | ⬜ Pending      | Security, observability, testing, and agent evaluation              |
+| Day 4                 | 🟡 In Progress  | Podcast, whitepaper, study notes, and visual revision documented; codelabs pending |
 | Day 5                 | ⬜ Pending      | Production deployment, final learning wrap-up, and documentation    |
 | Capstone Project      | ⬜ Pending      | Final applied AI agents project                                     |
 
@@ -402,6 +402,8 @@ Primary goal:
 
 This section is especially important from a cybersecurity and SOC automation perspective.
 
+**Current update:** Day 4 theory work is now documented. Podcast, whitepaper, NotebookLM revision, key concepts, source notes, and visual study assets are added. Codelab evidence is still pending and will be added only after implementation.
+
 Planned coverage:
 
 * agent safety
@@ -413,10 +415,19 @@ Planned coverage:
 * risk analysis
 * secure handling of tool permissions and secrets
 
-Expected artifacts:
+Current artifacts:
 
 * Day 4 README
-* notes
+* podcast + whitepaper notes
+* key concepts glossary
+* study guide summary
+* source material note
+* official links
+* visual study assets
+
+Pending after codelabs:
+
+* implementation notes
 * evaluation examples
 * security testing notes
 * screenshots
@@ -786,7 +797,7 @@ Next steps:
 
 * review Day 1 screenshots for any private account/project details before long-term public use
 * add or update root/course-overview links after each completed day
-* continue into Day 4 security, observability, testing, and agent evaluation work
+* complete Day 4 codelabs and add implementation evidence for security, observability, testing, and agent evaluation work
 * keep Day 2 as the reference point for tool use, MCP validation, permission review, and interoperability documentation
 * keep Day 3 as the reference point for Agent Skills, procedural memory, progressive disclosure, and ADK graph workflow documentation
 * keep cloud cost, secret handling, and human-review notes visible throughout the remaining course
