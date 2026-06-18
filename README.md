@@ -76,7 +76,7 @@ The broader purpose is to connect **AI agents and vibe coding** with my existing
 * [`00-course-overview/`](./00-course-overview/) — course context, roadmap, setup checklist, and learning objectives
 * [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/) — Day 1 notes, podcast/whitepaper reflections, Antigravity, AI Studio, and Cloud Run codelab work
 * [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) — Day 2 agent tools, APIs, external integrations, and workflow interoperability
-* [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) — Day 3 Agent Skills, procedural memory, context rot, progressive disclosure, and reusable agent workflows
+* [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) — Day 3 Agent Skills, procedural memory, context rot, progressive disclosure, Antigravity Skills, Agents CLI skills, and ADK lifecycle codelab work
 * [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) — Day 4 agent security, observability, testing, safety, and evaluation
 * [`05-day-5-production-agent-deployment/`](./05-day-5-production-agent-deployment/) — Day 5 production development, deployment notes, Cloud Run, and final course wrap-up
 * [`capstone-project/`](./capstone-project/) — final applied AI agents capstone project, architecture, implementation, and submission evidence
@@ -157,7 +157,7 @@ That is why this repository includes not only code and notes, but also reflectio
 | Day 0 / Setup         | ✅ Completed    | Course onboarding, community setup, and environment preparation     |
 | Day 1                 | ✅ Completed    | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs documented |
 | Day 2                 | ✅ Completed    | Agent tools, APIs, MCP validation, interoperability, and hands-on codelabs documented |
-| Day 3                 | 🟡 In Progress  | Agent Skills theory completed; Antigravity and Agents CLI codelabs pending |
+| Day 3                 | ✅ Completed    | Agent Skills, procedural memory, Antigravity Skills, Agents CLI skills, and ADK graph workflow codelabs documented |
 | Day 4                 | ⬜ Pending      | Security, observability, testing, and agent evaluation              |
 | Day 5                 | ⬜ Pending      | Production deployment, final learning wrap-up, and documentation    |
 | Capstone Project      | ⬜ Pending      | Final applied AI agents project                                     |
@@ -249,6 +249,8 @@ Expected coverage includes:
 * [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
 * [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/)
 * [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
+
+**Day 3 update:** Agent Skills and procedural memory are now documented through both theory notes and hands-on codelabs. The Day 3 folder includes Antigravity workspace skill examples, skill-routing tests, Agents CLI skill installation evidence, and a customer-support ADK graph workflow agent tested through the ADK playground and command-line execution.
 
 ---
 
@@ -361,27 +363,36 @@ Completed artifacts:
 
 ## Day 3 — Agent Skills, Procedural Memory, and Context Control
 
-This section focuses on how agents package reusable procedural knowledge through Agent Skills, reduce context bloat through progressive disclosure, and load specialist workflows only when needed.
+This section documents how agents package reusable procedural knowledge through Agent Skills, reduce context bloat through progressive disclosure, and load specialist workflows only when needed.
 
-Planned coverage:
+Coverage completed:
 
 * Agent Skills and `SKILL.md` anatomy
-* procedural memory
-* progressive disclosure
-* context rot and active context budget
-* skill triggering and routing descriptions
+* procedural memory and reusable task knowledge
+* progressive disclosure and active context control
+* context rot and context-window pressure
+* skill triggering through routing descriptions
 * Skills vs MCP vs `AGENTS.md`
 * evaluation-driven skill development
+* Antigravity workspace skill installation and testing
+* Agents CLI skill installation and verification
+* ADK graph workflow lifecycle through a customer-support agent
+* troubleshooting around Windows ADK behavior, API key visibility, and Google Cloud billing boundaries
 
-Expected artifacts:
+Completed artifacts:
 
 * Day 3 README
-* theory notes
-* key concept glossary
-* study-guide summary
-* hands-on codelab files later
-* screenshots after implementation
-* reflection on skills, context, and workflow design
+* theory notes and study-guide summaries
+* codelab-specific notes
+* completed Antigravity Skills codelab folder
+* completed Agents CLI + ADK lifecycle codelab folder
+* screenshot evidence for skill discovery, validation, routing, playground testing, and CLI execution
+* curated source snapshots for workspace skills, skill test files, a weather assistant scaffold, and the final customer-support ADK agent
+* Day 3 reflection connecting procedural memory, workflow design, and security-aware agent development
+
+Primary goal:
+
+> Capture the shift from using agents as general assistants to engineering reusable procedural memory and graph-based workflows that can be inspected, tested, and reused.
 
 📂 Folder: [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/)
 
@@ -474,7 +485,7 @@ Kaggle-AI-Agents-Vibe-Coding-Portfolio/
 ├── 00-course-overview/                           # Course roadmap, setup checklist, and learning objectives
 ├── 01-day-1-intro-to-agents-and-vibe-coding/     # Day 1 notes, codelabs, screenshots, and reflections
 ├── 02-day-2-agent-tools-and-interoperability/    # Day 2 agent tools, APIs, integrations, and workflows
-├── 03-day-3-agent-skills-procedural-memory/   # Day 3 Agent Skills, procedural memory, and context control
+├── 03-day-3-agent-skills-procedural-memory/      # Day 3 skills, procedural memory, Antigravity Skills, and ADK workflow codelabs
 ├── 04-day-4-agent-security-evaluation/           # Day 4 security, observability, testing, and evaluation
 ├── 05-day-5-production-agent-deployment/         # Day 5 deployment, production readiness, and wrap-up
 │
@@ -621,6 +632,10 @@ Core concepts expected in this portfolio:
 * context engineering
 * memory and sessions
 * agent skills
+* procedural memory
+* progressive disclosure
+* Agents CLI
+* ADK graph workflows
 * orchestration
 * evaluation
 * observability
@@ -725,6 +740,11 @@ Useful official references:
 * [Kaggle — 5-Day AI Agents Intensive Course With Google](https://www.kaggle.com/learn-guide/5-day-agents)
 * [Google Codelab — Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity)
 * [Google Codelab — Deploy from AI Studio to Cloud Run](https://codelabs.developers.google.com/deploy-from-aistudio-to-run)
+* [Google Codelab — Authoring Google Antigravity Skills](https://codelabs.developers.google.com/getting-started-with-antigravity-skills)
+* [Google Codelab — Agents CLI and ADK Lifecycle](https://codelabs.developers.google.com/agents-cli-adk-lifecycle)
+* [Kaggle Whitepaper — Agent Skills](https://www.kaggle.com/whitepaper-agent-skills)
+* [Agents CLI Documentation](https://google.github.io/agents-cli/guide/getting-started/)
+* [Google Antigravity Documentation](https://antigravity.google/docs)
 * [Kaggle Capstone Competition](https://www.kaggle.com/competitions/agents-intensive-capstone-project)
 
 Additional course links and references will be maintained in:
@@ -735,7 +755,7 @@ Additional course links and references will be maintained in:
 
 # 📌 Repository Status
 
-This repository has completed the foundation, Day 1, and Day 2 documentation phases, and is ready to continue into the remaining course units.
+This repository has completed the foundation, Day 1, Day 2, and Day 3 documentation phases, and is ready to continue into the remaining course units.
 
 Completed so far:
 
@@ -757,13 +777,18 @@ Completed so far:
 * Day 2 theory notes, study summaries, resources, and reflection documented
 * Day 2 Antigravity CLI codelab documented with source, screenshots, QA notes, and Render deployment evidence
 * Day 2 Google Developer Knowledge MCP codelab documented with setup notes, prompt-result validation, screenshots, and sanitized config template
+* Day 3 Agent Skills theory notes, study-guide summaries, infographics, resources, and reflection documented
+* Day 3 Antigravity Skills codelab documented with workspace skills, skill tests, validation screenshots, and curated source snapshots
+* Day 3 Agents CLI + ADK lifecycle codelab documented with the `customer-support-agent` workflow, linting evidence, playground testing, response-style refinement, and CLI execution proof
+* Day 3 troubleshooting notes captured for Windows ADK behavior, API key environment visibility, Google Cloud billing limitations, and safe credential handling
 
 Next steps:
 
 * review Day 1 screenshots for any private account/project details before long-term public use
 * add or update root/course-overview links after each completed day
-* continue into Day 3 context engineering, skills, sessions, and memory work
+* continue into Day 4 security, observability, testing, and agent evaluation work
 * keep Day 2 as the reference point for tool use, MCP validation, permission review, and interoperability documentation
+* keep Day 3 as the reference point for Agent Skills, procedural memory, progressive disclosure, and ADK graph workflow documentation
 * keep cloud cost, secret handling, and human-review notes visible throughout the remaining course
 * add final capstone planning and implementation files when the capstone work begins
 
