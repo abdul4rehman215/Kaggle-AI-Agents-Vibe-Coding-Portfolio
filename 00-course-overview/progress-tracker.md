@@ -15,7 +15,7 @@ Detailed notes, codelab outputs, screenshots, source files, and reflections shou
 | Day 1 | ✅ Completed | [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/) | Notes, Antigravity codelab, AI Studio codelab, Cloud Run notes, screenshots, source code, and reflection added |
 | Day 2 | ✅ Completed | [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/) | Theory notes, Antigravity CLI codelab, Google Developer Knowledge MCP codelab, screenshots, resources, security notes, and reflection documented |
 | Day 3 | ✅ Completed | [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/) | Agent Skills theory, Antigravity Skills codelab, Agents CLI + ADK lifecycle codelab, screenshots, source snapshots, troubleshooting notes, and reflection documented |
-| Day 4 | ⬜ Pending | [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/) | Not started |
+| Day 4 | 🟡 In Progress | [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/) | Podcast, whitepaper, study notes, source notes, and visual assets documented; codelabs pending |
 | Day 5 | ⬜ Pending | [`../05-day-5-production-agent-deployment/`](../05-day-5-production-agent-deployment/) | Not started |
 | Capstone Project | ⬜ Pending | [`../capstone-project/`](../capstone-project/) | Not started |
 
@@ -34,7 +34,7 @@ Detailed notes, codelab outputs, screenshots, source files, and reflections shou
 
 ## 🧭 Current Repository Phase
 
-The repository has completed the **foundation, Day 1, Day 2, and Day 3 documentation phases**. The next major course focus is Day 4, where security, observability, testing, and evaluation become more central.
+The repository has completed the **foundation, Day 1, Day 2, and Day 3 documentation phases**. Day 4 theory documentation has started, with security, observability, testing, and evaluation concepts now captured before the hands-on codelabs.
 
 Current focus:
 
@@ -43,7 +43,7 @@ Current focus:
 - protect secrets through `.gitignore` and careful screenshot review
 - keep official links in the resources area
 - use Day 3 as the reference point for Agent Skills, procedural memory, progressive disclosure, and ADK graph workflow documentation
-- prepare for Day 4 security/evaluation work without marking it complete before real evidence exists
+- keep Day 4 marked as in progress until the codelabs, screenshots, commands, and validation evidence are added
 
 ---
 
@@ -71,6 +71,8 @@ Current focus:
 - Day 3 Antigravity Skills codelab documented with workspace skills, skill tests, screenshots, command evidence, and curated source snapshots
 - Day 3 Agents CLI + ADK lifecycle codelab documented with `customer-support-agent`, lint/import checks, playground testing, response-style refinement, CLI execution, and troubleshooting notes
 - Day 3 final reflection added to connect procedural memory, progressive disclosure, skills, and graph workflow testing
+- Day 4 podcast and whitepaper completed
+- Day 4 theory folder added with README, podcast/whitepaper notes, key concepts, study workflow summary, source material note, official links, and visual study assets
 
 ---
 
@@ -78,11 +80,12 @@ Current focus:
 
 | Priority | Task | Target Location |
 |---------|------|----------------|
-| 1 | Begin Day 4 security, observability, testing, and evaluation documentation when course work starts | `04-day-4-agent-security-evaluation/` |
-| 2 | Continue reviewing public screenshots for private account/project details before long-term sharing | Day-wise `screenshots/` folders |
-| 3 | Keep root and course-overview links updated after each completed stage | `README.md` and `00-course-overview/` |
-| 4 | Keep setup/troubleshooting docs updated only when new issues appear | `docs/` |
-| 5 | Prepare capstone planning only after the course reaches the applied project stage | `capstone-project/` |
+| 1 | Complete Day 4 codelab 1: ambient expense approval agent with human-in-the-loop and local evaluations | `04-day-4-agent-security-evaluation/` |
+| 2 | Complete Day 4 codelab 2: secure agentic coding with scans, tests, and hooks | `04-day-4-agent-security-evaluation/` |
+| 3 | Continue reviewing public screenshots for private account/project details before long-term sharing | Day-wise `screenshots/` folders |
+| 4 | Keep root and course-overview links updated after each completed stage | `README.md` and `00-course-overview/` |
+| 5 | Keep setup/troubleshooting docs updated only when new issues appear | `docs/` |
+| 6 | Prepare capstone planning only after the course reaches the applied project stage | `capstone-project/` |
 
 ---
 
