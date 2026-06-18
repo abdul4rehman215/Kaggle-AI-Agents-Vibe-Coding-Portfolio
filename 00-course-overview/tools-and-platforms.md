@@ -54,7 +54,7 @@ Antigravity work may include:
 - future: [`../docs/antigravity-setup.md`](../docs/antigravity-setup.md)
 - completed Day 1 codelab: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/)
 - completed Day 2 folder: [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
-- Day 3 in progress: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
 
 ---
 
@@ -73,13 +73,13 @@ IDE usage should be documented with:
 - workflow observations
 - generated artifacts where relevant
 - issues or configuration steps
-- skill trigger/testing observations once Day 3 codelabs are completed
+- skill trigger/testing observations from the completed Day 3 codelabs
 
 ### Documentation Location
 
 - future: [`../docs/antigravity-setup.md`](../docs/antigravity-setup.md)
 - completed Day 1 evidence: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/)
-- Day 3 in progress: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
 
 ---
 
@@ -99,7 +99,7 @@ CLI usage should be documented with:
 - troubleshooting notes
 - safe handling of local environment details
 - Day 2 codelab evidence
-- Day 3 skill/agent lifecycle commands after completion
+- Day 3 skill and agent lifecycle commands
 
 ### Documentation Location
 
@@ -143,7 +143,7 @@ Agent Skills are folder-based capabilities centered around a `SKILL.md` file. Th
 
 ### Repository Use
 
-Agent Skills documentation may include:
+The completed Day 3 Agent Skills documentation includes:
 
 - `SKILL.md` anatomy
 - trigger descriptions
@@ -156,7 +156,7 @@ Agent Skills documentation may include:
 
 ### Documentation Location
 
-- Day 3 in progress: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
 
 ### Safety Note
 
@@ -168,23 +168,23 @@ Skills can include executable scripts. Treat them like dependencies: review scri
 
 **Role:** Agent lifecycle tooling for scaffolding, linting, testing, and running ADK-based agents.
 
-Agents CLI and ADK become relevant during the Day 3 lifecycle codelab. They connect the Agent Skills idea to a practical agent development workflow.
+Agents CLI and ADK were used during the Day 3 lifecycle codelab. They connect the Agent Skills idea to a practical agent development workflow: scaffold an agent, validate it, inspect the graph, test behavior, adjust instructions, and run the agent from the command line.
 
 ### Repository Use
 
-After the codelab is completed, documentation should include:
+The completed Day 3 documentation includes:
 
 - setup verification
 - commands used
 - generated project structure
 - linting/testing results
-- playground or local run evidence
-- issues faced and fixes
+- playground and command-line run evidence
+- issues faced, fixes, and documented workarounds
 - security notes around API keys and local config
 
 ### Documentation Location
 
-- Day 3 in progress: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
 
 ---
 
@@ -307,7 +307,7 @@ Discord content should not be copied directly unless it is your own message and 
 
 **Role:** Study-support tools for summarization, revision, quizzes, and concept reinforcement.
 
-These tools were used during Day 3 theory work to process the podcast and whitepaper more efficiently.
+These tools were used during Day 3 theory work to process the podcast and whitepaper more efficiently before the hands-on codelabs were documented.
 
 ### Repository Use
 
@@ -320,7 +320,7 @@ Study-support tools should be documented carefully:
 
 ### Documentation Location
 
-- Day 3 in progress: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
 
 ---
 
@@ -397,10 +397,10 @@ private MCP config values
 | Kaggle | Course and capstone platform | `00-course-overview/`, `resources/` |
 | Google Antigravity | Agent-first development workflow | Day 1, Day 2, Day 3 folders |
 | Antigravity IDE | Visual agent development environment | Day 1 and Day 3 evidence |
-| Antigravity CLI | Terminal interface for agent workflows | Day 2 and future Day 3 codelabs |
+| Antigravity CLI | Terminal interface for agent workflows | Day 2 and Day 3 command evidence |
 | MCP | External tool/knowledge connection layer | Day 2 folder |
 | Agent Skills / `SKILL.md` | Reusable procedural memory | Day 3 folder |
-| Agents CLI + ADK | Agent lifecycle workflow | Day 3 codelab pending |
+| Agents CLI + ADK | Agent lifecycle workflow | Completed Day 3 lifecycle codelab |
 | Google AI Studio | Vibe coding and app generation | Day 1 codelabs |
 | Cloud Run | Deployment platform | Day 1 codelabs, future deployment notes |
 | Render | Supporting deployment/output evidence where relevant | Day 2 folder |
@@ -433,14 +433,19 @@ Day 2 expanded the toolchain from app generation into tool-connected agent workf
 
 ---
 
-## 🟡 Day 3 Tooling Update
+## ✅ Day 3 Tooling Update
 
-Day 3 has started from the theory side:
+Day 3 is now documented as completed tooling work:
 
-- **Agent Skills** and `SKILL.md` are the core concept.
-- **NotebookLM** and **NoteGPT** were used for study support, quiz review, and concept reinforcement.
-- **Antigravity Skills**, **Agents CLI**, and **ADK** are still pending hands-on codelab tools.
-- The current folder should remain in progress until those codelabs produce real commands, screenshots, and testing evidence.
+- **Agent Skills** and `SKILL.md` were studied as the core procedural-memory pattern.
+- **NotebookLM** and **NoteGPT** were used for study support, quiz review, and concept reinforcement before the final notes were written in a personal technical voice.
+- **Antigravity IDE** was used to inspect, trigger, and validate workspace skills.
+- **Agents CLI** was installed and used for skill setup, project scaffolding, linting, and lifecycle commands.
+- **ADK Web UI** was used to inspect and test the customer-support graph workflow.
+- **Gemini API key local mode** was used for the successful ADK codelab path while keeping secrets out of the repository.
+- **uv** supported dependency installation and reproducible local execution for the generated ADK projects.
+
+The Day 3 folder now stores the practical evidence: renamed screenshots, curated source snapshots, command notes, validation notes, and troubleshooting records.
 
 ---
 
