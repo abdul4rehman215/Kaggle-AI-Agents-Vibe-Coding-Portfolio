@@ -69,6 +69,8 @@ The broader purpose is to connect **AI agents and vibe coding** with my existing
 
 **Cybersecurity • SOC Analysis • Security Automation • AI Workflows • Cloud Monitoring • Agentic Systems**
 
+By Day 4, this portfolio also includes hands-on agent security and evaluation work: an ambient expense approval agent with pre-LLM security screening, trace-based evaluation, and a secure Antigravity/TDD lifecycle around a shopping-assistant agent.
+
 ---
 
 # 🧭 Quick Navigation
@@ -77,7 +79,7 @@ The broader purpose is to connect **AI agents and vibe coding** with my existing
 * [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/) — Day 1 notes, podcast/whitepaper reflections, Antigravity, AI Studio, and Cloud Run codelab work
 * [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) — Day 2 agent tools, APIs, external integrations, and workflow interoperability
 * [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) — Day 3 Agent Skills, procedural memory, context rot, progressive disclosure, Antigravity Skills, Agents CLI skills, and ADK lifecycle codelab work
-* [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) — Day 4 agent security, observability, testing, safety, and evaluation
+* [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) — Day 4 agent security, observability, evaluation, ambient expense-agent security, and secure Antigravity/TDD lifecycle codelabs
 * [`05-day-5-production-agent-deployment/`](./05-day-5-production-agent-deployment/) — Day 5 production development, deployment notes, Cloud Run, and final course wrap-up
 * [`capstone-project/`](./capstone-project/) — final applied AI agents capstone project, architecture, implementation, and submission evidence
 * [`docs/`](./docs/) — setup guides, troubleshooting logs, deployment notes, and reusable documentation
@@ -158,7 +160,7 @@ That is why this repository includes not only code and notes, but also reflectio
 | Day 1                 | ✅ Completed    | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs documented |
 | Day 2                 | ✅ Completed    | Agent tools, APIs, MCP validation, interoperability, and hands-on codelabs documented |
 | Day 3                 | ✅ Completed    | Agent Skills, procedural memory, Antigravity Skills, Agents CLI skills, and ADK graph workflow codelabs documented |
-| Day 4                 | 🟡 In Progress  | Podcast, whitepaper, study notes, and visual revision documented; codelabs pending |
+| Day 4                 | ✅ Completed    | Agent security, observability, evaluation, ambient expense-agent security, and secure lifecycle codelabs documented |
 | Day 5                 | ⬜ Pending      | Production deployment, final learning wrap-up, and documentation    |
 | Capstone Project      | ⬜ Pending      | Final applied AI agents project                                     |
 
@@ -252,9 +254,34 @@ Expected coverage includes:
 
 **Day 3 update:** Agent Skills and procedural memory are now documented through both theory notes and hands-on codelabs. The Day 3 folder includes Antigravity workspace skill examples, skill-routing tests, Agents CLI skill installation evidence, and a customer-support ADK graph workflow agent tested through the ADK playground and command-line execution.
 
+**Day 4 update:** The security and evaluation work is now documented through two completed codelabs. The first builds an ADK 2.0 ambient expense approval agent with deterministic routing, PII redaction, prompt-injection bypass, human review, trace generation, and local/offline grading. The second builds a secure shopping-assistant lifecycle using Antigravity project rules, Semgrep, pre-commit hooks, `PreToolUse` command validation, STRIDE threat modeling, TDD planning gates, outcome-based tests, and local ADK Playground verification. This was one of the most enjoyable parts of the course for me because it connected agent building directly with the security engineering mindset: boundaries, evidence, safe failure paths, and credential hygiene.
+
 ---
 
-## 5) Capstone Project
+## 5) Agent Security, Evaluation, and Secure Lifecycle Work
+
+This section documents how agent systems can be built with explicit security controls instead of treating safety as an afterthought.
+
+Expected coverage includes:
+
+* prompt-injection awareness
+* PII containment and redaction
+* deterministic security routing
+* human-in-the-loop approval
+* trace-based evaluation
+* local/offline grading
+* secure development lifecycle gates
+* STRIDE threat modeling
+* pre-commit security enforcement
+* command validation before agent tool execution
+
+📂 Folder: [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
+
+**Day 4 update:** The Day 4 folder is now complete with theory notes, study summaries, curated screenshots, source snapshots, evaluation artifacts, a security engineering reflection, and two completed codelab folders: `01-ambient-expense-agent/` and `02-secure-agent-lifecycle/`.
+
+---
+
+## 6) Capstone Project
 
 The final capstone will be documented as a standalone portfolio project inside this repository.
 
@@ -402,20 +429,27 @@ Primary goal:
 
 This section is especially important from a cybersecurity and SOC automation perspective.
 
-**Current update:** Day 4 theory work is now documented. Podcast, whitepaper, NotebookLM revision, key concepts, source notes, and visual study assets are added. Codelab evidence is still pending and will be added only after implementation.
+Day 4 moved the work from “can the agent build?” toward “can the agent build and operate inside enforceable security, testing, and evaluation boundaries?” This day connected strongly with my security background because it treated agent development as a system-design problem: define trust boundaries, validate tool behavior, protect credentials, detect unsafe inputs, capture evidence, and prove the workflow through tests and evaluation artifacts.
 
-Planned coverage:
+Coverage completed:
 
-* agent safety
-* prompt injection awareness
-* guardrails
-* evaluation workflows
-* observability
-* testing agent behavior
-* risk analysis
-* secure handling of tool permissions and secrets
+* agent security and evaluation theory
+* effective trust, guardrails, and secure agent harness concepts
+* prompt injection and PII containment patterns
+* ADK 2.0 ambient expense approval workflow
+* deterministic routing for low-value vs high-value expenses
+* pre-LLM security checkpoint with PII redaction and prompt-injection bypass
+* human-in-the-loop review flow for higher-risk expenses
+* local trace generation and offline evaluation scorecard
+* secure Antigravity/TDD lifecycle for a shopping assistant agent
+* custom Semgrep rule and pre-commit enforcement
+* Antigravity `PreToolUse` command validation hook
+* STRIDE threat-modeling skill and generated threat model
+* TDD planning gate with **Security Boundaries & Assertions**
+* outcome-based pytest validation
+* local ADK Playground verification through a working tool call
 
-Current artifacts:
+Completed artifacts:
 
 * Day 4 README
 * podcast + whitepaper notes
@@ -424,15 +458,18 @@ Current artifacts:
 * source material note
 * official links
 * visual study assets
+* completed Ambient Expense Agent codelab folder
+* completed Secure Agent Lifecycle codelab folder
+* codelab-specific notes
+* screenshot evidence for both codelabs
+* curated source snapshots for both implementations
+* evaluation artifacts, traces, and scorecard
+* STRIDE threat model and security controls documentation
+* Day 4 security engineering reflection
 
-Pending after codelabs:
+Primary goal:
 
-* implementation notes
-* evaluation examples
-* security testing notes
-* screenshots
-* lessons learned
-* SOC/security automation reflection
+> Capture how agent systems can be secured, tested, evaluated, and documented with the same discipline expected in security-aware software engineering and SOC automation workflows.
 
 📂 Folder: [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
 
@@ -497,7 +534,7 @@ Kaggle-AI-Agents-Vibe-Coding-Portfolio/
 ├── 01-day-1-intro-to-agents-and-vibe-coding/     # Day 1 notes, codelabs, screenshots, and reflections
 ├── 02-day-2-agent-tools-and-interoperability/    # Day 2 agent tools, APIs, integrations, and workflows
 ├── 03-day-3-agent-skills-procedural-memory/      # Day 3 skills, procedural memory, Antigravity Skills, and ADK workflow codelabs
-├── 04-day-4-agent-security-evaluation/           # Day 4 security, observability, testing, and evaluation
+├── 04-day-4-agent-security-evaluation/           # Day 4 security, observability, evaluation, secure lifecycle codelabs, and reflections
 ├── 05-day-5-production-agent-deployment/         # Day 5 deployment, production readiness, and wrap-up
 │
 ├── capstone-project/                             # Final applied capstone project and submission evidence
@@ -638,6 +675,12 @@ Core concepts expected in this portfolio:
 * vibe coding workflows
 * prompt-driven application development
 * human-in-the-loop review
+* prompt-injection containment
+* PII redaction
+* trace-based evaluation
+* STRIDE threat modeling
+* Semgrep and pre-commit security gates
+* secure agent lifecycle design
 * agent tool usage
 * API integration
 * context engineering
@@ -766,7 +809,7 @@ Additional course links and references will be maintained in:
 
 # 📌 Repository Status
 
-This repository has completed the foundation, Day 1, Day 2, and Day 3 documentation phases, and is ready to continue into the remaining course units.
+This repository has completed the foundation, Day 1, Day 2, Day 3, and Day 4 documentation phases, and is ready to continue into Day 5 and the capstone project.
 
 Completed so far:
 
@@ -792,14 +835,18 @@ Completed so far:
 * Day 3 Antigravity Skills codelab documented with workspace skills, skill tests, validation screenshots, and curated source snapshots
 * Day 3 Agents CLI + ADK lifecycle codelab documented with the `customer-support-agent` workflow, linting evidence, playground testing, response-style refinement, and CLI execution proof
 * Day 3 troubleshooting notes captured for Windows ADK behavior, API key environment visibility, Google Cloud billing limitations, and safe credential handling
+* Day 4 agent security, evaluation, whitepaper notes, study-guide summaries, infographics, and visual study assets documented
+* Day 4 Ambient Expense Agent codelab documented with ADK workflow routing, security checkpointing, PII redaction, prompt-injection bypass, HITL review, trace generation, and offline evaluation evidence
+* Day 4 Secure Agent Lifecycle codelab documented with Antigravity project rules, Semgrep, pre-commit hooks, command validation, STRIDE threat modeling, TDD planning gate, outcome-based tests, and ADK Playground proof
+* Day 4 screenshots, curated source snapshots, validation notes, troubleshooting notes, evaluation artifacts, and security engineering reflection organized
 
 Next steps:
 
-* review Day 1 screenshots for any private account/project details before long-term public use
 * add or update root/course-overview links after each completed day
-* complete Day 4 codelabs and add implementation evidence for security, observability, testing, and agent evaluation work
+* continue into Day 5 production deployment and final wrap-up documentation
 * keep Day 2 as the reference point for tool use, MCP validation, permission review, and interoperability documentation
 * keep Day 3 as the reference point for Agent Skills, procedural memory, progressive disclosure, and ADK graph workflow documentation
+* keep Day 4 as the reference point for secure agent design, evaluation, guardrails, trace evidence, and security-focused lifecycle gates
 * keep cloud cost, secret handling, and human-review notes visible throughout the remaining course
 * add final capstone planning and implementation files when the capstone work begins
 
@@ -812,6 +859,8 @@ This repository is being built as a serious AI agents learning portfolio.
 It is not just a folder for course files.
 
 It is a structured record of how I am learning, building, testing, documenting, and thinking about AI agents in the context of modern software development, cloud deployment, and security automation.
+
+By Day 4, this portfolio also shows how security gates, evaluation traces, human review, command validation, and safe credential handling become part of the agent-building lifecycle rather than afterthoughts.
 
 The main idea behind this portfolio is:
 
