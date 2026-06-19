@@ -201,20 +201,26 @@ The Day 3 module is now closed as a documented learning unit. It preserves both 
 ## 🔐 Day 4 — Agent Security and Evaluation
 
 **Folder:** [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)  
-**Status:** In progress - theory documented, codelabs pending  
-**Main purpose:** Study agent reliability, testing, observability, and security risks.
+**Status:** Completed  
+**Main purpose:** Study agent reliability, testing, observability, security boundaries, and evaluation, then validate those concepts through two completed hands-on codelabs.
 
 ### Focus Areas
 
 - prompt injection awareness
-- safe tool usage
-- agent evaluation
-- observability
-- testing behavior
-- guardrails and failure modes
+- safe tool usage and tool-call boundaries
+- PII containment and redaction
+- pre-LLM security screening
+- deterministic routing outside the LLM
+- human-in-the-loop review
+- trace generation and local evaluation
+- guardrails, failure modes, and secure defaults
+- STRIDE threat modeling
+- pre-commit and Semgrep enforcement
+- Antigravity command validation hooks
+- outcome-based testing for agent tools
 - secure handling of credentials and permissions
 
-### Current Artifacts
+### Completed Artifacts
 
 - Day 4 README
 - podcast and whitepaper notes
@@ -223,19 +229,28 @@ The Day 3 module is now closed as a documented learning unit. It preserves both 
 - official links
 - source material note
 - visual study assets
-
-### Pending After Codelabs
-
-- evaluation examples
-- security testing notes
-- screenshots
-- implementation notes
-- risk observations
-- SOC/security automation reflection
+- completed Codelab 1 folder for the ADK ambient expense approval agent
+- completed Codelab 2 folder for the secure Antigravity/TDD shopping-assistant lifecycle
+- codelab-specific notes, commands, testing records, troubleshooting notes, and evidence logs
+- curated source snapshots for `ambient-expense-agent` and `shopping-assistant`
+- screenshot evidence for workflow graphs, security behavior, evaluation output, and Playground validation
+- evaluation scorecard, trace evidence, STRIDE threat model, and secure lifecycle documentation
+- Day 4 security-engineering reflection
 
 ### Portfolio Value
 
-Day 4 is important because agentic systems can create risk if they are given tools, memory, or external access without proper evaluation and controls.
+Day 4 is the strongest security-engineering module so far. It shows that agentic systems cannot be trusted only because they run successfully. They need enforceable boundaries, deterministic checks, safe credential handling, human review paths, test evidence, and evaluation artifacts.
+
+This day connected especially well with my cybersecurity and SOC automation direction because the work felt close to real security engineering: inspect the attack surface, constrain tool behavior, block unsafe paths, test outcomes, capture evidence, and document the remaining risk honestly.
+
+### ✅ Completion Notes
+
+The completed Day 4 module includes two practical codelab tracks:
+
+1. **Ambient Expense Agent Security and Evaluation** — an ADK 2.0 expense approval workflow with deterministic routing, a pre-LLM security checkpoint, PII redaction, prompt-injection bypass, human review, trace generation, and local/offline evaluation evidence.
+2. **Secure Agent Lifecycle with Antigravity and TDD** — a shopping-assistant agent surrounded by persistent project rules, Semgrep, pre-commit hooks, Antigravity `PreToolUse` validation, STRIDE threat modeling, a TDD planning gate, outcome-based tests, secure mock-key remediation, and final ADK Playground proof.
+
+The main lesson from Day 4 is that secure agent development is a lifecycle, not a single scan. The agent, the workflow, the tools, the tests, the evaluation traces, and the repository hygiene all need to reinforce each other.
 
 ---
 
@@ -313,7 +328,7 @@ The capstone should become the strongest applied section of the repository. It s
 | Day 1 | Completed | Antigravity, AI Studio, Cloud Run evidence, screenshots, and reflections |
 | Day 2 | Completed | Agent tools, Antigravity CLI, MCP notes, screenshots, security notes, and reflection |
 | Day 3 | Completed | Agent Skills theory, Antigravity Skills, Agents CLI setup, ADK lifecycle codelab, screenshots, source snapshots, troubleshooting notes, and reflection |
-| Day 4 | In progress | Theory notes and visual study assets added; codelabs pending |
+| Day 4 | Completed | Agent security theory, ambient expense-agent security/evaluation codelab, secure Antigravity/TDD lifecycle codelab, screenshots, source snapshots, and reflection |
 | Day 5 | Pending | Production deployment and final course wrap-up |
 | Capstone | Pending | Final applied AI agents project |
 
