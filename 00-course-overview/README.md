@@ -34,7 +34,7 @@ Those artifacts belong in the day-wise folders:
 01-day-1-intro-to-agents-and-vibe-coding/        # completed and documented
 02-day-2-agent-tools-and-interoperability/       # completed and documented
 03-day-3-agent-skills-procedural-memory/         # completed: theory, Antigravity Skills, Agents CLI, and ADK lifecycle codelabs
-04-day-4-agent-security-evaluation/              # planned for Day 4
+04-day-4-agent-security-evaluation/              # completed: security theory, ambient expense agent, secure lifecycle, and evaluation codelabs
 05-day-5-production-agent-deployment/            # planned for Day 5
 capstone-project/                                # planned final build
 ```
@@ -175,6 +175,30 @@ The folder now connects the theory phase with hands-on codelab evidence:
 The key portfolio point from Day 3 is that reusable agent behavior is not only about adding more context. It is about packaging task knowledge cleanly, triggering it at the right time, testing the behavior, and keeping secrets or local runtime details out of public documentation.
 
 ---
+
+
+## ✅ Day 4 Documentation Update
+
+Day 4 is now documented as completed work and connects directly with the security-focused direction of this portfolio.
+
+The completed Day 4 folder is:
+
+[`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
+
+The folder now captures both the theory and the hands-on security engineering evidence:
+
+- agent security, observability, and evaluation notes
+- secure agent harness and effective-trust concepts from the Day 4 whitepaper
+- ambient expense approval agent codelab documentation
+- ADK workflow routing, human review, and deterministic approval boundaries
+- pre-LLM security screening with PII redaction and prompt-injection bypass behavior
+- trace generation, local/offline grading, and evaluation scorecard evidence
+- secure shopping-assistant lifecycle codelab documentation
+- Antigravity project rules, Semgrep, pre-commit enforcement, and command validation hooks
+- STRIDE threat-modeling skill, TDD planning gate, and outcome-based pytest validation
+- curated source snapshots, screenshots, troubleshooting notes, and a Day 4 security-engineering reflection
+
+The key portfolio point from Day 4 is that building agents securely is not an optional cleanup task after the code works. It is part of the workflow: define boundaries, block unsafe paths, test behavior, preserve evidence, and keep secrets out of source.
 
 ## 🔗 Back to Repository Home
 

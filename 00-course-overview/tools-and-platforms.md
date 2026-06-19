@@ -55,6 +55,9 @@ Antigravity work may include:
 - completed Day 1 codelab: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/)
 - completed Day 2 folder: [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
 - completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
+- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
+- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
 
 ---
 
@@ -74,6 +77,7 @@ IDE usage should be documented with:
 - generated artifacts where relevant
 - issues or configuration steps
 - skill trigger/testing observations from the completed Day 3 codelabs
+- secure lifecycle observations from Day 4 project rules, command hooks, STRIDE skill usage, and TDD planning gates
 
 ### Documentation Location
 
@@ -100,10 +104,12 @@ CLI usage should be documented with:
 - safe handling of local environment details
 - Day 2 codelab evidence
 - Day 3 skill and agent lifecycle commands
+- Day 4 security/evaluation codelab commands, validation commands, and secure commit workflow evidence
 
 ### Documentation Location
 
 - completed Day 2 folder: [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
+- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
 - future: [`../docs/antigravity-setup.md`](../docs/antigravity-setup.md)
 - future: [`../docs/troubleshooting-log.md`](../docs/troubleshooting-log.md)
 
@@ -168,11 +174,11 @@ Skills can include executable scripts. Treat them like dependencies: review scri
 
 **Role:** Agent lifecycle tooling for scaffolding, linting, testing, and running ADK-based agents.
 
-Agents CLI and ADK were used during the Day 3 lifecycle codelab. They connect the Agent Skills idea to a practical agent development workflow: scaffold an agent, validate it, inspect the graph, test behavior, adjust instructions, and run the agent from the command line.
+Agents CLI and ADK were used during the Day 3 lifecycle codelab and extended further during Day 4 security/evaluation work. They connect agent design to a practical lifecycle: scaffold an agent, validate it, inspect the graph, test behavior, evaluate traces, enforce security gates, and run the agent locally.
 
 ### Repository Use
 
-The completed Day 3 documentation includes:
+The completed Day 3 and Day 4 documentation includes:
 
 - setup verification
 - commands used
@@ -181,6 +187,7 @@ The completed Day 3 documentation includes:
 - playground and command-line run evidence
 - issues faced, fixes, and documented workarounds
 - security notes around API keys and local config
+- Day 4 ambient expense workflow, trace generation, offline grading, and secure shopping-assistant lifecycle evidence
 
 ### Documentation Location
 
@@ -208,6 +215,7 @@ AI Studio work may include:
 ### Documentation Location
 
 - completed Day 1 codelab: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/)
+- completed Day 4 secure lifecycle notes: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
 
 ---
 
@@ -257,6 +265,31 @@ Render-related documentation should include:
 - completed Day 2 folder: [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
 
 ---
+
+
+## 🧪 Semgrep, Pre-Commit, and Pytest
+
+**Role:** Local security gates and outcome-based validation.
+
+Day 4 introduced Semgrep, pre-commit hooks, and pytest as part of the secure agent lifecycle codelab. These tools helped turn security rules into enforceable workflow checks rather than optional reminders.
+
+### Repository Use
+
+The Day 4 documentation captures:
+
+- a custom Semgrep rule for Google API-key-shaped strings
+- pre-commit enforcement that blocked the intentional mock-key vulnerability
+- remediation of the simulated key issue without hardcoding a real secret
+- outcome-based pytest tests for the deterministic discount redemption tool
+- command validation tests for safe and destructive payload handling
+
+### Documentation Location
+
+- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
+
+### Safety Note
+
+These tools are not only quality checks. In the Day 4 workflow they acted as security boundaries: block risky code before commit, validate deterministic tool behavior, and keep secret handling visible in the development process.
 
 ## 🧑‍💻 GitHub
 
@@ -395,19 +428,20 @@ private MCP config values
 | Tool / Platform | Main Role | Repository Location |
 |-----------------|-----------|---------------------|
 | Kaggle | Course and capstone platform | `00-course-overview/`, `resources/` |
-| Google Antigravity | Agent-first development workflow | Day 1, Day 2, Day 3 folders |
-| Antigravity IDE | Visual agent development environment | Day 1 and Day 3 evidence |
-| Antigravity CLI | Terminal interface for agent workflows | Day 2 and Day 3 command evidence |
+| Google Antigravity | Agent-first development workflow | Day 1, Day 2, Day 3, Day 4 folders |
+| Antigravity IDE | Visual agent development environment | Day 1, Day 3, and Day 4 evidence |
+| Antigravity CLI | Terminal interface for agent workflows | Day 2, Day 3, and Day 4 command evidence |
 | MCP | External tool/knowledge connection layer | Day 2 folder |
 | Agent Skills / `SKILL.md` | Reusable procedural memory | Day 3 folder |
-| Agents CLI + ADK | Agent lifecycle workflow | Completed Day 3 lifecycle codelab |
-| Google AI Studio | Vibe coding and app generation | Day 1 codelabs |
+| Agents CLI + ADK | Agent lifecycle workflow, local ADK testing, and evaluation-oriented agent development | Completed Day 3 and Day 4 codelabs |
+| Google AI Studio / Gemini API | Vibe coding, app generation, and local Gemini API authentication | Day 1 codelabs and Day 4 local ADK verification |
 | Cloud Run | Deployment platform | Day 1 codelabs, future deployment notes |
 | Render | Supporting deployment/output evidence where relevant | Day 2 folder |
 | GitHub | Portfolio and code hosting | Full repository |
 | Discord | Community participation | Progress notes if relevant |
 | NotebookLM / NoteGPT | Study and revision support | Day 3 study notes |
-| Local Terminal / Git | Local workflow and version control | Setup and troubleshooting docs |
+| Local Terminal / Git | Local workflow, version control, and secure commit validation | Setup, troubleshooting docs, and Day 4 secure lifecycle evidence |
+| Semgrep / Pre-Commit / Pytest | Security scanning, commit-time enforcement, and outcome-based validation | Day 4 secure lifecycle codelab |
 
 ---
 
@@ -448,6 +482,24 @@ Day 3 is now documented as completed tooling work:
 The Day 3 folder now stores the practical evidence: renamed screenshots, curated source snapshots, command notes, validation notes, and troubleshooting records.
 
 ---
+
+
+## ✅ Day 4 Tooling Update
+
+Day 4 made the tooling stack feel closest to security engineering. The work was not only to build agents, but to surround them with detection, validation, safe execution gates, and repeatable evidence.
+
+The completed Day 4 tooling work includes:
+
+- **ADK and Agents CLI** for scaffolding, linting, running, and inspecting local agent projects.
+- **ADK Web UI** for graph inspection and tool-call proof during the ambient expense and shopping-assistant workflows.
+- **Semgrep** with a custom rule that detected the intentional API-key-shaped mock vulnerability.
+- **pre-commit** enforcement that blocked the first insecure commit attempt and forced remediation before the secure commit succeeded.
+- **Antigravity `PreToolUse` hooks** for validating command execution requests before allowing shell-like actions.
+- **STRIDE threat-modeling skill** for turning vague security concern into structured spoofing, tampering, repudiation, information disclosure, denial-of-service, and privilege-risk notes.
+- **pytest** for outcome-based validation of deterministic agent tool behavior.
+- **Gemini API / AI Studio local authentication** for final local Playground verification without committing credentials.
+
+This fits the security direction of the portfolio: each tool added a boundary, a check, a trace, or a review point around the agent lifecycle.
 
 ## ⭐ Final Note
 

@@ -41,7 +41,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | Item | Status | Notes |
 |------|--------|-------|
 | Google AI Studio access | ✅ Done | Used for the Day 1 AI Studio codelab and Snowflakes & Balloons app build |
-| Gemini/API access readiness | ✅ Done | Local Gemini API key mode was used for Day 3 ADK testing; no real keys should be committed or shown in screenshots |
+| Gemini/API access readiness | ✅ Done | Local Gemini API key mode was used for Day 3 and Day 4 ADK testing; no real keys should be committed or shown in screenshots |
 | Google Cloud access | ✅ Done | Used for the Day 1 Cloud Run deployment test |
 | Cloud Run deployment readiness | ✅ Done | Validated during the Day 1 AI Studio to Cloud Run codelab |
 | Billing/cost awareness reviewed | ✅ Done | Day 1 Cloud Run app was unpublished/cleaned up to avoid unnecessary cost |
@@ -59,7 +59,7 @@ The goal is to keep setup work visible without mixing it into daily codelab docu
 | Day 1 folder created | ✅ Done | Stores Day 1 notes, codelabs, screenshots, source code, and reflections |
 | Day 2 folder created | ✅ Done | Stores Day 2 notes, codelabs, screenshots, tool/MCP documentation, and reflection |
 | Day 3 folder created | ✅ Done | Stores Day 3 theory notes, codelabs, screenshots, source snapshots, resources, and reflection |
-| Day 4 folder created | 🟡 In Progress | Theory documentation added; codelabs pending |
+| Day 4 folder created | ✅ Done | Stores Day 4 theory notes, codelabs, screenshots, security/evaluation artifacts, curated source snapshots, and reflection |
 | Day 5 folder created | ⬜ Pending | Will store Day 5 work |
 | `capstone-project/` created | ⬜ Pending | Will store final applied project |
 | `docs/` created | ⬜ Pending | Will store setup guides and troubleshooting logs when needed |
@@ -123,15 +123,30 @@ This keeps Day 3 reproducible while still respecting security and cost boundarie
 
 ---
 
+
+## ✅ Day 4 Setup and Security Validation Note
+
+Day 4 setup was validated through security-focused agent implementation rather than only checklist-style preparation:
+
+- `uv`, ADK, and Agents CLI were used for local agent scaffolding, linting, testing, and Playground execution.
+- The ambient expense agent codelab validated ADK workflow routing, human review paths, trace generation, and offline evaluation artifacts.
+- The secure lifecycle codelab validated Antigravity project rules, Semgrep scanning, pre-commit enforcement, command validation hooks, STRIDE threat modeling, and pytest-based outcome validation.
+- Local ADK Playground verification was completed for the shopping-assistant agent.
+- The initial Vertex/Google Cloud billing constraint was documented and resolved for local testing by routing through AI Studio / Gemini API environment authentication instead of hardcoding credentials.
+- The simulated hardcoded-key vulnerability was intentionally blocked by Semgrep and then remediated through the secure commit workflow.
+- Runtime folders, local sessions, caches, virtual environments, and credential-related files were excluded from public source snapshots.
+
+This made Day 4 feel closest to practical security engineering: the goal was not only to build agents, but to surround them with boundaries, tests, evidence, and safe failure paths.
+
 ## 🧾 Documentation Readiness
 
 | Item | Status | Notes |
 |------|--------|-------|
-| Course roadmap drafted | ✅ Done | Stored in `course-roadmap.md` and updated through Day 3 completion status |
-| Learning objectives drafted | ✅ Done | Stored in `learning-objectives.md` and updated with Agent Skills objectives |
-| Progress tracker started | ✅ Done | Stored in `progress-tracker.md` and updated through Day 3 completion status |
-| Documentation plan drafted | ✅ Done | Stored in `documentation-plan.md` and updated with completed Day 3 documentation guidance |
-| Tools/platforms overview drafted | ✅ Done | Stored in `tools-and-platforms.md` and updated with completed Day 3 Agent Skills, Agents CLI, ADK, and study-support tooling notes |
+| Course roadmap drafted | ✅ Done | Stored in `course-roadmap.md` and updated through Day 4 completion status |
+| Learning objectives drafted | ✅ Done | Stored in `learning-objectives.md` and updated with Agent Skills and Day 4 security/evaluation objectives |
+| Progress tracker started | ✅ Done | Stored in `progress-tracker.md` and updated through Day 4 completion status |
+| Documentation plan drafted | ✅ Done | Stored in `documentation-plan.md` and updated with completed Day 3 and Day 4 documentation guidance |
+| Tools/platforms overview drafted | ✅ Done | Stored in `tools-and-platforms.md` and updated with completed Day 3 tooling notes and Day 4 security/evaluation lifecycle tooling notes |
 | Screenshot naming standard defined | ✅ Done | Covered in documentation plan |
 | Evidence strategy defined | ✅ Done | Covered in documentation plan |
 

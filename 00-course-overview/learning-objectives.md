@@ -172,7 +172,8 @@ My objectives are:
 - avoid committing secrets
 - document risk and reliability concerns
 - connect agent safety to cybersecurity thinking
-- treat skills and MCP configurations as reviewable dependencies
+- treat skills, MCP configurations, security hooks, and generated agent projects as reviewable dependencies
+- understand how pre-LLM security checkpoints, human review, trace evaluation, and commit-time gates reduce unsafe automation
 
 Success criteria:
 
@@ -181,6 +182,7 @@ Success criteria:
 - I can explain what was tested and what still needs verification
 - I can treat agent output as something to review, not blindly trust
 - I can separate read-only, draft-only, and action-capable workflows when thinking about agent risk
+- I can explain how prompt-injection containment, PII redaction, STRIDE analysis, Semgrep findings, pre-commit checks, and outcome-based tests strengthen an agent workflow
 
 ---
 
@@ -280,6 +282,23 @@ Completed progress:
 This objective moved from theory into practice: Agent Skills became a reusable procedural-memory pattern, and ADK turned routing into a visible workflow that could be tested and reviewed.
 
 ---
+
+
+## ✅ Day 4 Objective Progress
+
+Day 4 moved the security and evaluation objectives from theory into implementation.
+
+Completed progress:
+
+- I documented the Day 4 agent security and evaluation concepts through podcast, whitepaper, key-concept, and study-guide notes.
+- I built and documented an ADK ambient expense approval workflow with deterministic routing and human review.
+- I added and documented a pre-LLM security checkpoint that redacts PII and bypasses the LLM when prompt-injection behavior is detected.
+- I generated traces and validated route/security behavior through local/offline evaluation evidence.
+- I built and documented a secure shopping-assistant lifecycle using Antigravity project rules, Semgrep, pre-commit hooks, command validation, STRIDE threat modeling, a TDD planning gate, and outcome-based pytest tests.
+- I validated the shopping assistant through the ADK Playground using Gemini API environment authentication without committing secrets.
+- I preserved the security lifecycle evidence through curated source snapshots, screenshots, troubleshooting notes, and reflection.
+
+This day connected strongly with my cybersecurity background because it treated agent building like security engineering: define boundaries, block unsafe paths, test behavior, preserve evidence, and keep credentials out of source. It was also one of the most enjoyable course sections because it showed how agent applications can be built with security controls from the beginning instead of patched after the fact.
 
 ## ⭐ Final Learning Outcome
 

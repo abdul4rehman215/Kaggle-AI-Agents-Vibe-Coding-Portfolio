@@ -50,7 +50,7 @@ day-folder/
     └── infographics/
 ```
 
-This smaller pattern is useful for an early theory-first stage. After hands-on work exists, the folder should expand into the completed-day pattern with codelabs, screenshots, testing notes, source snapshots, and reflection material. Day 3 now follows that completed pattern.
+This smaller pattern is useful for an early theory-first stage. After hands-on work exists, the folder should expand into the completed-day pattern with codelabs, screenshots, testing notes, source snapshots, and reflection material. Day 3 and Day 4 now follow that completed pattern.
 
 ---
 
@@ -351,6 +351,25 @@ The completed structure separates:
 This is important because Day 3 includes both reusable procedural memory and executable/local agent tooling. The documentation keeps those pieces reviewable without exposing API keys, private project details, billing information, or unnecessary runtime folders.
 
 ---
+
+
+## ✅ Day 4 Documentation Pattern Applied
+
+The Day 4 folder now documents a completed security-and-evaluation workflow.
+
+The completed structure separates:
+
+- podcast and whitepaper notes from codelab implementation records
+- ambient expense-agent security work from secure lifecycle/TDD work
+- security implementation notes from evaluation notes
+- trace/evaluation artifacts from general screenshots
+- source snapshots from runtime folders and local sessions
+- Semgrep/pre-commit/command-hook controls from ordinary agent behavior tests
+- public documentation from API keys, local credentials, private runtime files, and private planning logs
+
+This is important because Day 4 involves security-sensitive material: prompt-injection handling, PII redaction, human review, API-key remediation, local auth configuration, and automated security gates. The documentation keeps those controls visible while excluding secrets, local session databases, virtual environments, caches, and raw credentials.
+
+Day 4 also reinforced that security documentation should not be generic. Each codelab explains what was protected, what was tested, what failed safely, and what evidence proves the behavior.
 
 ## 🔄 Update Rule
 
