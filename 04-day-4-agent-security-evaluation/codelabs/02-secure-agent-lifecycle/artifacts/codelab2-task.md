@@ -1,0 +1,21 @@
+# Codelab 2 Phases Checklist
+
+- [x] Workspace/toolchain setup
+- [x] `shopping-assistant` ADK scaffold
+- [x] Discount redemption tool implementation
+- [x] `.agents/CONTEXT.md` secure coding standards
+- [x] Custom Semgrep rule
+- [x] `.pre-commit-config.yaml`
+- [x] Antigravity `PreToolUse` hook
+- [x] `validate_tool_call.py` safe/destructive payload tests
+- [x] STRIDE threat-model skill
+- [x] `threat_model.md`
+- [x] TDD Planning Gate
+- [x] Optional planning-gate verification with `update_discount_status`
+- [x] Outcome-based pytest tests
+- [x] First commit blocked by Semgrep mock-key finding
+- [x] Mock key removed securely
+- [x] Successful secure commit
+- [x] AI Studio auth-routing fix
+- [x] Local ADK Playground launch
+- [x] Final Playground redemption proof
