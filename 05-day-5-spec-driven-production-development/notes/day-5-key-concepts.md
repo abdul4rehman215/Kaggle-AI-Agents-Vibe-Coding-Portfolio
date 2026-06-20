@@ -342,10 +342,142 @@ This avoids hardcoding sensitive data in prompts, tests, or examples.
 
 ---
 
-## Final revision map
+## Core revision map
 
 ```text
 Spec -> Behavior -> Implementation -> Test -> Evaluate -> Review -> Govern -> Deploy
 ```
 
-That is the Day 5 production mindset in one line.
+That is the core Day 5 production mindset in one line.
+
+---
+
+## Codelab architecture terms
+
+The codelab review added a few practical production terms to the Day 5 mental model.
+
+---
+
+## ADK graph workflow
+
+A graph-based agent workflow built with the Agent Development Kit.
+
+In the codelab, the expense agent uses graph nodes for auto-approval and human review.
+
+---
+
+## Agents CLI
+
+The toolchain used to scaffold, enhance, dry-run, deploy, publish, and manage ADK agents.
+
+My note: this turns agent development into a lifecycle workflow instead of a loose collection of scripts.
+
+---
+
+## Agent Runtime
+
+A managed runtime for hosting agents beyond the local development machine.
+
+It gives the agent a cloud lifecycle with sessions, memory, secure execution, telemetry, and managed hosting.
+
+---
+
+## Deployment descriptor
+
+A generated file that explains how the local agent should be packaged and hosted.
+
+In the codelab, `deployment_metadata.json` is the key metadata artifact.
+
+---
+
+## Dry-run deployment
+
+A validation step that previews deployment and checks configuration before cloud resources are created.
+
+This is a useful production habit because it catches problems before the expensive or risky step.
+
+---
+
+## Cloud Trace
+
+A Google Cloud observability tool for inspecting spans, latency, and execution paths.
+
+For agents, traces help answer: what did the agent call, where did it pause, and how long did each step take?
+
+---
+
+## Cloud Logging
+
+A logging service used to inspect runtime output, errors, and diagnostic stack traces.
+
+My note: logs are not only for failures; they also help explain agent behavior after a workflow runs.
+
+---
+
+## Agent Registry
+
+A discovery layer where deployed agents can be registered and found by other services or users in an organization.
+
+---
+
+## Cloud Run
+
+A managed serverless platform for running containerized web services.
+
+In the codelab, it hosts the manager dashboard that reviews paused expense sessions.
+
+---
+
+## Pub/Sub
+
+A messaging service for asynchronous event ingestion.
+
+In the codelab, expense reports are published to a topic and pushed toward the deployed agent.
+
+---
+
+## Push subscription
+
+A Pub/Sub subscription that sends messages directly to an HTTP endpoint.
+
+This avoids needing a separate polling worker for the basic event-forwarding path.
+
+---
+
+## OIDC-authenticated push
+
+A secure way for Pub/Sub to call an endpoint using an identity token.
+
+This matters because production event delivery should not rely on anonymous calls.
+
+---
+
+## Dead-letter topic
+
+A fallback topic for messages that fail delivery repeatedly.
+
+This keeps bad or stuck events inspectable instead of silently losing them.
+
+---
+
+## NoWrapper payload delivery
+
+A Pub/Sub setting that sends the raw payload instead of wrapping it in the standard Pub/Sub envelope.
+
+This matters when the receiver expects a specific JSON schema.
+
+---
+
+## Session Service
+
+The service that stores agent session state.
+
+In the codelab, high-value expenses pause at a HITL checkpoint and the pending state is later surfaced to the manager dashboard.
+
+---
+
+## Service account
+
+A cloud identity used by a workload or service instead of a person.
+
+The codelabs use service accounts so Cloud Run and Pub/Sub can call Agent Runtime with controlled permissions.
