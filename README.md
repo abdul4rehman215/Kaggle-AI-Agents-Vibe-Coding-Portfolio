@@ -36,11 +36,11 @@
 
 This repository documents my hands-on work from the **Google/Kaggle 5-Day AI Agents Intensive Vibe Coding Course**. It is structured as a technical portfolio: each completed day includes notes, codelab outputs, source snapshots, screenshots, troubleshooting records, implementation evidence, and reflections.
 
-The repository currently covers the foundation work and Day 1 through Day 4 of the course. The completed work includes Google Antigravity development workflows, Google AI Studio app generation, Cloud Run deployment testing, MCP validation, Agent Skills, procedural memory, ADK graph workflows, agent security controls, trace-based evaluation, and secure development lifecycle practices.
+The repository currently covers the foundation work and Day 1 through Day 5 of the course. The completed work includes Google Antigravity development workflows, Google AI Studio app generation, Cloud Run deployment testing, MCP validation, Agent Skills, procedural memory, ADK graph workflows, agent security controls, trace-based evaluation, secure development lifecycle practices, and Spec-Driven Development for production-grade agent systems.
 
 My focus is not only on completing course exercises. I am using the course to study how AI agents, vibe coding, and tool-using workflows can connect with practical software engineering, cloud deployment, cybersecurity, SOC automation, and secure AI system design.
 
-Day 5 and the final capstone project remain pending and will be added after completion.
+Day 5 also adds a production-readiness layer: Agent Runtime deployment review, Cloud Run dashboard architecture, Pub/Sub event pipeline review, human-in-the-loop production flow mapping, observability notes, and cleanup awareness. The final capstone project remains pending and will be added after completion.
 
 ---
 
@@ -53,11 +53,11 @@ Day 5 and the final capstone project remain pending and will be added after comp
 | [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) | Day 2 tool use, interoperability, MCP validation, Antigravity CLI app build, Render deployment, and evidence. |
 | [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) | Day 3 Agent Skills, procedural memory, Antigravity Skills, Agents CLI, and ADK workflow codelabs. |
 | [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) | Day 4 agent security, observability, evaluation, secure lifecycle codelabs, tests, traces, and reflections. |
+| [`05-day-5-spec-driven-production-development/`](./05-day-5-spec-driven-production-development/) | Day 5 Spec-Driven Development, production-readiness notes, Agent Runtime deployment review, Cloud Run dashboard architecture, Pub/Sub pipeline review, and course wrap-up documentation. |
 | [`resources/`](./resources/) | Official course links, references, and supporting material. |
 
-Pending sections:
+Pending section:
 
-- Day 5 production agent development and deployment documentation
 - Final applied capstone project
 
 ---
@@ -72,7 +72,7 @@ Pending sections:
 | Day 2 | ✅ Completed | Agent tools, APIs, MCP validation, interoperability, Antigravity CLI app building, and deployment evidence. |
 | Day 3 | ✅ Completed | Agent Skills, procedural memory, progressive disclosure, Agents CLI, and ADK graph workflow implementation. |
 | Day 4 | ✅ Completed | Agent security, observability, evaluation, prompt-injection containment, secure lifecycle gates, and trace evidence. |
-| Day 5 | ⬜ Pending | Production agent development, deployment workflow, production-readiness notes, and course wrap-up. |
+| Day 5 | ✅ Completed | Spec-driven production development, Agent Runtime deployment review, frontend dashboard architecture, Pub/Sub event pipeline, HITL flow, and course wrap-up documentation. |
 | Capstone Project | ⬜ Pending | Final applied AI agents project, architecture, implementation, evaluation, and submission evidence. |
 
 ---
@@ -207,6 +207,29 @@ Built and documented two Day 4 security-focused agent workflows: an ambient expe
 
 ---
 
+### 7. Spec-Driven Production Development and Codelab Architecture Review
+
+Completed Day 5 documentation around moving from fast vibe-coded prototypes toward production-grade agent systems using specifications, deployment workflows, observability, governance, and human checkpoints.
+
+**What this demonstrates:**
+
+- Spec-Driven Development as a production workflow
+- specs as the source of truth and code as regenerable implementation
+- Behavior-Driven Development and Gherkin-style production thinking
+- Agent Runtime deployment workflow review
+- `agents-cli` production scaffolding and dry-run concepts
+- Cloud Trace, Cloud Logging, and Agent Registry observability review
+- Cloud Run manager dashboard architecture
+- Pub/Sub event ingestion and dead-letter topic design
+- OIDC-authenticated push subscription flow
+- human-in-the-loop approval and rejection path mapping
+- prompt-injection scenario review in a production workflow
+- safe review-track documentation without fake deployment evidence
+
+**Location:** [`05-day-5-spec-driven-production-development/`](./05-day-5-spec-driven-production-development/)
+
+---
+
 ## 🗺️ Course Roadmap
 
 ### Day 0 / Setup — Course Readiness and Environment Preparation
@@ -304,18 +327,22 @@ Built and documented two Day 4 security-focused agent workflows: an ambient expe
 
 ---
 
-### Day 5 — Production Agent Development and Deployment
+### Day 5 — Spec-Driven Production Development
 
-**Status:** Pending  
-**Focus:** Production-style agent development, deployment workflow, debugging, monitoring, and final course wrap-up.
+**Status:** Completed  
+**Focus:** Understand how vibe-coded prototypes move toward production-grade systems through specs, deployment workflows, observability, policy boundaries, and human-in-the-loop review.
 
-**Planned work:**
+**Key work:**
 
-- production-readiness checklist
-- deployment notes
-- monitoring and debugging observations
-- final course reflection
-- screenshots and evidence from Day 5 work
+- completed Unit 5 podcast and whitepaper study
+- documented Spec-Driven Development and production-grade agent concepts
+- reviewed the Agent Runtime deployment codelab
+- reviewed the frontend dashboard and Pub/Sub codelab
+- mapped the end-to-end production architecture
+- documented the safe review-track execution boundary
+- connected Day 5 production ideas back to Day 4 security and evaluation work
+
+**Folder:** [`05-day-5-spec-driven-production-development/`](./05-day-5-spec-driven-production-development/)
 
 ---
 
@@ -350,7 +377,7 @@ Kaggle-AI-Agents-Vibe-Coding-Portfolio/
 ├── 02-day-2-agent-tools-and-interoperability/    # Day 2 agent tools, APIs, integrations, and workflows
 ├── 03-day-3-agent-skills-procedural-memory/      # Day 3 skills, procedural memory, Antigravity Skills, and ADK workflow codelabs
 ├── 04-day-4-agent-security-evaluation/           # Day 4 security, observability, evaluation, secure lifecycle codelabs, and reflections
-├── 05-day-5-production-agent-deployment/         # Day 5 deployment, production readiness, and wrap-up
+├── 05-day-5-spec-driven-production-development/  # Day 5 spec-driven production development, codelab reviews, and architecture notes
 │
 ├── capstone-project/                             # Final applied capstone project and submission evidence
 ├── docs/                                         # Setup guides, troubleshooting logs, and deployment notes
@@ -360,7 +387,7 @@ Kaggle-AI-Agents-Vibe-Coding-Portfolio/
 
 Each day folder follows a documentation-first structure with a day-level README, notes, resources, screenshots, codelab folders, source snapshots, and reflections where applicable.
 
-Day 5 and the capstone are still pending in the current course timeline. The structure above shows the intended final repository layout so the README stays aligned with the full portfolio roadmap.
+The course day folders are documented through Day 5. The capstone project remains pending and will complete the final applied project section. The structure above keeps the README aligned with the full portfolio roadmap.
 
 ---
 
@@ -376,8 +403,10 @@ This repository contains:
 - screenshots and visual evidence
 - troubleshooting notes
 - deployment notes where applicable
+- production architecture review notes from Day 5
+- optional cloud codelab walkthrough documentation
 - security and automation reflections
-- evaluation artifacts and trace evidence from Day 4
+- evaluation artifacts, trace evidence, and production-readiness notes
 - official course links and reference resources
 
 The repository functions as a learning record, implementation archive, technical documentation portfolio, and AI agent experimentation workspace.
@@ -389,7 +418,7 @@ The repository functions as a learning record, implementation archive, technical
 The repository follows a consistent documentation workflow:
 
 ```text
-Study → Build → Test → Capture Evidence → Document → Reflect → Improve
+Study → Build / Review → Test / Validate → Capture Evidence → Document → Reflect → Improve
 ```
 
 For each completed codelab or project section, I aim to document:
@@ -425,7 +454,7 @@ The repository excludes sensitive material such as:
 
 Credentials and environment-specific values are handled through local environment variables, ignored local files, or cloud secret mechanisms where applicable. Screenshots and terminal outputs are reviewed and redacted before being committed.
 
-Day 4 expands this security focus through concrete agent lifecycle controls, including PII redaction, prompt-injection handling, Semgrep checks, pre-commit hooks, command validation, threat modeling, and outcome-based tests.
+Day 4 expands this security focus through concrete agent lifecycle controls, including PII redaction, prompt-injection handling, Semgrep checks, pre-commit hooks, command validation, threat modeling, and outcome-based tests. Day 5 extends this thinking into production boundaries: sandboxing, policy servers, human checkpoints, context hygiene, deployment review, and cleanup awareness.
 
 ---
 
@@ -459,6 +488,8 @@ This is why the repository gives strong attention to security boundaries, creden
 - model + harness thinking
 - vibe coding workflows
 - prompt-to-code development
+- Spec-Driven Development
+- production-grade agent workflow thinking
 - human review of generated outputs
 - tool-using agents
 - agent orchestration
@@ -499,15 +530,24 @@ This is why the repository gives strong attention to security boundaries, creden
 - Semgrep rules
 - pre-commit security gates
 - command validation before agent tool execution
+- policy server pattern
+- sandboxing concepts
+- context hygiene
+- production HITL checkpoints
 - credential hygiene
 - secure failure paths
 
-### Cloud, Deployment, and Documentation
+### Cloud, Deployment, Production Readiness, and Documentation
 
 - Cloud Run deployment testing
+- Agent Runtime deployment workflow review
+- Cloud Run manager dashboard architecture
+- Pub/Sub event pipeline review
 - Render deployment
 - Vercel static frontend hosting documentation
 - deployment cleanup for cost control
+- cleanup and cost-awareness documentation
+- production architecture mapping
 - technical README writing
 - screenshot evidence organization
 - troubleshooting documentation
@@ -519,7 +559,7 @@ This is why the repository gives strong attention to security boundaries, creden
 
 This portfolio currently demonstrates:
 
-- a structured record of the Google/Kaggle AI Agents Intensive learning journey through Day 4
+- a structured record of the Google/Kaggle AI Agents Intensive learning journey through Day 5
 - working codelab outputs with source snapshots and documentation
 - agent-assisted local development using Google Antigravity
 - prompt-to-app generation using Google AI Studio
@@ -530,10 +570,14 @@ This portfolio currently demonstrates:
 - ADK graph workflow implementation
 - secure agent workflow design
 - evaluation traces and local/offline grading evidence
+- spec-driven production development notes
+- Agent Runtime deployment workflow review
+- Cloud Run and Pub/Sub production architecture review
+- human-in-the-loop production flow mapping
 - security-aware reflections on agentic workflows
 - clear progression from concepts to implementation evidence
 
-Day 5 and the capstone project will complete the remaining production deployment and final applied project sections.
+The remaining major portfolio section is the final capstone project.
 
 ---
 
@@ -542,7 +586,7 @@ Day 5 and the capstone project will complete the remaining production deployment
 Recommended reading order:
 
 1. Start with [`00-course-overview/`](./00-course-overview/) for course context, setup, roadmap, and progress tracking.
-2. Read the day-level README files from Day 1 through Day 4 in order.
+2. Read the day-level README files from Day 1 through Day 5 in order.
 3. Open the codelab folders inside each day to inspect implementation details and source snapshots.
 4. Review screenshots together with notes to understand what was tested or validated.
 5. Use the reflections to understand the learning outcomes and security/automation connections.
@@ -557,6 +601,7 @@ Best starting points:
 | Inspect tool use and MCP work | [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) |
 | Study Agent Skills and ADK workflows | [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) |
 | Review security and evaluation work | [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) |
+| Review production development and codelab architecture | [`05-day-5-spec-driven-production-development/`](./05-day-5-spec-driven-production-development/) |
 | Find official references | [`resources/`](./resources/) |
 
 ---
@@ -596,6 +641,9 @@ Useful official references:
 - [Google Codelab — Authoring Google Antigravity Skills](https://codelabs.developers.google.com/getting-started-with-antigravity-skills)
 - [Google Codelab — Agents CLI and ADK Lifecycle](https://codelabs.developers.google.com/agents-cli-adk-lifecycle)
 - [Kaggle Whitepaper — Agent Skills](https://www.kaggle.com/whitepaper-agent-skills)
+- [Kaggle Whitepaper — Spec-Driven Production Grade Development in the Age of Vibe Coding](https://www.kaggle.com/whitepaper-spec-driven-production-grade-development-in-the-age-of-vibe-coding)
+- [Google Codelab — Deploy an ADK Agent to Agent Runtime using Agents CLI](https://codelabs.developers.google.com/enterprise-cloud-scale-deploying-the-expense-agent-to-agent-runtime-on-google-cloud)
+- [Google Codelab — Vibecode and Deploy a Frontend for an ADK Agent](https://codelabs.developers.google.com/vibecode-frontend-with-antigravity)
 - [Agents CLI Documentation](https://google.github.io/agents-cli/guide/getting-started/)
 - [Google Antigravity Documentation](https://antigravity.google/docs)
 - [Kaggle Capstone Competition](https://www.kaggle.com/competitions/agents-intensive-capstone-project)
@@ -614,10 +662,10 @@ Completed:
 - Day 2 tool use, MCP validation, interoperability notes, BigQuery Release Notes Hub, and Render deployment evidence
 - Day 3 Agent Skills, procedural memory, Antigravity Skills, Agents CLI, and ADK customer-support workflow documentation
 - Day 4 secure agent workflows, prompt-injection handling, PII redaction, trace evidence, offline evaluation, secure lifecycle gates, and security reflections
+- Day 5 Spec-Driven Development notes, production architecture review, Agent Runtime deployment walkthrough, Cloud Run dashboard review, Pub/Sub event pipeline notes, and final Day 5 documentation
 
 Pending:
 
-- Day 5 production agent development and deployment documentation
 - final capstone project planning, implementation, evaluation, and submission evidence
 
 ---
