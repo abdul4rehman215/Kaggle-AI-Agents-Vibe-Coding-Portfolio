@@ -1,8 +1,8 @@
 # 🚀 Day 5 - Spec-Driven Production Development
 
-This folder documents the theory phase of Unit 5 from the **Google/Kaggle 5-Day AI Agents Intensive Vibe Coding Course**.
+This folder documents Unit 5 from the **Google/Kaggle 5-Day AI Agents Intensive Vibe Coding Course**.
 
-Day 5 focused on the move from fast vibe-coded prototypes to production-grade agentic software. The main idea is that production reliability does not come from trusting generated code more. It comes from tightening the process around the code: specs, review boundaries, tests, evaluation, policy checks, sandboxing, and human checkpoints.
+Day 5 focused on the move from fast vibe-coded prototypes to production-grade agentic software. The main idea is that production reliability does not come from trusting generated code more. It comes from tightening the process around the code: specs, review boundaries, tests, evaluation, policy checks, sandboxing, human checkpoints, deployment discipline, observability, and cleanup.
 
 ---
 
@@ -14,10 +14,10 @@ Day 5 focused on the move from fast vibe-coded prototypes to production-grade ag
 | Spec-driven development whitepaper | ✅ Completed | Read the whitepaper and mapped the core ideas into documentation. |
 | NotebookLM review | ✅ Completed | Used study guide, Q&A, quiz-style review, and explainer material for revision. |
 | Visual revision | ✅ Completed | Added two infographics created during study revision. |
-| Optional codelab 1 | Pending | Deploy and host an ADK agent on Google Cloud. Not attempted yet because this may require billing. |
-| Optional codelab 2 | Pending | Build a frontend web app and connect it to the hosted agent. Not attempted yet. |
+| Optional codelab 1 | ✅ Reviewed | Studied the Agent Runtime deployment path with `agents-cli`, ADK skills, dry-run checks, observability, registry, and cleanup. |
+| Optional codelab 2 | ✅ Reviewed | Studied the Cloud Run manager dashboard, Pub/Sub event pipeline, OIDC push subscription, HITL flow, and cleanup path. |
 
-This is a **Phase 1 theory folder**. The optional cloud codelabs will be documented later if I choose to run them.
+Day 5 is complete for the documentation and safe review track. The cloud codelabs were studied from the official walkthroughs and documented as architecture reviews. I did not add deployment screenshots, live endpoints, command logs, or cleanup evidence because no live cloud resources were provisioned in this pass.
 
 ---
 
@@ -59,8 +59,13 @@ I used two visual summaries while revising the Day 5 material.
 |---|---|
 | [`notes/day-5-podcast-whitepaper-notes.md`](./notes/day-5-podcast-whitepaper-notes.md) | Main theory notes from the podcast, whitepaper, and revision material. |
 | [`notes/day-5-key-concepts.md`](./notes/day-5-key-concepts.md) | Compact revision map for the most important Day 5 terms. |
-| [`notes/day-5-study-guide-summary.md`](./notes/day-5-study-guide-summary.md) | Study process, recall prompts, and how I reviewed the material before codelabs. |
-| [`resources/day-5-links.md`](./resources/day-5-links.md) | Official podcast, whitepaper, optional codelabs, and related references. |
+| [`notes/day-5-study-guide-summary.md`](./notes/day-5-study-guide-summary.md) | Study process, recall prompts, and how I reviewed the material. |
+| [`codelabs/README.md`](./codelabs/README.md) | Landing page for the optional codelab review notes. |
+| [`codelabs/codelab-1-agent-runtime-review.md`](./codelabs/codelab-1-agent-runtime-review.md) | Review notes for deploying an ADK agent to Agent Runtime. |
+| [`codelabs/codelab-2-frontend-dashboard-review.md`](./codelabs/codelab-2-frontend-dashboard-review.md) | Review notes for the Cloud Run dashboard and Pub/Sub event pipeline. |
+| [`codelabs/production-architecture-map.md`](./codelabs/production-architecture-map.md) | Combined architecture map across both codelabs. |
+| [`codelabs/execution-boundary-note.md`](./codelabs/execution-boundary-note.md) | Clear boundary between reviewed architecture and actual cloud execution. |
+| [`resources/day-5-links.md`](./resources/day-5-links.md) | Official podcast, whitepaper, codelabs, and related references. |
 | [`resources/source-material-note.md`](./resources/source-material-note.md) | What was used, what was committed, and what was intentionally left out. |
 | [`assets/infographics/`](./assets/infographics/) | Visual study assets created during the theory phase. |
 
@@ -77,6 +82,7 @@ A few ideas became clear:
 - **Behavior is more stable than implementation.** Code can be regenerated, but expected behavior should be preserved.
 - **Security cannot live only in prompts.** Sandboxes, policy servers, and human checkpoints are external controls, not motivational instructions to the model.
 - **Testing and evaluation are different.** Tests catch deterministic failures; evaluation catches quality drift and behavior changes.
+- **Deployment is a system boundary.** Once an agent leaves localhost, runtime identity, observability, permissions, and cleanup become part of the work.
 
 ---
 
@@ -92,6 +98,7 @@ High-level idea
   -> tests and evaluation
   -> review and policy checks
   -> sandboxed or governed deployment
+  -> observability and cleanup
 ```
 
 This is a different mindset from writing a prompt, accepting generated files, and cleaning up later. The cleanup-later approach is risky because AI can create technical debt at the same speed it creates code.
@@ -102,6 +109,50 @@ The better habit is to move design decisions earlier:
 Do not ask the agent to guess the system.
 Give the agent a reviewed blueprint and make it build against that blueprint.
 ```
+
+---
+
+## 🧪 Optional codelabs reviewed
+
+The two optional codelabs helped connect the theory to a concrete production architecture.
+
+### Codelab 1: Agent Runtime deployment
+
+The first codelab showed the path from a local ADK Ambient Expense Agent to a managed Agent Runtime deployment.
+
+```text
+Local ADK agent
+  -> agents-cli setup
+  -> production scaffolding
+  -> uv lock
+  -> deploy dry-run
+  -> Agent Runtime deployment
+  -> test auto-approval and HITL
+  -> Cloud Trace / Logging
+  -> Agent Registry
+  -> cleanup
+```
+
+What I learned: a production agent is not only an agent that works locally. It needs packaging, runtime wrappers, dependency locking, dry-run checks, telemetry, discovery, and a resource cleanup path.
+
+### Codelab 2: Frontend dashboard and event pipeline
+
+The second codelab showed how to place a human-facing workflow around the deployed agent.
+
+```text
+Expense event
+  -> Pub/Sub
+  -> authenticated push subscription
+  -> Agent Runtime
+  -> low-value auto approval
+  -> high-value HITL pause
+  -> Session Service
+  -> Cloud Run Manager Dashboard
+  -> approve / reject
+  -> resume agent execution
+```
+
+What I learned: the dashboard is not just UI polish. It is the operational surface where a human resolves paused agent sessions safely.
 
 ---
 
@@ -119,23 +170,14 @@ The production safety net has multiple layers:
 | HITL | High-risk decisions | Require human sign-off for deployment, money, schema changes, or sensitive data actions. |
 | Policy server | Runtime governance | Intercept actions before they reach external systems. |
 | Context hygiene | Data safety | Keep sensitive data out of prompts, test logs, and agent memory. |
+| Observability | Runtime explainability | Use traces, logs, and sessions to understand what the agent did. |
+| Cleanup | Cloud responsibility | Remove resources that are no longer needed. |
 
 This makes the system safer without pretending that the model is deterministic.
 
 ---
 
-## ⏭️ Next work: optional codelabs
-
-The next step is to review or complete the optional cloud codelabs:
-
-1. Deploy and host the ADK expense agent on Google Cloud.
-2. Build a frontend dashboard and connect it to the hosted agent through an event-driven flow.
-
-I am not documenting those as completed yet. If I run them later, I will add codelab folders, command logs, screenshots, cleanup notes, and billing-safety notes in the same style as previous days.
-
----
-
-## ✅ Current takeaway
+## ✅ Final takeaway
 
 Day 5 reframed vibe coding for me.
 
@@ -143,5 +185,5 @@ The goal is not to stop using fast AI-assisted development. The goal is to make 
 
 ```text
 Generation is no longer the hard part.
-Specification, verification, governance, and integration are the real craft.
+Specification, verification, governance, integration, and observability are the real craft.
 ```

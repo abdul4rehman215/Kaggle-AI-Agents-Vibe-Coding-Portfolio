@@ -91,22 +91,22 @@ A model can be helpful, but it is not a security boundary. Real boundaries are e
 
 ---
 
-## 🧪 Validation questions for the optional codelabs
+## 🧪 Questions I used while reviewing the codelabs
 
-Before starting the cloud codelabs, these are the questions I want the implementation to answer:
+After finishing the podcast and whitepaper, I reviewed the two optional codelabs with these questions in mind:
 
 - What does the deployment path look like for an ADK agent?
 - What files does `agents-cli` generate or require?
-- How is the agent tested before deployment?
-- What does dry-run validation check?
-- Where do logs and traces appear after deployment?
+- How is the agent checked before deployment?
+- What does dry-run validation protect against?
+- Where do logs, traces, and sessions appear after deployment?
 - How does the high-value expense review flow behave when hosted?
-- How does the frontend dashboard connect to the deployed agent?
+- How does a frontend dashboard connect to a deployed agent?
 - What Pub/Sub event path triggers the workflow?
-- What resources need cleanup to avoid billing surprises?
-- What screenshots are useful without leaking account, project, or billing details?
+- What identity and IAM boundaries are needed between services?
+- What resources need cleanup at the end?
 
-These questions should keep the codelab documentation focused when I work on it later.
+These questions helped me review the codelabs as architecture, not just as a list of commands.
 
 ---
 
@@ -139,4 +139,4 @@ I can explain:
 - why testing and evaluation are both needed,
 - and why sandboxing, HITL, policy servers, and context hygiene form the production safety net.
 
-The next step is optional implementation. The codelabs should turn this theory into hosted-agent and frontend workflow experience.
+The codelab review added the missing practical layer: Agent Runtime for hosting, Cloud Run for the manager dashboard, Pub/Sub for event ingestion, Session Service for paused workflows, and Cloud Trace/Logging for visibility.
