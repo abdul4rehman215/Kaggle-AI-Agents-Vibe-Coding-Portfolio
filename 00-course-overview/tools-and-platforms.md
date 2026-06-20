@@ -1,508 +1,279 @@
 # 🛠️ Tools and Platforms
 
-This file explains the role of each major tool or platform used in this course portfolio.
+This file explains why each major tool or platform appears in the course portfolio.
 
-The goal is not to provide full tutorials here. Detailed setup and codelab steps belong in the relevant day folders or `docs/`. This file acts as a quick reference for why each tool appears in the repository.
+It is a reference map, not a tutorial. Setup steps, screenshots, commands, and codelab-specific notes belong inside the relevant day folders.
 
 ---
 
-## 📚 Kaggle
+## 📌 Tooling Summary
 
-**Role:** Course platform and capstone workspace.
+| Tool / Platform | Role in the Portfolio | Main Evidence Location |
+|-----------------|-----------------------|------------------------|
+| Kaggle | Course hub, learning path, and capstone context | [`../resources/`](../resources/), roadmap files |
+| Google Antigravity | Agent-oriented development environment | Day 1, Day 2, Day 3, Day 4, Day 5 folders |
+| Antigravity CLI | Local agent-assisted app-building workflow | Day 2 folder |
+| Google AI Studio | Prompt-to-application generation | Day 1 folder |
+| Cloud Run | Serverless deployment workflow and production concept | Day 1 and Day 5 folders |
+| Render | External deployment evidence for a small Flask app | Day 2 folder |
+| MCP | Tool/document interoperability pattern | Day 2 folder |
+| Agent Skills | Reusable procedural memory for agents | Day 3 folder |
+| Agents CLI | CLI workflow for agent/skill lifecycle work | Day 3 folder |
+| ADK | Agent workflow implementation and local testing | Day 3 and Day 4 folders |
+| Semgrep | Static analysis/security gate | Day 4 folder |
+| pre-commit | Local security and quality enforcement | Day 4 folder |
+| pytest | Outcome-based validation | Day 4 folder |
+| Agent Runtime / Agent Registry | Production agent architecture concepts | Day 5 folder |
+| Pub/Sub / Cloud Trace / Cloud Logging | Production architecture and observability concepts | Day 5 folder |
 
-Kaggle is the main course hub for the 5-day AI agents intensive. It is used for course access, learning materials, assignments, community context, and capstone participation.
+---
 
-### Repository Use
+## 📚 Course and Learning Platforms
 
-Kaggle-related work is documented through:
+### Kaggle
 
-- course roadmap
-- daily notes
-- codelab progress
-- capstone tracking
-- official course references
+**Role:** Main course platform and capstone entry point.
 
-### Documentation Location
+Kaggle provides the course structure, learning guide, assignments, and capstone context. In this repository, Kaggle is referenced through roadmap notes, official links, daily documentation, and the eventual capstone work.
+
+**Evidence locations:**
 
 - [`course-roadmap.md`](./course-roadmap.md)
-- [`../resources/official-links.md`](../resources/official-links.md)
-- [`../resources/official-course-links.md`](../resources/official-course-links.md)
+- [`../resources/`](../resources/)
 
 ---
 
-## 🤖 Google Antigravity
+### Course Community and Study Aids
 
-**Role:** Agent-oriented development platform.
+**Role:** Supporting context for learning, discussion, summaries, and review.
 
-Google Antigravity is used in the course to explore agent-first development workflows. It supports working with agents that can assist with coding and non-coding tasks.
+Community access and study aids are used as support, but the repository does not paste raw generated summaries as final documentation. The final notes are rewritten into a technical portfolio style.
 
-### Repository Use
+**Evidence locations:**
 
-Antigravity work may include:
-
-- IDE setup notes
-- CLI setup notes
-- first-run screenshots
-- task execution observations
-- codelab evidence
-- skill usage notes
-- troubleshooting records
-- reflections on agent-assisted development
-
-### Documentation Location
-
-- future: [`../docs/antigravity-setup.md`](../docs/antigravity-setup.md)
-- completed Day 1 codelab: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/)
-- completed Day 2 folder: [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
-- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
-- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
-- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
-- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
+- day-level notes and reflections
+- [`learning-objectives.md`](./learning-objectives.md)
 
 ---
 
-## 💻 Antigravity IDE
+## 🤖 Agent Development Tools
 
-**Role:** Visual development environment for agentic coding workflows.
+### Google Antigravity
 
-The IDE provides a workspace where agent-assisted development tasks can be planned, reviewed, and executed in a more visual way.
+**Role:** Agent-oriented development environment used across multiple course days.
 
-### Repository Use
+Antigravity appears in the portfolio as both a coding environment and a place to inspect agent behavior, review plans, test skills, apply project rules, and document permission-sensitive workflows.
 
-IDE usage should be documented with:
+**Used in:**
 
-- setup notes
-- screenshots
-- workflow observations
-- generated artifacts where relevant
-- issues or configuration steps
-- skill trigger/testing observations from the completed Day 3 codelabs
-- secure lifecycle observations from Day 4 project rules, command hooks, STRIDE skill usage, and TDD planning gates
+- Day 1: first Antigravity workflow and Google News CLI codelab
+- Day 2: CLI-driven app-building workflow
+- Day 3: workspace skills and procedural memory testing
+- Day 4: secure lifecycle rules, tool hooks, threat modeling, and TDD gates
+- Day 5: production/spec-driven architecture review work
 
-### Documentation Location
+**Evidence locations:**
 
-- future: [`../docs/antigravity-setup.md`](../docs/antigravity-setup.md)
-- completed Day 1 evidence: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/)
-- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
-
----
-
-## ⌨️ Antigravity CLI
-
-**Role:** Terminal-based interface for agent workflows.
-
-The CLI is useful for local development, command-line interaction, and terminal-based agent workflows.
-
-### Repository Use
-
-CLI usage should be documented with:
-
-- installation verification
-- command examples
-- terminal output summaries
-- troubleshooting notes
-- safe handling of local environment details
-- Day 2 codelab evidence
-- Day 3 skill and agent lifecycle commands
-- Day 4 security/evaluation codelab commands, validation commands, and secure commit workflow evidence
-
-### Documentation Location
-
-- completed Day 2 folder: [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
-- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
-- future: [`../docs/antigravity-setup.md`](../docs/antigravity-setup.md)
-- future: [`../docs/troubleshooting-log.md`](../docs/troubleshooting-log.md)
+- [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/)
+- [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
+- [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
+- [`../05-day-5-spec-driven-production-development/`](../05-day-5-spec-driven-production-development/)
 
 ---
 
-## 🔌 Model Context Protocol (MCP)
+### Antigravity CLI
 
-**Role:** Connect agents to external tools, knowledge sources, and services.
+**Role:** Command-line workflow for local agent-assisted development.
 
-MCP is important because it expands what an agent can reach. In Day 2, it was documented through the Google Developer Knowledge MCP codelab.
+The CLI is important because it shows agent-assisted work outside a purely visual IDE flow. It was used most clearly during the Day 2 app-building work.
 
-### Repository Use
+**Evidence location:**
 
-MCP-related documentation should capture:
-
-- what server or tool was configured
-- what capability it gave the agent
-- what prompt/result validation was performed
-- what configuration was sanitized before public sharing
-- what security boundaries or risks were noticed
-
-### Documentation Location
-
-- completed Day 2 folder: [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
-
-### Safety Note
-
-MCP configuration can contain local paths, tokens, server details, or account-specific values. Public documentation should use sanitized examples and avoid real credentials.
+- [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
 
 ---
 
-## 🧩 Agent Skills and `SKILL.md`
+### Agent Skills
 
 **Role:** Reusable procedural memory for agents.
 
-Agent Skills are folder-based capabilities centered around a `SKILL.md` file. They let an agent load task-specific know-how only when the task needs it, instead of putting every instruction into the active context window.
+Agent Skills are used to package repeatable task knowledge into structured `SKILL.md` files and supporting scripts. This helps reduce repeated prompting and keeps specialized procedures separate from general conversation context.
 
-### Repository Use
+**Used in:**
 
-The completed Day 3 Agent Skills documentation includes:
+- Day 1: custom code-review skill example
+- Day 3: workspace skills, skill tests, and procedural-memory codelab
+- Day 4: STRIDE threat-modeling skill in the secure lifecycle workflow
 
-- `SKILL.md` anatomy
-- trigger descriptions
-- skill folder layout
-- progressive disclosure notes
-- skill vs MCP vs `AGENTS.md`
-- evaluation notes
-- screenshots showing skill discovery or triggering
-- command output from installing or testing skills
+**Evidence locations:**
 
-### Documentation Location
-
-- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
-
-### Safety Note
-
-Skills can include executable scripts. Treat them like dependencies: review scripts, avoid secrets, and document whether a skill is read-only, draft-only, or action-capable.
+- [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/)
+- [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
 
 ---
 
-## 🧬 Agents CLI and ADK
+### Agents CLI and ADK
 
-**Role:** Agent lifecycle tooling for scaffolding, linting, testing, and running ADK-based agents.
+**Role:** Agent lifecycle and workflow implementation tooling.
 
-Agents CLI and ADK were used during the Day 3 lifecycle codelab and extended further during Day 4 security/evaluation work. They connect agent design to a practical lifecycle: scaffold an agent, validate it, inspect the graph, test behavior, evaluate traces, enforce security gates, and run the agent locally.
+Agents CLI and ADK support a more structured agent-building workflow. They are used to define, test, and inspect graph-style agent behavior rather than only prompting a model directly.
 
-### Repository Use
+**Used in:**
 
-The completed Day 3 and Day 4 documentation includes:
+- Day 3: `customer-support-agent` ADK workflow
+- Day 4: ambient expense agent and secure shopping-assistant lifecycle
 
-- setup verification
-- commands used
-- generated project structure
-- linting/testing results
-- playground and command-line run evidence
-- issues faced, fixes, and documented workarounds
-- security notes around API keys and local config
-- Day 4 ambient expense workflow, trace generation, offline grading, and secure shopping-assistant lifecycle evidence
+**Evidence locations:**
 
-### Documentation Location
-
-- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
 
 ---
 
-## 🧠 Google AI Studio
+## 🧰 Application and Interoperability Tools
 
-**Role:** AI application generation and experimentation platform.
+### Google AI Studio
 
-Google AI Studio is used in the course for vibe coding workflows, where an application can be generated or improved through natural language prompts.
+**Role:** Prompt-to-application generation.
 
-### Repository Use
+Google AI Studio is used in Day 1 to generate the Snowflakes & Balloons browser app. The portfolio uses this codelab to show both the speed of vibe coding and the need for review, testing, and cleanup.
 
-AI Studio work may include:
+**Evidence location:**
 
-- prompts used
-- generated app code
-- UI previews
-- testing notes
-- improvements made after generation
-- screenshots of final output
-
-### Documentation Location
-
-- completed Day 1 codelab: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/)
-- completed Day 4 secure lifecycle notes: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
+- [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/)
 
 ---
 
-## ☁️ Google Cloud Run
+### MCP
 
-**Role:** Serverless deployment platform.
+**Role:** Interoperability layer for connecting agents to external tools and documentation.
 
-Cloud Run is used to deploy web applications generated or prepared through course codelabs.
+MCP is documented in Day 2 through Google Developer Knowledge MCP validation. The focus is not only whether the tool works, but also how permission review, scoped access, and sanitized configuration should be handled.
 
-### Repository Use
+**Evidence location:**
 
-Cloud Run work should be documented with:
-
-- deployment steps
-- service setup notes
-- final deployment evidence
-- screenshots
-- live URL if safe to share
-- cleanup notes
-- cost and security considerations
-
-### Documentation Location
-
-- future: [`../docs/cloud-run-deployment-notes.md`](../docs/cloud-run-deployment-notes.md)
-- completed Day 1 deployment note: [`../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md`](../01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md)
-- future: deployment notes inside relevant day folders
+- [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
 
 ---
 
-## 🚀 Render
+### Flask, React/Vite, and Supporting App Frameworks
 
-**Role:** Deployment/testing platform used where relevant for course artifacts.
+**Role:** Application outputs created or reviewed during codelabs.
 
-Render appears in the Day 2 documentation as part of deployment/output evidence. It is not the main course platform, but it can support portfolio validation when a codelab or project needs a simple hosted result.
+These frameworks are not the main subject of the course, but they appear as implementation surfaces for agent-assisted development.
 
-### Repository Use
+**Used in:**
 
-Render-related documentation should include:
+- Day 1: React/Vite Snowflakes & Balloons app
+- Day 2: Flask BigQuery Release Notes Hub
 
-- what was deployed
-- what evidence was captured
-- whether the URL is safe to share
-- what cleanup/cost considerations apply
+**Evidence locations:**
 
-### Documentation Location
-
-- completed Day 2 folder: [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
+- [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/)
+- [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
 
 ---
 
+## ☁️ Cloud and Production Tools
 
-## 🧪 Semgrep, Pre-Commit, and Pytest
+### Cloud Run
 
-**Role:** Local security gates and outcome-based validation.
+**Role:** Serverless deployment workflow and production-readiness concept.
 
-Day 4 introduced Semgrep, pre-commit hooks, and pytest as part of the secure agent lifecycle codelab. These tools helped turn security rules into enforceable workflow checks rather than optional reminders.
+Cloud Run appears in two ways:
 
-### Repository Use
+- Day 1: deployment test and cleanup for the AI Studio app
+- Day 5: production architecture and deployment-boundary review
 
-The Day 4 documentation captures:
+The documentation distinguishes between verified test deployment, cleanup decisions, and architecture-level production review.
 
-- a custom Semgrep rule for Google API-key-shaped strings
-- pre-commit enforcement that blocked the intentional mock-key vulnerability
-- remediation of the simulated key issue without hardcoding a real secret
-- outcome-based pytest tests for the deterministic discount redemption tool
-- command validation tests for safe and destructive payload handling
+**Evidence locations:**
 
-### Documentation Location
-
-- completed Day 4 folder: [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
-
-### Safety Note
-
-These tools are not only quality checks. In the Day 4 workflow they acted as security boundaries: block risky code before commit, validate deterministic tool behavior, and keep secret handling visible in the development process.
-
-## 🧑‍💻 GitHub
-
-**Role:** Portfolio, documentation, and code hosting platform.
-
-GitHub is the public home for this learning journey. It stores the README files, codelab code, notes, screenshots, setup documentation, and final capstone artifacts.
-
-### Repository Use
-
-GitHub is used for:
-
-- version control
-- portfolio presentation
-- documentation organization
-- artifact preservation
-- public technical storytelling
-
-### Documentation Location
-
-- root [`../README.md`](../README.md)
-- all repository folders
+- [`../01-day-1-intro-to-agents-and-vibe-coding/`](../01-day-1-intro-to-agents-and-vibe-coding/)
+- [`../05-day-5-spec-driven-production-development/`](../05-day-5-spec-driven-production-development/)
 
 ---
 
-## 💬 Discord
+### Render
 
-**Role:** Course community and peer interaction space.
+**Role:** External app deployment evidence.
 
-Discord is used for community participation, introductions, updates, and potential collaboration.
+Render is used for the Day 2 BigQuery Release Notes Hub deployment evidence. It is included because it shows a practical deployed app workflow outside local-only testing.
 
-### Repository Use
+**Evidence location:**
 
-Discord itself is not a code platform, but community participation can support:
-
-- course engagement
-- discussion
-- collaboration
-- idea sharing
-- capstone awareness
-
-### Documentation Location
-
-Discord content should not be copied directly unless it is your own message and safe to share. General community participation can be mentioned in progress notes.
+- [`../02-day-2-agent-tools-and-interoperability/`](../02-day-2-agent-tools-and-interoperability/)
 
 ---
 
-## 📝 NotebookLM and NoteGPT
+### Agent Runtime, Agent Registry, Pub/Sub, Cloud Trace, and Cloud Logging
 
-**Role:** Study-support tools for summarization, revision, quizzes, and concept reinforcement.
+**Role:** Production architecture and observability concepts.
 
-These tools were used during Day 3 theory work to process the podcast and whitepaper more efficiently before the hands-on codelabs were documented.
+These tools appear in Day 5 as part of production-style agent development review. They are documented as architecture and runtime concepts rather than overstated as fully verified live production deployment evidence.
 
-### Repository Use
+**Evidence location:**
 
-Study-support tools should be documented carefully:
-
-- mention how they supported learning
-- convert outputs into personal notes
-- avoid dumping raw generated summaries into the repo
-- keep the final documentation concise and readable
-
-### Documentation Location
-
-- completed Day 3 folder: [`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
+- [`../05-day-5-spec-driven-production-development/`](../05-day-5-spec-driven-production-development/)
 
 ---
 
-## 🖥️ Local Terminal and Git
+## 🔐 Security and Validation Tools
 
-**Role:** Local repository management and command-line workflow.
+### Semgrep
 
-The local terminal is used to manage files, run Git commands, push changes, and work with CLI tools.
+**Role:** Static analysis and secret-pattern detection.
 
-### Repository Use
+Semgrep is used in Day 4 to enforce a security gate around key-shaped values. It helps show that security can be part of the agent-development lifecycle instead of a manual final check.
 
-Terminal usage may appear in:
+**Evidence location:**
 
-- setup notes
-- troubleshooting logs
-- deployment steps
-- Git workflow notes
-- CLI/codelab command summaries
-
-### Security Note
-
-Before documenting terminal output, review it for:
-
-- usernames
-- private local paths
-- tokens
-- environment variables
-- cloud project IDs if sensitive
-- account details
+- [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
 
 ---
 
-## 🔐 Environment Variables and Local Secret Files
+### pre-commit
 
-**Role:** Safe local handling of credentials and configuration.
+**Role:** Local enforcement before code is committed.
 
-This course may involve API keys, cloud credentials, MCP configuration, or environment-specific setup. Those values must not be committed.
+The pre-commit workflow supports the secure lifecycle work by catching unsafe patterns before they enter the repository history.
 
-### Repository Use
+**Evidence location:**
 
-Safe examples:
-
-```text
-.env.example
-README instructions
-placeholder values
-redacted screenshots
-sanitized config examples
-```
-
-Unsafe examples:
-
-```text
-.env
-credentials.json
-actual API keys
-service account files
-token outputs
-private MCP config values
-```
-
-### Documentation Location
-
-- future: [`../docs/security-and-secrets-handling.md`](../docs/security-and-secrets-handling.md)
-- root `.gitignore`
-- relevant day-level security notes
+- [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
 
 ---
 
-## 🧭 Tooling Summary
+### pytest
 
-| Tool / Platform | Main Role | Repository Location |
-|-----------------|-----------|---------------------|
-| Kaggle | Course and capstone platform | `00-course-overview/`, `resources/` |
-| Google Antigravity | Agent-first development workflow | Day 1, Day 2, Day 3, Day 4 folders |
-| Antigravity IDE | Visual agent development environment | Day 1, Day 3, and Day 4 evidence |
-| Antigravity CLI | Terminal interface for agent workflows | Day 2, Day 3, and Day 4 command evidence |
-| MCP | External tool/knowledge connection layer | Day 2 folder |
-| Agent Skills / `SKILL.md` | Reusable procedural memory | Day 3 folder |
-| Agents CLI + ADK | Agent lifecycle workflow, local ADK testing, and evaluation-oriented agent development | Completed Day 3 and Day 4 codelabs |
-| Google AI Studio / Gemini API | Vibe coding, app generation, and local Gemini API authentication | Day 1 codelabs and Day 4 local ADK verification |
-| Cloud Run | Deployment platform | Day 1 codelabs, future deployment notes |
-| Render | Supporting deployment/output evidence where relevant | Day 2 folder |
-| GitHub | Portfolio and code hosting | Full repository |
-| Discord | Community participation | Progress notes if relevant |
-| NotebookLM / NoteGPT | Study and revision support | Day 3 study notes |
-| Local Terminal / Git | Local workflow, version control, and secure commit validation | Setup, troubleshooting docs, and Day 4 secure lifecycle evidence |
-| Semgrep / Pre-Commit / Pytest | Security scanning, commit-time enforcement, and outcome-based validation | Day 4 secure lifecycle codelab |
+**Role:** Outcome-based validation.
+
+pytest is used to validate expected behavior in the Day 4 secure lifecycle workflow. This matters because agent systems still need deterministic tests around business rules, tool behavior, and state changes.
+
+**Evidence location:**
+
+- [`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
 
 ---
 
-## ✅ Day 1 Tooling Update
+## 🧪 Local Workflow and Secret Handling
 
-Day 1 confirmed the practical role of the first toolchain:
+The repository uses local environment variables, ignored `.env` files, and sanitized templates where credentials or private configuration are involved.
 
-- **Antigravity** was used for workspace exploration, generated source code, and a custom skill demo.
-- **AI Studio** was used for prompt-to-app development.
-- **Cloud Run** was used for deployment testing and then cleaned up to avoid cost.
-- **GitHub** now stores the Day 1 source, notes, screenshots, and reflections in a reviewable portfolio structure.
+Important rules:
 
----
+- do not commit real API keys or service account files
+- keep local config outside Git unless it is sanitized
+- review screenshots before publishing
+- avoid exposing billing data, account details, project IDs, tokens, or private paths
+- document cloud limitations honestly when billing or access prevents full execution
 
-## ✅ Day 2 Tooling Update
-
-Day 2 expanded the toolchain from app generation into tool-connected agent workflows:
-
-- **Antigravity CLI** was documented through local command-line usage.
-- **MCP** was explored through the Google Developer Knowledge MCP codelab.
-- **Render** appears as supporting deployment/output evidence where relevant.
-- **GitHub** stores the Day 2 notes, codelab evidence, security notes, sanitized config examples, and reflection.
+This is especially important for Day 2 MCP work, Day 3/Day 4 ADK usage, and Day 5 production architecture discussion.
 
 ---
 
-## ✅ Day 3 Tooling Update
+## 🧭 Final Note
 
-Day 3 is now documented as completed tooling work:
-
-- **Agent Skills** and `SKILL.md` were studied as the core procedural-memory pattern.
-- **NotebookLM** and **NoteGPT** were used for study support, quiz review, and concept reinforcement before the final notes were written in a personal technical voice.
-- **Antigravity IDE** was used to inspect, trigger, and validate workspace skills.
-- **Agents CLI** was installed and used for skill setup, project scaffolding, linting, and lifecycle commands.
-- **ADK Web UI** was used to inspect and test the customer-support graph workflow.
-- **Gemini API key local mode** was used for the successful ADK codelab path while keeping secrets out of the repository.
-- **uv** supported dependency installation and reproducible local execution for the generated ADK projects.
-
-The Day 3 folder now stores the practical evidence: renamed screenshots, curated source snapshots, command notes, validation notes, and troubleshooting records.
-
----
-
-
-## ✅ Day 4 Tooling Update
-
-Day 4 made the tooling stack feel closest to security engineering. The work was not only to build agents, but to surround them with detection, validation, safe execution gates, and repeatable evidence.
-
-The completed Day 4 tooling work includes:
-
-- **ADK and Agents CLI** for scaffolding, linting, running, and inspecting local agent projects.
-- **ADK Web UI** for graph inspection and tool-call proof during the ambient expense and shopping-assistant workflows.
-- **Semgrep** with a custom rule that detected the intentional API-key-shaped mock vulnerability.
-- **pre-commit** enforcement that blocked the first insecure commit attempt and forced remediation before the secure commit succeeded.
-- **Antigravity `PreToolUse` hooks** for validating command execution requests before allowing shell-like actions.
-- **STRIDE threat-modeling skill** for turning vague security concern into structured spoofing, tampering, repudiation, information disclosure, denial-of-service, and privilege-risk notes.
-- **pytest** for outcome-based validation of deterministic agent tool behavior.
-- **Gemini API / AI Studio local authentication** for final local Playground verification without committing credentials.
-
-This fits the security direction of the portfolio: each tool added a boundary, a check, a trace, or a review point around the agent lifecycle.
-
-## ⭐ Final Note
-
-The tools are not the main achievement by themselves.
-
-The real portfolio value comes from showing how each tool was used, what was built, what was tested, what problems appeared, and what engineering judgment was applied during the process.
+The tools in this portfolio are not listed to show a large stack for its own sake. Each one supports a specific part of the learning path: building with agents, connecting tools, packaging reusable procedures, validating behavior, securing workflows, or reviewing production architecture.
