@@ -2,11 +2,9 @@
 
 This folder is the course-level control hub for the **Kaggle AI Agents Vibe Coding Portfolio**.
 
-The root `README.md` introduces the full repository as a public portfolio. This folder goes one level deeper. It explains how the course journey is organized, how progress is tracked, what setup is required, what learning outcomes matter, and how each codelab or project should be documented.
+The root `README.md` introduces the repository as a public portfolio. This folder keeps the course structure, documentation rules, setup state, tooling map, learning goals, and progress tracking in one place.
 
-The purpose of this folder is simple:
-
-> Keep the full 5-day AI agents learning journey structured, traceable, and easy to review.
+It is not a storage area for codelab code or screenshots. Those belong inside the relevant day folders. The purpose here is to keep the full learning path organized and easy to review.
 
 ---
 
@@ -14,194 +12,139 @@ The purpose of this folder is simple:
 
 | File | Purpose |
 |------|---------|
-| [`course-roadmap.md`](./course-roadmap.md) | High-level course and portfolio roadmap from setup to capstone |
-| [`setup-checklist.md`](./setup-checklist.md) | Readiness checklist for accounts, tools, local setup, repo setup, and security hygiene |
-| [`learning-objectives.md`](./learning-objectives.md) | Personal learning goals and success criteria for this course |
-| [`progress-tracker.md`](./progress-tracker.md) | Compact status tracker for each course stage |
-| [`documentation-plan.md`](./documentation-plan.md) | Documentation standards for daily notes, codelabs, screenshots, and reflections |
-| [`tools-and-platforms.md`](./tools-and-platforms.md) | Role of each platform/tool used during the course |
-| [`../resources/`](../resources/) | Official course links and supporting references kept outside the overview folder |
+| [`course-roadmap.md`](./course-roadmap.md) | Day-by-day course roadmap from setup through Day 5 and the pending capstone |
+| [`setup-checklist.md`](./setup-checklist.md) | Practical readiness checklist for accounts, tools, local environment, repository setup, and secrets hygiene |
+| [`learning-objectives.md`](./learning-objectives.md) | Main learning goals and the outcomes demonstrated through the completed course work |
+| [`progress-tracker.md`](./progress-tracker.md) | Compact status tracker for course stages, completed work, and next steps |
+| [`documentation-plan.md`](./documentation-plan.md) | Documentation standards for day folders, codelabs, screenshots, reflections, and evidence |
+| [`tools-and-platforms.md`](./tools-and-platforms.md) | Reference map for the tools and platforms used across the portfolio |
+| [`../resources/`](../resources/) | Official course links and supporting references |
 
 ---
 
 ## 🎯 Folder Role in the Repository
 
-This folder is not meant to store daily codelab code, screenshots, generated apps, or local setup artifacts.
+`00-course-overview/` answers the course-level questions:
 
-Those artifacts belong in the day-wise folders:
+- How is the 5-day course organized in this repository?
+- Which days are completed and which work is still pending?
+- What documentation standard is used across the portfolio?
+- What setup and tooling were required?
+- How does the work connect to AI agents, production thinking, and security automation?
+
+The implementation details stay in the day folders:
 
 ```text
-01-day-1-intro-to-agents-and-vibe-coding/        # completed and documented
-02-day-2-agent-tools-and-interoperability/       # completed and documented
-03-day-3-agent-skills-procedural-memory/         # completed: theory, Antigravity Skills, Agents CLI, and ADK lifecycle codelabs
-04-day-4-agent-security-evaluation/              # completed: security theory, ambient expense agent, secure lifecycle, and evaluation codelabs
-05-day-5-production-agent-deployment/            # planned for Day 5
-capstone-project/                                # planned final build
+01-day-1-intro-to-agents-and-vibe-coding/        # Antigravity, AI Studio, Cloud Run test workflow
+02-day-2-agent-tools-and-interoperability/       # Tool use, MCP validation, interoperability, deployed Flask app
+03-day-3-agent-skills-procedural-memory/         # Agent Skills, procedural memory, Agents CLI, ADK workflow
+04-day-4-agent-security-evaluation/              # Secure agents, guardrails, evaluation, secure lifecycle work
+05-day-5-spec-driven-production-development/     # Spec-driven development, production review, cloud architecture notes
+capstone-project/                                # Pending final applied build
 ```
 
-Instead, `00-course-overview/` defines the structure and direction for the entire repository.
+---
 
-It answers:
+## 📈 Current Course Status
 
-- What is this course journey about?
-- What is the documentation approach?
-- What tools and platforms are involved?
-- What setup must be ready?
-- What learning outcomes are being targeted?
-- How will progress be tracked?
-- How will codelab evidence be preserved?
+| Stage | Status | Repository Role |
+|------|--------|-----------------|
+| Day 0 / Setup | ✅ Completed | Course readiness, setup tracking, and documentation foundation |
+| Day 1 | ✅ Completed | First hands-on agentic and vibe-coding workflows |
+| Day 2 | ✅ Completed | Tool use, MCP validation, interoperability, and deployment evidence |
+| Day 3 | ✅ Completed | Agent Skills, procedural memory, and ADK workflow implementation |
+| Day 4 | ✅ Completed | Agent security, evaluation, guardrails, and secure lifecycle practices |
+| Day 5 | ✅ Completed | Spec-driven production development and architecture-review documentation |
+| Capstone Project | ⬜ Pending | Final applied agent project |
 
 ---
 
 ## 🧠 Portfolio Direction
 
-This repository is being built as more than a place to store files.
-
-The direction is:
-
-**AI Agents + Vibe Coding + Tool Interoperability + Agent Skills + Cloud Deployment + Security-Aware Automation Thinking**
-
-The course work is documented through a practical lens:
-
-- learn the concept
-- apply it through codelabs
-- capture the implementation
-- test the output
-- record issues and decisions
-- preserve screenshots or evidence
-- connect the learning to real engineering and security automation workflows
-
-This makes the repository useful as both a course archive and a portfolio artifact.
-
----
-
-## 🧱 Naming Standard
-
-The following folder names are the current repository standard:
+The course work is documented through a practical engineering lens:
 
 ```text
-00-course-overview/
-01-day-1-intro-to-agents-and-vibe-coding/
-02-day-2-agent-tools-and-interoperability/
-03-day-3-agent-skills-procedural-memory/
-04-day-4-agent-security-evaluation/
-05-day-5-production-agent-deployment/
-capstone-project/
-docs/
-assets/
-resources/
+Study → Build → Test → Document → Reflect → Improve
 ```
 
-Any links, README references, screenshots, notes, or future documentation should use these exact names to avoid broken navigation.
+The strongest direction of this portfolio is the connection between **AI agents**, **vibe coding**, **tool-using workflows**, **Agent Skills**, **production readiness**, and **security-aware automation**.
+
+That means the documentation does not only say what the course covered. It also records what was built, how the work was validated, what constraints appeared, and where the concepts connect to real-world engineering or SOC-style automation.
 
 ---
 
-## ✅ Current Use of This Folder
+## 🧱 Repository Organization Standard
 
-At this stage, this folder provides the planning and tracking layer for the repository.
+The repository is organized by course stage. Day folders contain the detailed work, while this folder keeps the overview and standards.
 
-As the course progresses, the files here should be updated with:
+```text
+Kaggle-AI-Agents-Vibe-Coding-Portfolio/
+├── README.md
+├── .gitignore
+├── LICENSE
+│
+├── 00-course-overview/
+├── 01-day-1-intro-to-agents-and-vibe-coding/
+├── 02-day-2-agent-tools-and-interoperability/
+├── 03-day-3-agent-skills-procedural-memory/
+├── 04-day-4-agent-security-evaluation/
+├── 05-day-5-spec-driven-production-development/
+│
+├── capstone-project/        # pending
+└── resources/
+```
 
-- revised progress status
-- completed codelab evidence locations
-- improved setup notes
-- final capstone direction
-- new documentation lessons learned
-- additional tool references
-
-The folder should remain clean and high-level. Detailed implementation work should stay inside the day-wise folders and `capstone-project/`.
-
----
-
-## ✅ Day 1 Documentation Update
-
-Day 1 has moved from planning into documented implementation work.
-
-The Day 1 folder contains:
-
-- livestream and concept notes
-- Antigravity codelab documentation
-- Antigravity-generated Google News CLI source
-- custom code-review skill demo files
-- AI Studio to Cloud Run codelab documentation
-- Snowflakes & Balloons React/Vite app source
-- screenshots organized by codelab
-- implementation notes, deployment notes, prompt notes, and reflection
-
-This keeps the overview folder focused on course-level tracking while the actual evidence stays inside the Day 1 folder.
+Shared `docs/` or root-level `assets/` folders can be added later if a cross-repository guide or shared visual asset is needed. Until then, setup notes, screenshots, source snapshots, and evidence remain inside the relevant day folders.
 
 ---
 
-## ✅ Day 2 Documentation Update
+## 🧾 Documentation Standard
 
-Day 2 is now documented as completed work.
+Across the repository, each completed course stage should make the work reviewable without needing outside chat history.
 
-The Day 2 folder captures:
+A completed day folder normally includes:
 
-- theory notes around agent tools and interoperability
-- podcast and whitepaper learning notes
-- Antigravity CLI codelab documentation
-- Google Developer Knowledge MCP codelab documentation
-- MCP setup/security notes and sanitized config examples
-- screenshots and output evidence
-- Render deployment record where relevant
-- implementation notes, troubleshooting notes, and reflection
+- a day-level `README.md`
+- concept notes or study summaries
+- codelab folders where hands-on work exists
+- screenshots or output evidence
+- source snapshots or implementation files
+- troubleshooting notes when useful
+- reflections that connect the work to agentic systems, security, or production readiness
 
-The key portfolio point from Day 2 is that agents become more useful when they can safely connect to tools, commands, external systems, and developer workflows.
-
----
-
-## ✅ Day 3 Documentation Update
-
-Day 3 is now documented as completed work.
-
-The completed Day 3 folder is:
-
-[`../03-day-3-agent-skills-procedural-memory/`](../03-day-3-agent-skills-procedural-memory/)
-
-The folder now connects the theory phase with hands-on codelab evidence:
-
-- Unit 3 podcast and Agent Skills whitepaper study notes
-- Agent Skills key concept notes and study-guide summary
-- procedural memory, progressive disclosure, context rot, and routing notes
-- Antigravity Skills codelab documentation
-- workspace skill examples and skill-trigger validation
-- Agents CLI skills installation evidence
-- ADK lifecycle codelab documentation
-- `customer-support-agent` graph workflow source snapshot
-- playground testing, linting, hot-restart validation, and CLI execution evidence
-- Day 3 reflection and practical troubleshooting notes
-
-The key portfolio point from Day 3 is that reusable agent behavior is not only about adding more context. It is about packaging task knowledge cleanly, triggering it at the right time, testing the behavior, and keeping secrets or local runtime details out of public documentation.
+The exact structure can vary by day. The important rule is that a reviewer should be able to understand **what was done, where the evidence is, and why the work matters**.
 
 ---
 
+## 🔐 Security and Evidence Handling
 
-## ✅ Day 4 Documentation Update
+This portfolio involves cloud tools, local development, generated code, API access, and agent workflows. The documentation standard therefore includes basic security hygiene:
 
-Day 4 is now documented as completed work and connects directly with the security-focused direction of this portfolio.
+- do not commit API keys, tokens, service account files, `.env` files, or private credentials
+- use sanitized config examples when documenting local setup
+- review screenshots before committing them
+- avoid exposing billing information, private account details, project IDs, or sensitive terminal output
+- keep failed attempts and blockers documented honestly, but without leaking private values
 
-The completed Day 4 folder is:
+Day 4 and Day 5 strengthen this security focus by documenting guardrails, evaluation, trace evidence, secure lifecycle checks, and production architecture review boundaries.
 
-[`../04-day-4-agent-security-evaluation/`](../04-day-4-agent-security-evaluation/)
+---
 
-The folder now captures both the theory and the hands-on security engineering evidence:
+## 🧭 How To Use This Folder
 
-- agent security, observability, and evaluation notes
-- secure agent harness and effective-trust concepts from the Day 4 whitepaper
-- ambient expense approval agent codelab documentation
-- ADK workflow routing, human review, and deterministic approval boundaries
-- pre-LLM security screening with PII redaction and prompt-injection bypass behavior
-- trace generation, local/offline grading, and evaluation scorecard evidence
-- secure shopping-assistant lifecycle codelab documentation
-- Antigravity project rules, Semgrep, pre-commit enforcement, and command validation hooks
-- STRIDE threat-modeling skill, TDD planning gate, and outcome-based pytest validation
-- curated source snapshots, screenshots, troubleshooting notes, and a Day 4 security-engineering reflection
+A good reading order is:
 
-The key portfolio point from Day 4 is that building agents securely is not an optional cleanup task after the code works. It is part of the workflow: define boundaries, block unsafe paths, test behavior, preserve evidence, and keep secrets out of source.
+1. Start with [`course-roadmap.md`](./course-roadmap.md) to understand the course path.
+2. Check [`progress-tracker.md`](./progress-tracker.md) for the current status.
+3. Use [`setup-checklist.md`](./setup-checklist.md) to see the environment and security readiness state.
+4. Read [`documentation-plan.md`](./documentation-plan.md) before reviewing how day folders are structured.
+5. Use [`tools-and-platforms.md`](./tools-and-platforms.md) as a reference when a tool or platform appears in the day folders.
+6. Use [`learning-objectives.md`](./learning-objectives.md) to understand the learning outcomes behind the work.
+
+---
 
 ## 🔗 Back to Repository Home
 
-Return to the main portfolio page:
+Return to the main portfolio overview:
 
 [`../README.md`](../README.md)
