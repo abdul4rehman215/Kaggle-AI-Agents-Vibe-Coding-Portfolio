@@ -28,741 +28,535 @@
   <img src="https://img.shields.io/badge/GitHub-Portfolio%20Documentation-24292F?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
-<!--
-<p>
-  <img src="https://img.shields.io/github/repo-size/abdul4rehman215/Kaggle-AI-Agents-Vibe-Coding-Portfolio?style=for-the-badge" />
-  <img src="https://img.shields.io/github/last-commit/abdul4rehman215/Kaggle-AI-Agents-Vibe-Coding-Portfolio?style=for-the-badge" />
-  <img src="https://img.shields.io/github/stars/abdul4rehman215/Kaggle-AI-Agents-Vibe-Coding-Portfolio?style=for-the-badge" />
-  <img src="https://img.shields.io/github/forks/abdul4rehman215/Kaggle-AI-Agents-Vibe-Coding-Portfolio?style=for-the-badge" />
-</p>
-
--->
-
 </div>
 
 ---
 
-# 📌 Executive Summary
+## 📌 Overview
 
-This repository is my structured learning and implementation portfolio for the **Google/Kaggle 5-Day AI Agents Intensive Vibe Coding Course**.
+This repository documents my hands-on work from the **Google/Kaggle 5-Day AI Agents Intensive Vibe Coding Course**. It is structured as a technical portfolio: each completed day includes notes, codelab outputs, source snapshots, screenshots, troubleshooting records, implementation evidence, and reflections.
 
-The goal of this repository is not only to store course files.
+The repository currently covers the foundation work and Day 1 through Day 4 of the course. The completed work includes Google Antigravity development workflows, Google AI Studio app generation, Cloud Run deployment testing, MCP validation, Agent Skills, procedural memory, ADK graph workflows, agent security controls, trace-based evaluation, and secure development lifecycle practices.
 
-It is designed to document the full journey of learning, building, testing, reflecting, and organizing hands-on AI agent work in a professional GitHub portfolio format.
+My focus is not only on completing course exercises. I am using the course to study how AI agents, vibe coding, and tool-using workflows can connect with practical software engineering, cloud deployment, cybersecurity, SOC automation, and secure AI system design.
 
-Through this course, I am exploring how modern AI development is shifting from traditional syntax-first programming toward **natural-language-driven software building**, where developers describe intent, collaborate with AI systems, review generated outputs, and guide agents toward working applications.
-
-This repository captures that journey through:
-
-* course setup and environment notes
-* daily learning documentation
-* codelab implementations
-* AI Studio and Cloud Run work
-* Google Antigravity exploration
-* screenshots and evidence
-* troubleshooting notes
-* deployment artifacts
-* security and automation reflections
-* final capstone planning and implementation work
-
-The broader purpose is to connect **AI agents and vibe coding** with my existing technical direction in:
-
-**Cybersecurity • SOC Analysis • Security Automation • AI Workflows • Cloud Monitoring • Agentic Systems**
-
-By Day 4, this portfolio also includes hands-on agent security and evaluation work: an ambient expense approval agent with pre-LLM security screening, trace-based evaluation, and a secure Antigravity/TDD lifecycle around a shopping-assistant agent.
+Day 5 and the final capstone project remain pending and will be added after completion.
 
 ---
 
-# 🧭 Quick Navigation
+## 🧭 Quick Navigation
 
-* [`00-course-overview/`](./00-course-overview/) — course context, roadmap, setup checklist, and learning objectives
-* [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/) — Day 1 notes, podcast/whitepaper reflections, Antigravity, AI Studio, and Cloud Run codelab work
-* [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) — Day 2 agent tools, APIs, external integrations, and workflow interoperability
-* [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) — Day 3 Agent Skills, procedural memory, context rot, progressive disclosure, Antigravity Skills, Agents CLI skills, and ADK lifecycle codelab work
-* [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) — Day 4 agent security, observability, evaluation, ambient expense-agent security, and secure Antigravity/TDD lifecycle codelabs
-* [`05-day-5-production-agent-deployment/`](./05-day-5-production-agent-deployment/) — Day 5 production development, deployment notes, Cloud Run, and final course wrap-up
-* [`capstone-project/`](./capstone-project/) — final applied AI agents capstone project, architecture, implementation, and submission evidence
-* [`docs/`](./docs/) — setup guides, troubleshooting logs, deployment notes, and reusable documentation
-* [`assets/`](./assets/) — screenshots, diagrams, badges, and visual evidence
-* [`resources/`](./resources/) — official course links, references, and useful learning resources
+| Section | Description |
+| --- | --- |
+| [`00-course-overview/`](./00-course-overview/) | Course roadmap, setup checklist, learning objectives, tools, and progress tracking. |
+| [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/) | Day 1 notes, Antigravity codelab, AI Studio app, Cloud Run testing, screenshots, and reflections. |
+| [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) | Day 2 tool use, interoperability, MCP validation, Antigravity CLI app build, Render deployment, and evidence. |
+| [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) | Day 3 Agent Skills, procedural memory, Antigravity Skills, Agents CLI, and ADK workflow codelabs. |
+| [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) | Day 4 agent security, observability, evaluation, secure lifecycle codelabs, tests, traces, and reflections. |
+| [`resources/`](./resources/) | Official course links, references, and supporting material. |
 
----
+Pending sections:
 
-# 🎯 Why This Repository Exists
-
-I use GitHub as a place to document technical learning in a structured and portfolio-ready way.
-
-For this course, the work is highly practical. It includes codelabs, tools, code files, deployments, setup steps, and a capstone project. That means the repository needs to work as both:
-
-1. a **learning journey archive**
-2. a **hands-on implementation workspace**
-3. a **technical documentation portfolio**
-4. a **future reference for AI agent workflows**
-5. a **public record of practical AI engineering growth**
-
-Instead of keeping screenshots, notes, code files, and reflections scattered across different places, this repository organizes everything into a clean structure that shows what I learned, what I built, how I tested it, and how each part connects to real AI system development.
+- Day 5 production agent development and deployment documentation
+- Final applied capstone project
 
 ---
 
-# 🧠 Course Context
+## 📈 Current Progress Snapshot
 
-The **Google/Kaggle 5-Day AI Agents Intensive Vibe Coding Course** focuses on building AI agents from foundational understanding toward more production-ready systems.
-
-The course introduces the idea of **vibe coding**, where natural language becomes a major interface for software development. Instead of only writing code line by line, the developer increasingly works by describing intent, guiding the AI, reviewing outputs, testing behavior, and refining the result.
-
-Important course themes include:
-
-* AI agent foundations
-* vibe coding workflows
-* natural-language-driven development
-* tools and API integration
-* orchestration and agent workflows
-* memory and context handling
-* evaluation and production readiness
-* hands-on codelabs
-* final capstone project work
-
-This repository documents my progress through those themes in a structured format.
+| Course Stage | Status | Focus |
+| --- | --- | --- |
+| Repository Foundation | ✅ Completed | GitHub portfolio structure, `.gitignore`, license, course overview, and documentation plan. |
+| Day 0 / Setup | ✅ Completed | Course onboarding, tool setup, environment preparation, and readiness tracking. |
+| Day 1 | ✅ Completed | Intro to agents, vibe coding, Antigravity, AI Studio, Cloud Run testing, and first codelab outputs. |
+| Day 2 | ✅ Completed | Agent tools, APIs, MCP validation, interoperability, Antigravity CLI app building, and deployment evidence. |
+| Day 3 | ✅ Completed | Agent Skills, procedural memory, progressive disclosure, Agents CLI, and ADK graph workflow implementation. |
+| Day 4 | ✅ Completed | Agent security, observability, evaluation, prompt-injection containment, secure lifecycle gates, and trace evidence. |
+| Day 5 | ⬜ Pending | Production agent development, deployment workflow, production-readiness notes, and course wrap-up. |
+| Capstone Project | ⬜ Pending | Final applied AI agents project, architecture, implementation, evaluation, and submission evidence. |
 
 ---
 
-# 🧩 My Learning Angle
+## 🚀 Portfolio Highlights
 
-This portfolio is not written from the perspective of only “learning AI.”
+### 1. Google Antigravity: Google News CLI
 
-My angle is more specific:
+Built a small command-line application with Google Antigravity that fetches Google News RSS results for a user-provided query and prints the top results in the terminal.
 
-> **How can AI agents, vibe coding, and agentic workflows support real-world automation, security operations, cloud workflows, and technical problem solving?**
+**What this demonstrates:**
 
-Because of my background in cybersecurity and security automation, I am especially interested in how these ideas can connect to:
+- agent-assisted local development
+- Node.js CLI implementation
+- dependency setup with `rss-parser`
+- terminal-based validation
+- Antigravity plans, permission prompts, and review flow
+- custom workspace skill usage through a `code-review` skill
+- intentionally broken demo code used for review testing
 
-* SOC workflows
-* alert triage
-* security investigation assistance
-* workflow automation
-* AI-assisted documentation
-* tool-using agents
-* cloud-native deployment
-* agent safety and evaluation
-* production readiness
-* secure handling of credentials and environment variables
-
-That is why this repository includes not only code and notes, but also reflections on practical system design, security boundaries, and real-world applicability.
+**Location:** [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/)
 
 ---
 
-# 📈 Current Progress Snapshot
+### 2. Google AI Studio to Cloud Run: Snowflakes & Balloons
 
-| Course Stage          | Status         | Focus                                                               |
-| --------------------- | -------------- | ------------------------------------------------------------------- |
-| Repository Foundation | ✅ Completed    | Core GitHub portfolio setup and documentation structure established |
-| Day 0 / Setup         | ✅ Completed    | Course onboarding, community setup, and environment preparation     |
-| Day 1                 | ✅ Completed    | Agents, vibe coding, Antigravity, AI Studio, and Cloud Run codelabs documented |
-| Day 2                 | ✅ Completed    | Agent tools, APIs, MCP validation, interoperability, and hands-on codelabs documented |
-| Day 3                 | ✅ Completed    | Agent Skills, procedural memory, Antigravity Skills, Agents CLI skills, and ADK graph workflow codelabs documented |
-| Day 4                 | ✅ Completed    | Agent security, observability, evaluation, ambient expense-agent security, and secure lifecycle codelabs documented |
-| Day 5                 | ⬜ Pending      | Production deployment, final learning wrap-up, and documentation    |
-| Capstone Project      | ⬜ Pending      | Final applied AI agents project                                     |
+Built a browser-based **Snowflakes & Balloons** app through Google AI Studio, exported the generated project, tested the Cloud Run deployment path, and documented cleanup after testing.
 
+**What this demonstrates:**
 
----
+- prompt-to-application workflow
+- React, Vite, and TypeScript app generation
+- browser-only interactive animation design
+- user-triggered visual effects
+- sound toggle, reduced-motion toggle, reset behavior, counters, and progress timers
+- Cloud Run deployment testing and cost-conscious cleanup
+- public static frontend demo documentation through Vercel
 
-# 🚀 Portfolio Highlights
+**Location:** [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/)
 
-As this course progresses, this repository will become a complete record of the following work:
-
-## 1) Google Antigravity Setup and Exploration
-
-This section will document the setup and usage of Google Antigravity as an agent-oriented development environment.
-
-Expected documentation includes:
-
-* installation notes
-* CLI setup notes
-* IDE setup screenshots
-* first-run observations
-* workspace structure
-* agent interaction notes
-* troubleshooting lessons
-* security considerations for local development
-
-📂 Planned folder: [`docs/antigravity-setup.md`](./docs/antigravity-setup.md)
-
-**Day 1 update:** The first Antigravity hands-on work is now documented inside [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/01-antigravity-getting-started/). It includes the generated Google News CLI source, the custom `code-review` skill, the intentionally broken demo file used for review, implementation notes, and screenshot evidence.
+**Deployment notes:** [`deployment-notes.md`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md)
 
 ---
 
-## 2) AI Studio Vibe Coding Codelab
+### 3. Day 2 Antigravity CLI: BigQuery Release Notes Hub
 
-This section will document hands-on application building using Google AI Studio.
+Built a Flask-based web app that fetches the public BigQuery release notes XML feed, parses updates, displays them in a searchable dashboard, and provides practical sharing/export features.
 
-Expected artifacts include:
+**What this demonstrates:**
 
-* prompt used for application generation
-* generated code files
-* app testing notes
-* screenshots
-* improvements made after first generation
-* reflection on vibe coding workflow
-* limitations and review notes
+- agent-assisted app generation and refinement
+- Flask backend development
+- XML parsing with Requests and BeautifulSoup
+- in-memory caching
+- search and category filtering
+- CSV export
+- copy/share workflow
+- Render deployment
+- production command troubleshooting with `gunicorn app:app`
 
-📂 Planned folder: [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/)
-
-**Day 1 update:** The AI Studio codelab output is now stored in [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/). The documented build is a browser-only **Snowflakes & Balloons** React/Vite app with prompt logs, implementation notes, source code, screenshots, and reflection notes.
-
----
-
-## 3) Cloud Run Deployment Work
-
-This section will document the process of deploying generated or agent-assisted applications to Google Cloud Run.
-
-Expected artifacts include:
-
-* deployment steps
-* environment setup notes
-* screenshots
-* deployed app link
-* cleanup steps
-* cost and security notes
-* troubleshooting observations
-
-📂 Planned folder: [`docs/cloud-run-deployment-notes.md`](./docs/cloud-run-deployment-notes.md)
-
-**Day 1 update:** The Snowflakes & Balloons app was tested through Cloud Run during the codelab and then unpublished/cleaned up to avoid unnecessary cloud cost. The deployment record is documented in [`01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md`](./01-day-1-intro-to-agents-and-vibe-coding/codelabs/02-ai-studio-to-cloud-run/deployment-notes.md).
+**Location:** [`02-day-2-agent-tools-and-interoperability/codelabs/01-antigravity-cli/`](./02-day-2-agent-tools-and-interoperability/codelabs/01-antigravity-cli/)
 
 ---
 
-## 4) Agentic Workflow Documentation
+### 4. Google Developer Knowledge MCP Validation
 
-Beyond individual codelabs, this repository will track how AI agents are designed, guided, evaluated, and improved.
+Configured and tested Google Developer Knowledge MCP inside Antigravity to validate how an agent can use external documentation tools instead of relying only on static model memory.
 
-Expected coverage includes:
+**What this demonstrates:**
 
-* agent task breakdown
-* tool use
-* memory and context handling
-* prompt-to-code workflows
-* evaluation notes
-* human review process
-* production-readiness thinking
+- MCP server configuration
+- documentation search and retrieval through agent tools
+- prompt-result validation
+- permission review for external tool use
+- sanitized config handling
+- practical comparison between model knowledge and tool-backed answers
 
-📂 Planned folders:
-
-* [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
-* [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/)
-* [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
-
-**Day 3 update:** Agent Skills and procedural memory are now documented through both theory notes and hands-on codelabs. The Day 3 folder includes Antigravity workspace skill examples, skill-routing tests, Agents CLI skill installation evidence, and a customer-support ADK graph workflow agent tested through the ADK playground and command-line execution.
-
-**Day 4 update:** The security and evaluation work is now documented through two completed codelabs. The first builds an ADK 2.0 ambient expense approval agent with deterministic routing, PII redaction, prompt-injection bypass, human review, trace generation, and local/offline grading. The second builds a secure shopping-assistant lifecycle using Antigravity project rules, Semgrep, pre-commit hooks, `PreToolUse` command validation, STRIDE threat modeling, TDD planning gates, outcome-based tests, and local ADK Playground verification. This was one of the most enjoyable parts of the course for me because it connected agent building directly with the security engineering mindset: boundaries, evidence, safe failure paths, and credential hygiene.
+**Location:** [`02-day-2-agent-tools-and-interoperability/codelabs/02-google-developer-knowledge-mcp/`](./02-day-2-agent-tools-and-interoperability/codelabs/02-google-developer-knowledge-mcp/)
 
 ---
 
-## 5) Agent Security, Evaluation, and Secure Lifecycle Work
+### 5. Agent Skills and ADK Workflow Development
 
-This section documents how agent systems can be built with explicit security controls instead of treating safety as an afterthought.
+Tested reusable Antigravity workspace skills and built a customer-support ADK graph workflow that routes shipping-related questions to a shipping FAQ agent and unrelated questions to a polite decline path.
 
-Expected coverage includes:
+**What this demonstrates:**
 
-* prompt-injection awareness
-* PII containment and redaction
-* deterministic security routing
-* human-in-the-loop approval
-* trace-based evaluation
-* local/offline grading
-* secure development lifecycle gates
-* STRIDE threat modeling
-* pre-commit security enforcement
-* command validation before agent tool execution
+- `SKILL.md`-based procedural memory
+- progressive disclosure
+- context control
+- skill routing and validation
+- deterministic scripts inside skills
+- Agents CLI installation and verification
+- ADK graph workflow design
+- route-map troubleshooting
+- local Gemini API-key mode instead of forced Vertex mode
+- ADK Playground and CLI execution evidence
 
-📂 Folder: [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
+**Locations:**
 
-**Day 4 update:** The Day 4 folder is now complete with theory notes, study summaries, curated screenshots, source snapshots, evaluation artifacts, a security engineering reflection, and two completed codelab folders: `01-ambient-expense-agent/` and `02-secure-agent-lifecycle/`.
-
----
-
-## 6) Capstone Project
-
-The final capstone will be documented as a standalone portfolio project inside this repository.
-
-Expected capstone documentation includes:
-
-* problem statement
-* use case selection
-* architecture
-* agent workflow
-* implementation files
-* screenshots
-* deployment notes
-* testing and evaluation
-* final submission evidence
-* lessons learned
-
-📂 Planned folder: [`capstone-project/`](./capstone-project/)
+- [`03-day-3-agent-skills-procedural-memory/codelabs/01-antigravity-skills/`](./03-day-3-agent-skills-procedural-memory/codelabs/01-antigravity-skills/)
+- [`03-day-3-agent-skills-procedural-memory/codelabs/02-agents-cli-adk-lifecycle/`](./03-day-3-agent-skills-procedural-memory/codelabs/02-agents-cli-adk-lifecycle/)
 
 ---
 
-# 🗺️ Course and Portfolio Roadmap
+### 6. Agent Security, Evaluation, and Secure Lifecycle Work
 
-This roadmap will be updated as the course progresses. Some sections are intentionally marked as planned until the corresponding daily content and codelabs are completed.
+Built and documented two Day 4 security-focused agent workflows: an ambient expense approval agent and a secure shopping-assistant lifecycle.
 
----
+**What this demonstrates:**
 
-## Day 0 / Setup — Course Readiness and Environment Preparation
+- ADK 2.0 workflow routing
+- deterministic approval thresholds
+- pre-LLM security screening
+- PII redaction
+- prompt-injection bypass
+- human-in-the-loop review
+- local trace generation
+- offline evaluation scorecards
+- Semgrep security rules
+- pre-commit enforcement
+- Antigravity `PreToolUse` command validation
+- STRIDE threat modeling
+- TDD planning gates
+- outcome-based pytest validation
+- credential hygiene and safe failure paths
 
-This section documents the initial preparation needed before hands-on development.
+**Locations:**
 
-Coverage:
-
-* Kaggle course onboarding
-* Google AI Studio access
-* Antigravity IDE setup
-* Antigravity CLI setup
-* Discord/community setup
-* GitHub repository setup
-* local development readiness
-* troubleshooting notes
-
-Primary goal:
-
-> Establish a clean course workspace, development environment, and documentation structure for the full 5-day AI agents learning journey.
-
-📂 Folder: [`00-course-overview/`](./00-course-overview/)
-
----
-
-## Day 1 — Introduction to Agents and Vibe Coding
-
-This section documents the first full hands-on course day.
-
-Coverage completed:
-
-* Day 1 livestream and course framing notes
-* introduction to AI agents and vibe coding
-* agent = model + harness concept
-* specification and verification as new bottlenecks
-* Google Antigravity exploration
-* Antigravity-generated Google News CLI
-* custom code-review skill demo
-* Google AI Studio prompt-to-app workflow
-* Snowflakes & Balloons browser app
-* Cloud Run deployment test and cleanup note
-* screenshots and implementation evidence
-
-Primary goal:
-
-> Capture the move from learning the concept of agentic development to completing the first practical prompt-to-code and prompt-to-deployment workflows.
-
-📂 Folder: [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/)
+- [`04-day-4-agent-security-evaluation/codelabs/01-ambient-expense-agent/`](./04-day-4-agent-security-evaluation/codelabs/01-ambient-expense-agent/)
+- [`04-day-4-agent-security-evaluation/codelabs/02-secure-agent-lifecycle/`](./04-day-4-agent-security-evaluation/codelabs/02-secure-agent-lifecycle/)
 
 ---
 
-## Day 2 — Agent Tools and Interoperability
+## 🗺️ Course Roadmap
 
-This section documents how agents connect with external systems, tools, APIs, and interoperability layers.
+### Day 0 / Setup — Course Readiness and Environment Preparation
 
-Coverage completed:
+**Status:** Completed  
+**Focus:** Set up the course workspace, tools, documentation structure, and local development readiness.
 
-* tool-using agents and external integrations
-* MCP concepts and practical MCP validation
-* A2A/interoperability concepts
-* A2UI, UCP, and AP2 protocol notes
-* Antigravity CLI local app-building workflow
-* BigQuery Release Notes Hub Flask app
-* Render deployment evidence for the Codelab 1 app
-* Google Developer Knowledge MCP setup and validation in Antigravity
-* permission-review screenshots for local and remote tool use
-* security observations around credentials, scoped access, and public documentation
+**Key work:**
 
-Completed artifacts:
+- course onboarding
+- Google AI Studio access preparation
+- Antigravity IDE and CLI setup notes
+- GitHub repository foundation
+- setup checklist and progress tracking
+- documentation plan and learning objectives
 
-* Day 2 README
-* theory notes and study guide summaries
-* completed Codelab 1 folder
-* completed Codelab 2 folder
-* screenshot evidence for both codelabs
-* Day 2 reflection with hands-on addenda
-* resource links and safe handling notes
-
-📂 Folder: [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
+**Folder:** [`00-course-overview/`](./00-course-overview/)
 
 ---
 
-## Day 3 — Agent Skills, Procedural Memory, and Context Control
+### Day 1 — Introduction to Agents and Vibe Coding
 
-This section documents how agents package reusable procedural knowledge through Agent Skills, reduce context bloat through progressive disclosure, and load specialist workflows only when needed.
+**Status:** Completed  
+**Focus:** Move from conceptual understanding of agents and vibe coding into the first prompt-to-code and prompt-to-deployment workflows.
 
-Coverage completed:
+**Key work:**
 
-* Agent Skills and `SKILL.md` anatomy
-* procedural memory and reusable task knowledge
-* progressive disclosure and active context control
-* context rot and context-window pressure
-* skill triggering through routing descriptions
-* Skills vs MCP vs `AGENTS.md`
-* evaluation-driven skill development
-* Antigravity workspace skill installation and testing
-* Agents CLI skill installation and verification
-* ADK graph workflow lifecycle through a customer-support agent
-* troubleshooting around Windows ADK behavior, API key visibility, and Google Cloud billing boundaries
+- documented Day 1 podcast, livestream, and whitepaper notes
+- explored the agent = model + harness concept
+- built the Antigravity Google News CLI
+- created and tested a custom `code-review` skill
+- built the Snowflakes & Balloons app with Google AI Studio
+- tested Cloud Run deployment and documented cleanup
+- organized screenshots, source files, notes, and reflections
 
-Completed artifacts:
-
-* Day 3 README
-* theory notes and study-guide summaries
-* codelab-specific notes
-* completed Antigravity Skills codelab folder
-* completed Agents CLI + ADK lifecycle codelab folder
-* screenshot evidence for skill discovery, validation, routing, playground testing, and CLI execution
-* curated source snapshots for workspace skills, skill test files, a weather assistant scaffold, and the final customer-support ADK agent
-* Day 3 reflection connecting procedural memory, workflow design, and security-aware agent development
-
-Primary goal:
-
-> Capture the shift from using agents as general assistants to engineering reusable procedural memory and graph-based workflows that can be inspected, tested, and reused.
-
-📂 Folder: [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/)
+**Folder:** [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/)
 
 ---
 
-## Day 4 — Agent Security, Observability, and Evaluation
+### Day 2 — Agent Tools and Interoperability
 
-This section is especially important from a cybersecurity and SOC automation perspective.
+**Status:** Completed  
+**Focus:** Understand how agents connect with tools, APIs, external systems, and interoperability layers.
 
-Day 4 moved the work from “can the agent build?” toward “can the agent build and operate inside enforceable security, testing, and evaluation boundaries?” This day connected strongly with my security background because it treated agent development as a system-design problem: define trust boundaries, validate tool behavior, protect credentials, detect unsafe inputs, capture evidence, and prove the workflow through tests and evaluation artifacts.
+**Key work:**
 
-Coverage completed:
+- studied tool-using agents and external integrations
+- documented MCP, A2A, A2UI, UCP, and AP2 concepts
+- built the BigQuery Release Notes Hub Flask app
+- deployed the Flask app on Render
+- configured and validated Google Developer Knowledge MCP in Antigravity
+- captured permission-review screenshots and safe handling notes
+- documented setup, troubleshooting, commands, and reflections
 
-* agent security and evaluation theory
-* effective trust, guardrails, and secure agent harness concepts
-* prompt injection and PII containment patterns
-* ADK 2.0 ambient expense approval workflow
-* deterministic routing for low-value vs high-value expenses
-* pre-LLM security checkpoint with PII redaction and prompt-injection bypass
-* human-in-the-loop review flow for higher-risk expenses
-* local trace generation and offline evaluation scorecard
-* secure Antigravity/TDD lifecycle for a shopping assistant agent
-* custom Semgrep rule and pre-commit enforcement
-* Antigravity `PreToolUse` command validation hook
-* STRIDE threat-modeling skill and generated threat model
-* TDD planning gate with **Security Boundaries & Assertions**
-* outcome-based pytest validation
-* local ADK Playground verification through a working tool call
-
-Completed artifacts:
-
-* Day 4 README
-* podcast + whitepaper notes
-* key concepts glossary
-* study guide summary
-* source material note
-* official links
-* visual study assets
-* completed Ambient Expense Agent codelab folder
-* completed Secure Agent Lifecycle codelab folder
-* codelab-specific notes
-* screenshot evidence for both codelabs
-* curated source snapshots for both implementations
-* evaluation artifacts, traces, and scorecard
-* STRIDE threat model and security controls documentation
-* Day 4 security engineering reflection
-
-Primary goal:
-
-> Capture how agent systems can be secured, tested, evaluated, and documented with the same discipline expected in security-aware software engineering and SOC automation workflows.
-
-📂 Folder: [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
+**Folder:** [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/)
 
 ---
 
-## Day 5 — Production Agent Development and Deployment
+### Day 3 — Agent Skills, Procedural Memory, and Context Control
 
-This section will focus on moving from prototypes toward production-style systems.
+**Status:** Completed  
+**Focus:** Package reusable procedural knowledge into skills and build inspectable ADK graph workflows.
 
-Planned coverage:
+**Key work:**
 
-* deployment workflow
-* production-readiness checklist
-* Cloud Run notes
-* agent lifecycle thinking
-* debugging and monitoring
-* documentation for reproducibility
-* final course wrap-up
+- studied Agent Skills, procedural memory, progressive disclosure, and context rot
+- tested workspace skills including code review, commit formatting, license headers, JSON-to-Pydantic generation, and database schema validation
+- used deterministic scripts inside skills for more reliable validation
+- installed and verified Agents CLI skills
+- built a customer-support ADK graph workflow
+- tested routing through ADK Playground and CLI execution
+- documented troubleshooting around Windows ADK behavior, API key visibility, billing boundaries, and credential handling
 
-Expected artifacts:
-
-* Day 5 README
-* deployment notes
-* screenshots
-* final reflections
-* production-readiness checklist
-* links to working outputs if applicable
-
-📂 Folder: [`05-day-5-production-agent-deployment/`](./05-day-5-production-agent-deployment/)
+**Folder:** [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/)
 
 ---
 
-## Capstone Project — Final Applied Build
+### Day 4 — Agent Security, Observability, and Evaluation
 
-The capstone will be treated as the strongest implementation section of this repository.
+**Status:** Completed  
+**Focus:** Treat agent development as a security-aware system design problem with controls, traces, tests, and evaluation evidence.
 
-Planned coverage:
+**Key work:**
 
-* selected problem statement
-* why the use case matters
-* architecture
-* agent workflow
-* implementation details
-* screenshots and evidence
-* deployment details
-* testing and evaluation
-* final submission documentation
+- documented agent security, guardrails, trust boundaries, and evaluation concepts
+- built an ambient expense approval agent with deterministic routing
+- added pre-LLM security screening for PII and prompt-injection patterns
+- implemented human review paths for higher-risk expense cases
+- generated local traces and offline evaluation scorecards
+- built a secure shopping-assistant lifecycle
+- added Semgrep, pre-commit checks, command validation, STRIDE threat modeling, TDD planning gates, and pytest validation
+- organized source snapshots, screenshots, artifacts, troubleshooting notes, and a security engineering reflection
 
-📂 Folder: [`capstone-project/`](./capstone-project/)
+**Folder:** [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/)
 
 ---
 
-# 🧱 Repository Architecture
+### Day 5 — Production Agent Development and Deployment
+
+**Status:** Pending  
+**Focus:** Production-style agent development, deployment workflow, debugging, monitoring, and final course wrap-up.
+
+**Planned work:**
+
+- production-readiness checklist
+- deployment notes
+- monitoring and debugging observations
+- final course reflection
+- screenshots and evidence from Day 5 work
+
+---
+
+### Capstone Project — Final Applied Build
+
+**Status:** Pending  
+**Focus:** Build and document a final applied AI agents project that connects the course concepts into one portfolio-quality implementation.
+
+**Planned work:**
+
+- problem statement
+- use case selection
+- architecture
+- agent workflow
+- implementation files
+- screenshots and evidence
+- testing and evaluation
+- final submission documentation
+
+---
+
+## 🧱 Repository Structure
 
 ```text
 Kaggle-AI-Agents-Vibe-Coding-Portfolio/
-├── README.md                                      # Main portfolio overview and navigation
-├── .gitignore                                    # Files and secrets excluded from Git tracking
-├── LICENSE                                       # Repository license
+├── README.md
+├── .gitignore
+├── LICENSE
 │
-├── 00-course-overview/                           # Course roadmap, setup checklist, and learning objectives
-├── 01-day-1-intro-to-agents-and-vibe-coding/     # Day 1 notes, codelabs, screenshots, and reflections
-├── 02-day-2-agent-tools-and-interoperability/    # Day 2 agent tools, APIs, integrations, and workflows
-├── 03-day-3-agent-skills-procedural-memory/      # Day 3 skills, procedural memory, Antigravity Skills, and ADK workflow codelabs
-├── 04-day-4-agent-security-evaluation/           # Day 4 security, observability, evaluation, secure lifecycle codelabs, and reflections
-├── 05-day-5-production-agent-deployment/         # Day 5 deployment, production readiness, and wrap-up
-│
-├── capstone-project/                             # Final applied capstone project and submission evidence
-├── docs/                                         # Setup guides, troubleshooting logs, and deployment notes
-├── assets/                                       # Screenshots, diagrams, badges, and visual evidence
-└── resources/                                    # Official links, references, and useful learning material
+├── 00-course-overview/
+├── 01-day-1-intro-to-agents-and-vibe-coding/
+├── 02-day-2-agent-tools-and-interoperability/
+├── 03-day-3-agent-skills-procedural-memory/
+├── 04-day-4-agent-security-evaluation/
+└── resources/
 ```
 
----
+Each completed day folder follows a documentation-first structure with a day-level README, notes, resources, screenshots, codelab folders, source snapshots, and reflections where applicable.
 
-# 🧪 What This Repository Will Contain
-
-This repository will include:
-
-* course-level documentation
-* day-wise README files
-* podcast notes
-* whitepaper reflections
-* codelab implementations
-* generated code files
-* manually reviewed and improved code
-* setup notes
-* troubleshooting logs
-* screenshots and evidence
-* deployment notes
-* Cloud Run links where applicable
-* capstone architecture and implementation files
-* final project documentation
-* security and production-readiness reflections
-
-This makes the repository more than a course notebook archive.
-
-It functions as a:
-
-**learning record + implementation archive + technical documentation portfolio + agentic AI experimentation workspace**
+Day 5 and the capstone folders are not listed in the current repository structure because they are pending and will be added after that work is completed.
 
 ---
 
-# 🏗️ Build Philosophy
+## 🧪 Repository Contents
 
-I am building this repository around a simple workflow:
+This repository contains:
+
+- course-level setup and progress documentation
+- day-wise README files
+- podcast, livestream, whitepaper, and study notes
+- completed codelab documentation
+- source snapshots for hands-on implementations
+- screenshots and visual evidence
+- troubleshooting notes
+- deployment notes where applicable
+- security and automation reflections
+- evaluation artifacts and trace evidence from Day 4
+- official course links and reference resources
+
+The repository functions as a learning record, implementation archive, technical documentation portfolio, and AI agent experimentation workspace.
+
+---
+
+## 🏗️ Documentation Approach
+
+The repository follows a consistent documentation workflow:
 
 ```text
-Study → Understand → Build → Test → Document → Reflect → Improve
+Study → Build → Test → Capture Evidence → Document → Reflect → Improve
 ```
 
-That means each section should show more than “I completed the task.”
+For each completed codelab or project section, I aim to document:
 
-Each part should answer:
+- the concept being practiced
+- the tool or platform used
+- the files and artifacts created
+- the implementation result
+- screenshots or validation evidence
+- issues encountered and how they were handled
+- security or production-readiness observations where relevant
+- how the work connects to real-world agentic systems or automation workflows
 
-* What was the concept?
-* What did I build?
-* What tool or platform was used?
-* What files were created?
-* What issue did I face?
-* How did I solve or document it?
-* What did this teach me about AI agents?
-* How does this connect to real-world automation or security workflows?
-
-The goal is to make the learning visible and reusable.
+This approach keeps the repository useful as both a portfolio and a long-term technical reference.
 
 ---
 
-# 🔐 Security and Secrets Handling
+## 🔐 Security and Secrets Handling
 
-Because this course involves cloud tools, API keys, generated applications, and deployment workflows, this repository follows basic security hygiene.
+This repository is maintained with basic security hygiene for cloud tools, API keys, generated applications, and deployment workflows.
 
-This repository should not contain:
+The repository excludes sensitive material such as:
 
-* API keys
-* access tokens
-* private credentials
-* service account keys
-* `.env` files
-* billing information
-* private account screenshots
-* sensitive logs
-* unredacted terminal outputs
+- API keys
+- access tokens
+- private credentials
+- service account keys
+- `.env` files
+- billing information
+- private account screenshots
+- sensitive logs
+- unredacted terminal outputs
 
-Secrets and credentials should be handled through:
+Credentials and environment-specific values are handled through local environment variables, ignored local files, or cloud secret mechanisms where applicable. Screenshots and terminal outputs are reviewed and redacted before being committed.
 
-* environment variables
-* local `.env` files excluded by `.gitignore`
-* cloud secret management where appropriate
-* redacted screenshots
-* clear documentation without exposing private values
-
-A dedicated security note will be maintained here:
-
-📂 [`docs/security-and-secrets-handling.md`](./docs/security-and-secrets-handling.md)
+Day 4 expands this security focus through concrete agent lifecycle controls, including PII redaction, prompt-injection handling, Semgrep checks, pre-commit hooks, command validation, threat modeling, and outcome-based tests.
 
 ---
 
-# 🧠 Security and SOC Automation Perspective
+## 🛡️ Security and SOC Automation Focus
 
-My background is in cybersecurity, SOC analysis, security automation, Linux, AWS monitoring, and AI workflow building.
+My background is in cybersecurity, SOC analysis, security automation, Linux, AWS monitoring, and AI workflow building. That perspective shapes how I approach this course.
 
-Because of that, I am not only looking at AI agents as development tools. I am also studying how agentic systems may apply to:
+I am especially interested in how AI agents and agentic workflows can support:
 
-* alert triage
-* investigation support
-* log analysis
-* security reporting
-* SOC workflow automation
-* cloud monitoring workflows
-* documentation generation
-* incident response assistance
-* tool-assisted security operations
-* safe automation boundaries
+- alert triage
+- investigation assistance
+- security reporting
+- log and event analysis
+- SOC workflow automation
+- cloud monitoring workflows
+- documentation generation
+- incident response support
+- safe tool-assisted automation
+- human-in-the-loop review
+- production-ready AI workflow design
 
-This security-focused perspective will appear in daily reflections, especially in sections related to tools, evaluation, observability, and production readiness.
-
----
-
-# 📚 Skills and Concepts Covered
-
-Through this repository, I am working across:
-
-<div align="left">
-
-![AI Agents](https://img.shields.io/badge/AI%20Agents-Agentic%20Systems-7B61FF?style=flat-square)
-![Vibe Coding](https://img.shields.io/badge/Vibe%20Coding-Natural%20Language%20Development-8E24AA?style=flat-square)
-![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-Intent%20to%20Implementation-FF7043?style=flat-square)
-![Tool Use](https://img.shields.io/badge/Tool%20Use-Agent%20Capabilities-00897B?style=flat-square)
-![Google Antigravity](https://img.shields.io/badge/Google%20Antigravity-Agent%20Workspace-4285F4?style=flat-square)
-![AI Studio](https://img.shields.io/badge/Google%20AI%20Studio-App%20Generation-F9AB00?style=flat-square)
-![Cloud Run](https://img.shields.io/badge/Cloud%20Run-Serverless%20Deployment-4285F4?style=flat-square)
-![GitHub](https://img.shields.io/badge/GitHub-Portfolio%20Documentation-24292F?style=flat-square)
-![Security Automation](https://img.shields.io/badge/Security%20Automation-SOC%20Workflows-C62828?style=flat-square)
-![Evaluation](https://img.shields.io/badge/Evaluation-Agent%20Testing-6A1B9A?style=flat-square)
-![Documentation](https://img.shields.io/badge/Documentation-Learning%20Portfolio-455A64?style=flat-square)
-
-</div>
-
-Core concepts expected in this portfolio:
-
-* AI agent fundamentals
-* vibe coding workflows
-* prompt-driven application development
-* human-in-the-loop review
-* prompt-injection containment
-* PII redaction
-* trace-based evaluation
-* STRIDE threat modeling
-* Semgrep and pre-commit security gates
-* secure agent lifecycle design
-* agent tool usage
-* API integration
-* context engineering
-* memory and sessions
-* agent skills
-* procedural memory
-* progressive disclosure
-* Agents CLI
-* ADK graph workflows
-* orchestration
-* evaluation
-* observability
-* deployment
-* Cloud Run
-* Google AI Studio
-* Google Antigravity
-* secure handling of credentials
-* production-readiness thinking
-* cybersecurity-aware AI automation
+This is why the repository gives strong attention to security boundaries, credential handling, prompt-injection containment, trace evidence, evaluation, and controlled automation rather than only focusing on app generation.
 
 ---
 
-# 🏆 Planned Portfolio Outcomes
+## 📚 Skills and Concepts Demonstrated
 
-By the end of this course, this repository should show:
+### Agent Development
 
-* a complete structured record of the 5-day AI Agents Intensive journey
-* working codelab outputs
-* code artifacts stored in the correct folders
-* screenshots and implementation evidence
-* deployment documentation
-* a final capstone section
-* security-aware reflections on agentic workflows
-* a clear progression from learning concepts to building practical outputs
-* a professional GitHub portfolio presentation of AI agent learning
+- AI agent fundamentals
+- model + harness thinking
+- vibe coding workflows
+- prompt-to-code development
+- human review of generated outputs
+- tool-using agents
+- agent orchestration
+- ADK graph workflows
+- Agents CLI
+- Google Antigravity
+- Google AI Studio
+
+### Procedural Memory and Context Engineering
+
+- Agent Skills
+- `SKILL.md` structure
+- procedural memory
+- progressive disclosure
+- context control
+- context rot awareness
+- reusable workflow packaging
+- skill routing and validation
+
+### Tool Use and Interoperability
+
+- API integration
+- MCP validation
+- documentation-backed agent answers
+- permission review for tool execution
+- local and remote tool usage
+- interoperability concepts including A2A, A2UI, UCP, and AP2
+
+### Security and Evaluation
+
+- prompt-injection containment
+- PII redaction
+- deterministic security routing
+- human-in-the-loop approval
+- trace-based evaluation
+- offline grading
+- STRIDE threat modeling
+- Semgrep rules
+- pre-commit security gates
+- command validation before agent tool execution
+- credential hygiene
+- secure failure paths
+
+### Cloud, Deployment, and Documentation
+
+- Cloud Run deployment testing
+- Render deployment
+- Vercel static frontend hosting documentation
+- deployment cleanup for cost control
+- technical README writing
+- screenshot evidence organization
+- troubleshooting documentation
+- portfolio-style GitHub organization
 
 ---
 
-# 🧾 Evidence and Documentation Strategy
+## 🏆 Portfolio Outcomes
 
-Every meaningful hands-on task should be documented with evidence.
+This portfolio currently demonstrates:
 
-For each codelab or project, I plan to include:
+- a structured record of the Google/Kaggle AI Agents Intensive learning journey through Day 4
+- working codelab outputs with source snapshots and documentation
+- agent-assisted local development using Google Antigravity
+- prompt-to-app generation using Google AI Studio
+- deployment testing and cleanup through Cloud Run
+- public demo documentation for selected outputs
+- tool use and MCP validation
+- reusable Agent Skills and procedural memory examples
+- ADK graph workflow implementation
+- secure agent workflow design
+- evaluation traces and local/offline grading evidence
+- security-aware reflections on agentic workflows
+- clear progression from concepts to implementation evidence
 
-* short overview
-* tools used
-* setup requirements
-* commands or steps followed
-* generated files
-* screenshots
-* testing notes
-* troubleshooting notes
-* final output
-* reflection
-* security considerations where relevant
-
-This makes the repository easier to review and more useful as a long-term technical reference.
+Day 5 and the capstone project will complete the remaining production deployment and final applied project sections.
 
 ---
 
-# 🔍 How To Explore This Repository
+## 🔍 How to Explore This Repository
 
 Recommended reading order:
 
-1. Start with this root `README.md`
-2. Open [`00-course-overview/`](./00-course-overview/)
-3. Review the setup checklist and learning objectives
-4. Move into the day-wise folders
-5. Read each day-level README before opening code files
-6. Check screenshots and notes together for full context
-7. Explore the capstone folder after the course project begins
+1. Start with [`00-course-overview/`](./00-course-overview/) for course context, setup, roadmap, and progress tracking.
+2. Read the day-level README files from Day 1 through Day 4 in order.
+3. Open the codelab folders inside each day to inspect implementation details and source snapshots.
+4. Review screenshots together with notes to understand what was tested or validated.
+5. Use the reflections to understand the learning outcomes and security/automation connections.
+6. Check [`resources/`](./resources/) for official course links and references.
 
-Best starting points once content is added:
+Best starting points:
 
-* For course direction: [`00-course-overview/`](./00-course-overview/)
-* For first hands-on work: [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/)
-* For setup and troubleshooting: [`docs/`](./docs/)
-* For final applied work: [`capstone-project/`](./capstone-project/)
+| Goal | Start Here |
+| --- | --- |
+| Understand the course structure | [`00-course-overview/`](./00-course-overview/) |
+| Review the first hands-on app work | [`01-day-1-intro-to-agents-and-vibe-coding/`](./01-day-1-intro-to-agents-and-vibe-coding/) |
+| Inspect tool use and MCP work | [`02-day-2-agent-tools-and-interoperability/`](./02-day-2-agent-tools-and-interoperability/) |
+| Study Agent Skills and ADK workflows | [`03-day-3-agent-skills-procedural-memory/`](./03-day-3-agent-skills-procedural-memory/) |
+| Review security and evaluation work | [`04-day-4-agent-security-evaluation/`](./04-day-4-agent-security-evaluation/) |
+| Find official references | [`resources/`](./resources/) |
 
 ---
 
-# 🛠️ Getting Started
+## 🛠️ Getting Started
 
 Clone the repository:
 
@@ -776,107 +570,64 @@ Navigate into the repository:
 cd Kaggle-AI-Agents-Vibe-Coding-Portfolio
 ```
 
-Explore the documentation:
+Explore the root folders:
 
 ```bash
 ls
 ```
 
-As codelabs are completed, each implementation folder will include its own README with setup steps, files, screenshots, and usage notes.
+This repository contains multiple independent codelab outputs. Each day or codelab folder includes its own README, notes, screenshots, source snapshots, and usage context where relevant.
 
 ---
 
-# 🌐 Official Course and Tool Links
+## 🌐 Official Course and Tool Links
 
 Useful official references:
 
-* [Google Blog — Google and Kaggle’s GenAI Intensive Vibe Coding Course 2026](https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/)
-* [Kaggle — 5-Day AI Agents Intensive Course With Google](https://www.kaggle.com/learn-guide/5-day-agents)
-* [Google Codelab — Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity)
-* [Google Codelab — Deploy from AI Studio to Cloud Run](https://codelabs.developers.google.com/deploy-from-aistudio-to-run)
-* [Google Codelab — Authoring Google Antigravity Skills](https://codelabs.developers.google.com/getting-started-with-antigravity-skills)
-* [Google Codelab — Agents CLI and ADK Lifecycle](https://codelabs.developers.google.com/agents-cli-adk-lifecycle)
-* [Kaggle Whitepaper — Agent Skills](https://www.kaggle.com/whitepaper-agent-skills)
-* [Agents CLI Documentation](https://google.github.io/agents-cli/guide/getting-started/)
-* [Google Antigravity Documentation](https://antigravity.google/docs)
-* [Kaggle Capstone Competition](https://www.kaggle.com/competitions/agents-intensive-capstone-project)
+- [Google Blog — Google and Kaggle’s GenAI Intensive Vibe Coding Course 2026](https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/)
+- [Kaggle — 5-Day AI Agents Intensive Course With Google](https://www.kaggle.com/learn-guide/5-day-agents)
+- [Google Codelab — Getting Started with Google Antigravity](https://codelabs.developers.google.com/getting-started-google-antigravity)
+- [Google Codelab — Deploy from AI Studio to Cloud Run](https://codelabs.developers.google.com/deploy-from-aistudio-to-run)
+- [Google Codelab — Authoring Google Antigravity Skills](https://codelabs.developers.google.com/getting-started-with-antigravity-skills)
+- [Google Codelab — Agents CLI and ADK Lifecycle](https://codelabs.developers.google.com/agents-cli-adk-lifecycle)
+- [Kaggle Whitepaper — Agent Skills](https://www.kaggle.com/whitepaper-agent-skills)
+- [Agents CLI Documentation](https://google.github.io/agents-cli/guide/getting-started/)
+- [Google Antigravity Documentation](https://antigravity.google/docs)
+- [Kaggle Capstone Competition](https://www.kaggle.com/competitions/agents-intensive-capstone-project)
 
-Additional course links and references will be maintained in:
-
-📂 [`resources/official-links.md`](./resources/official-links.md)
+Additional course references are maintained in [`resources/`](./resources/).
 
 ---
 
-# 📌 Repository Status
+## 📌 Repository Status
 
-This repository has completed the foundation, Day 1, Day 2, Day 3, and Day 4 documentation phases, and is ready to continue into Day 5 and the capstone project.
+Completed:
 
-Completed so far:
+- repository foundation and course overview
+- Day 0 setup and readiness documentation
+- Day 1 Antigravity, AI Studio, and Cloud Run codelab documentation
+- Day 2 tool use, MCP validation, interoperability notes, BigQuery Release Notes Hub, and Render deployment evidence
+- Day 3 Agent Skills, procedural memory, Antigravity Skills, Agents CLI, and ADK customer-support workflow documentation
+- Day 4 secure agent workflows, prompt-injection handling, PII redaction, trace evidence, offline evaluation, secure lifecycle gates, and security reflections
 
-* course enrollment
-* initial course setup
-* Antigravity IDE/CLI setup
-* Discord/community introduction
-* LinkedIn course announcement planning
-* Day 1 podcast
-* Day 1 whitepaper
-* GitHub repository creation
-* root README preparation
-* `00-course-overview/` documentation foundation
-* `.gitignore` and `LICENSE` preparation
-* Day 1 folder structure added
-* Antigravity codelab documented
-* AI Studio to Cloud Run codelab documented
-* Day 1 screenshots and source artifacts organized
-* Day 2 theory notes, study summaries, resources, and reflection documented
-* Day 2 Antigravity CLI codelab documented with source, screenshots, QA notes, and Render deployment evidence
-* Day 2 Google Developer Knowledge MCP codelab documented with setup notes, prompt-result validation, screenshots, and sanitized config template
-* Day 3 Agent Skills theory notes, study-guide summaries, infographics, resources, and reflection documented
-* Day 3 Antigravity Skills codelab documented with workspace skills, skill tests, validation screenshots, and curated source snapshots
-* Day 3 Agents CLI + ADK lifecycle codelab documented with the `customer-support-agent` workflow, linting evidence, playground testing, response-style refinement, and CLI execution proof
-* Day 3 troubleshooting notes captured for Windows ADK behavior, API key environment visibility, Google Cloud billing limitations, and safe credential handling
-* Day 4 agent security, evaluation, whitepaper notes, study-guide summaries, infographics, and visual study assets documented
-* Day 4 Ambient Expense Agent codelab documented with ADK workflow routing, security checkpointing, PII redaction, prompt-injection bypass, HITL review, trace generation, and offline evaluation evidence
-* Day 4 Secure Agent Lifecycle codelab documented with Antigravity project rules, Semgrep, pre-commit hooks, command validation, STRIDE threat modeling, TDD planning gate, outcome-based tests, and ADK Playground proof
-* Day 4 screenshots, curated source snapshots, validation notes, troubleshooting notes, evaluation artifacts, and security engineering reflection organized
+Pending:
 
-Next steps:
-
-* add or update root/course-overview links after each completed day
-* continue into Day 5 production deployment and final wrap-up documentation
-* keep Day 2 as the reference point for tool use, MCP validation, permission review, and interoperability documentation
-* keep Day 3 as the reference point for Agent Skills, procedural memory, progressive disclosure, and ADK graph workflow documentation
-* keep Day 4 as the reference point for secure agent design, evaluation, guardrails, trace evidence, and security-focused lifecycle gates
-* keep cloud cost, secret handling, and human-review notes visible throughout the remaining course
-* add final capstone planning and implementation files when the capstone work begins
+- Day 5 production agent development and deployment documentation
+- final capstone project planning, implementation, evaluation, and submission evidence
 
 ---
 
-# ⭐ Final Note
+## ⭐ Closing Note
 
-This repository is being built as a serious AI agents learning portfolio.
-
-It is not just a folder for course files.
-
-It is a structured record of how I am learning, building, testing, documenting, and thinking about AI agents in the context of modern software development, cloud deployment, and security automation.
-
-By Day 4, this portfolio also shows how security gates, evaluation traces, human review, command validation, and safe credential handling become part of the agent-building lifecycle rather than afterthoughts.
-
-The main idea behind this portfolio is:
-
-> **Natural language can accelerate development, but strong engineering judgment, documentation, testing, and security thinking still decide the quality of the final system.**
-
-As the course progresses, this repository will evolve from a setup and documentation foundation into a complete portfolio of hands-on AI agent work.
+This portfolio shows how natural-language-driven development can be combined with engineering review, testing, documentation, security controls, and evaluation evidence to produce more reliable agentic systems.
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Abdul Rehman**
 
 Cybersecurity • SOC Analysis • Security Automation • Linux • AWS Monitoring • AI Agents • AI Workflow Building
-
-I use GitHub as a place to document technical learning in a structured, practical, and portfolio-first way. This repository follows the same approach by combining course notes, codelab implementations, setup documentation, screenshots, troubleshooting logs, and final project work into one organized learning system.
 
 <p align="left">
   <a href="https://github.com/abdul4rehman215">
