@@ -1,307 +1,233 @@
-# 🎯 Learning Objectives
+# 🎯 Learning Objectives and Outcomes
 
-This file defines the personal learning goals behind this repository.
+This file captures the learning direction behind the portfolio and the outcomes demonstrated through the completed course work.
 
-The course provides the structure, but the portfolio direction is broader: understand AI agents practically, build hands-on outputs, document the process professionally, and connect the learning to security automation and real-world engineering workflows.
-
----
-
-## 🧠 Primary Objective
-
-The main objective is to understand how AI agents can move from simple LLM interactions into more useful systems that can reason, use tools, manage context, load reusable skills, support workflows, and produce deployable applications.
-
-This repository should show that learning progression clearly.
-
-The goal is not only:
-
-> “Complete the course.”
-
-The stronger goal is:
-
-> Build a structured, evidence-backed portfolio showing how AI agents, vibe coding, tool interoperability, Agent Skills, cloud deployment, and security-aware automation can fit into practical engineering work.
+The course provides the structure, but the broader goal is to understand how AI agents can be built, guided, evaluated, secured, and documented in a way that connects to real engineering and security automation work.
 
 ---
 
-## 🤖 AI Agents Understanding
+## 🧠 Primary Learning Goal
 
-By the end of this course journey, I want to understand:
+The main learning goal is to understand how AI agents move beyond simple chatbot interactions into systems that can use tools, follow workflows, manage context, load reusable procedures, support human review, and operate within security or production constraints.
 
-- what makes an AI system an agent
-- how agents differ from basic chatbot interactions
-- how agents use models, tools, skills, memory, and orchestration
-- how human review fits into agentic workflows
-- where agents are useful and where they can fail
-- how to evaluate agent behavior more carefully
+This portfolio shows that progression through evidence:
 
-Success criteria:
-
-- I can explain AI agent workflows in my own words
-- I can identify the components of an agentic system
-- I can document what an agent did, what tools or skills it used, and what evidence was produced
-- I can separate useful agent behavior from unreliable or unsafe automation
+```text
+Agent concepts → tool use → procedural memory → secure workflows → production architecture thinking
+```
 
 ---
 
-## 💬 Vibe Coding and Natural-Language Development
+## 🤖 Agent Development Objectives
 
-A major course theme is vibe coding: describing intent in natural language and guiding AI systems to generate, modify, test, and deploy applications.
+### Objective
 
-My objective is to understand this workflow practically, not treat it as magic.
+Understand the practical structure of agentic systems:
 
-I want to learn:
+- model behavior
+- tool use
+- orchestration
+- workflow routing
+- human review
+- context handling
+- evaluation and monitoring
 
-- how to write better intent-driven prompts
-- how to review AI-generated code
-- how to debug generated outputs
-- when manual editing is still required
-- how to preserve code quality while using natural-language development
-- how to document prompt-to-output decisions
+### Outcome Demonstrated
 
-Success criteria:
+This objective is supported by the completed Day 1 through Day 5 work:
 
-- I can turn a high-level idea into a working implementation using AI-assisted workflows
-- I can review and improve generated code instead of blindly accepting it
-- I can document the difference between prompt, generated output, manual fix, and final result
-
----
-
-## 🛠️ Google Antigravity Workflow
-
-Google Antigravity is one of the main agent-oriented tools involved in this course.
-
-My objective is to understand:
-
-- how Antigravity supports agent-based development
-- how the IDE and CLI fit into the workflow
-- how tasks are planned, executed, and reviewed
-- how agent artifacts or evidence can support transparency
-- how skills can extend the agent’s behavior without bloating the main prompt
-- how this type of environment may change developer workflows
-
-Success criteria:
-
-- I can document the setup clearly
-- I can explain the purpose of Antigravity in this course
-- I can capture screenshots and notes from hands-on usage
-- I can explain how Antigravity Skills are installed, triggered, tested, and documented from the Day 3 codelabs
-- I can reflect on where agent-first development is useful and where caution is needed
+- Day 1 introduced agent-assisted development through Antigravity and AI Studio.
+- Day 2 showed how agents interact with external tools, APIs, MCP, and deployed apps.
+- Day 3 documented Agent Skills, procedural memory, and ADK workflow routing.
+- Day 4 applied guardrails, evaluation, human review, and secure lifecycle checks.
+- Day 5 connected the work to production-style specifications and cloud architecture review.
 
 ---
 
-## ☁️ AI Studio and Cloud Run Deployment
+## 💬 Vibe Coding and Human Review Objectives
 
-The course includes hands-on work using Google AI Studio and Cloud Run.
+### Objective
 
-My objectives are:
+Learn how natural-language-driven development changes the developer role.
 
-- build a simple web application through AI Studio
-- understand the generated project structure
-- test the generated output
-- deploy to Cloud Run where required
-- document deployment steps and evidence
-- understand cost, cleanup, and security considerations
+The important skill is not just prompting an AI tool. The important skill is describing intent clearly, checking generated work, testing behavior, correcting assumptions, and deciding when the output is not good enough.
 
-Success criteria:
+### Outcome Demonstrated
 
-- I can store generated code in the correct folder
-- I can explain what the application does
-- I can document how it was generated, tested, and deployed
-- I can preserve screenshots and output evidence
-- I can avoid exposing credentials or account information
+Day 1 provides the clearest evidence through:
 
----
+- Antigravity-generated Google News CLI work
+- custom review skill testing
+- AI Studio prompt-to-app generation
+- Snowflakes & Balloons app refinement
+- Cloud Run test and cleanup documentation
 
-## 🔗 Tool Use, APIs, MCP, and Agent Interoperability
-
-Agents become more useful when they can interact with external tools and systems.
-
-My objective is to understand:
-
-- how agents call tools or functions
-- how APIs expand agent capabilities
-- how MCP connects an agent to external knowledge or systems
-- how tool permissions should be controlled
-- how to document inputs, outputs, and side effects
-- how tool use connects to automation workflows
-
-Success criteria:
-
-- I can document tool-using agent workflows clearly
-- I can describe what system, API, or MCP server the agent interacted with
-- I can identify security or reliability concerns around tool access
-- I can explain the value and risk of external integrations
+The takeaway is that vibe coding can accelerate development, but review, constraints, testing, and cleanup still decide the quality of the final result.
 
 ---
 
-## 🧩 Agent Skills, Procedural Memory, and Context Budget
+## 🛠️ Tool Use and Interoperability Objectives
 
-Useful agents need more than one prompt. They need reusable know-how, clean routing, controlled context, and sometimes memory.
+### Objective
 
-My objective is to learn:
+Understand how agents become more useful when they can interact with external systems.
 
-- how Agent Skills act as procedural memory for agents
-- how a `SKILL.md` file defines metadata, trigger description, and task instructions
-- how `scripts/`, `references/`, and `assets/` support a skill without forcing everything into the prompt
-- how progressive disclosure reduces active context pressure
-- how context rot and attention dilution affect agent reliability
-- how Skills differ from MCP and `AGENTS.md`
-- how skill descriptions route work and why vague triggers fail
-- how evaluation-driven development can make skills more trustworthy
+Key areas:
 
-Success criteria:
+- APIs and structured data
+- MCP and documentation retrieval
+- permission boundaries
+- tool call review
+- app deployment and integration points
+- agent-to-system interoperability
 
-- I can explain why bigger context is not automatically better
-- I can describe the anatomy of an Agent Skill in my own words
-- I can explain the difference between know-how, reach, and always-loaded project context
-- I can document reusable agent behavior patterns without repeating the same notes everywhere
-- I can identify trigger failure, execution failure, token budget failure, and regression risk
-- I can connect Day 3 theory to the completed Antigravity Skills and Agents CLI/ADK codelabs
+### Outcome Demonstrated
 
----
+Day 2 documents this objective through:
 
-## 🔐 Security, Evaluation, and Reliability
+- BigQuery Release Notes Hub Flask app
+- public release-note feed parsing
+- Render deployment evidence
+- Google Developer Knowledge MCP validation
+- sanitized MCP configuration
+- notes on permission review and safe tool access
 
-This is one of the most important learning objectives because agentic systems can take actions, use tools, access files, invoke scripts, or interact with cloud services.
-
-My objectives are:
-
-- understand prompt injection risks
-- think about safe tool permissions
-- evaluate agent outputs critically
-- test generated applications
-- avoid committing secrets
-- document risk and reliability concerns
-- connect agent safety to cybersecurity thinking
-- treat skills, MCP configurations, security hooks, and generated agent projects as reviewable dependencies
-- understand how pre-LLM security checkpoints, human review, trace evaluation, and commit-time gates reduce unsafe automation
-
-Success criteria:
-
-- I can include security notes in relevant codelab documentation
-- I can identify failure modes or unsafe assumptions
-- I can explain what was tested and what still needs verification
-- I can treat agent output as something to review, not blindly trust
-- I can separate read-only, draft-only, and action-capable workflows when thinking about agent risk
-- I can explain how prompt-injection containment, PII redaction, STRIDE analysis, Semgrep findings, pre-commit checks, and outcome-based tests strengthen an agent workflow
+This work shows that agent systems depend on surrounding infrastructure as much as model capability.
 
 ---
 
-## 🧑‍💻 Portfolio and Documentation Skill
+## 🧩 Procedural Memory and Context Objectives
 
-This repository is also a documentation project.
+### Objective
 
-My objective is to make the repository easy to understand for:
+Understand how agents can use reusable task knowledge without stuffing every instruction into the active prompt.
 
-- future me
-- technical reviewers
-- recruiters
-- collaborators
-- other learners exploring AI agents
+Key areas:
 
-Success criteria:
+- Agent Skills
+- `SKILL.md` structure
+- progressive disclosure
+- skill routing
+- context rot
+- procedural memory
+- graph workflow design
 
-- every major folder has a README
-- every codelab has clear notes and evidence
-- screenshots are organized and meaningful
-- progress is tracked honestly
-- incomplete items are not presented as completed
-- documentation is readable without needing the original chat history
-- generated study aids are converted into concise personal notes, not pasted directly
+### Outcome Demonstrated
+
+Day 3 documents this objective through:
+
+- Antigravity workspace skill examples
+- skill validation tests
+- Agents CLI installation and skill discovery
+- ADK customer-support workflow agent
+- playground and CLI validation evidence
+- troubleshooting around local environment, API key visibility, and billing limits
+
+The main outcome is a clearer understanding of how reusable procedures and workflow graphs make agents more inspectable and maintainable.
+
+---
+
+## 🔐 Security and Evaluation Objectives
+
+### Objective
+
+Study agent systems as security-sensitive workflows that need boundaries, evidence, and safe failure paths.
+
+Key areas:
+
+- prompt-injection containment
+- PII redaction
+- deterministic security routing
+- human-in-the-loop approval
+- trace-based evaluation
+- local/offline grading
+- secure development lifecycle gates
+- threat modeling
+- pre-commit and static-analysis controls
+
+### Outcome Demonstrated
+
+Day 4 is the main evidence for this objective:
+
+- Ambient Expense Agent workflow
+- pre-LLM security screening
+- redaction and bypass logic
+- human review escalation
+- trace generation and offline scorecard
+- Secure Agent Lifecycle codelab
+- Semgrep, pre-commit, command validation, STRIDE, TDD planning, and pytest evidence
+
+This is the section where the portfolio most strongly connects AI agents with cybersecurity and SOC-style automation thinking.
+
+---
+
+## 🏗️ Production Development Objectives
+
+### Objective
+
+Understand how agent prototypes need to change before they can be discussed as production systems.
+
+Key areas:
+
+- specification-first planning
+- deployment architecture
+- runtime and registry concepts
+- event-driven workflows
+- observability
+- operational boundaries
+- safe documentation of cloud limitations
+
+### Outcome Demonstrated
+
+Day 5 documents this objective through spec-driven production development and architecture-review work.
+
+The completed Day 5 material focuses on production thinking without overstating live deployment results. That distinction matters because professional documentation should separate reviewed architecture, local evidence, optional cloud work, and verified production execution.
+
+---
+
+## 🛡️ Security and SOC Automation Direction
+
+The portfolio is intentionally shaped by a security automation perspective.
+
+The strongest long-term learning question is:
+
+> How can agentic workflows support investigation, triage, documentation, reporting, and controlled automation without ignoring security boundaries?
+
+This connects the course work to:
+
+- SOC alert triage
+- log and evidence review
+- cloud monitoring workflows
+- security report generation
+- incident-response support
+- human approval gates
+- safe tool use
+- evaluation and trace evidence
+
+This does not mean every codelab is a security project. It means the portfolio reviews agent development with security and operational judgment in mind.
 
 ---
 
 ## 🏁 Capstone Objective
 
-The capstone should become the strongest applied section of this repository.
+The capstone is still pending.
 
-My objective is to build a final project that is:
+The preferred direction is a focused applied agent workflow that builds on the strongest completed themes:
 
-- practical
-- documented
-- connected to agentic workflows
-- reviewable
-- supported by screenshots or output evidence
-- meaningful from a security, automation, or workflow perspective if possible
+- tool use
+- workflow control
+- human review
+- security boundaries
+- evidence generation
+- evaluation
+- practical automation
 
-Success criteria:
-
-- the capstone has a clear problem statement
-- the architecture is explained
-- implementation files are organized
-- testing and evaluation are documented
-- final output or submission evidence is preserved
-- lessons learned are written clearly
+A security-aware or SOC-style capstone would fit the portfolio better than a generic chatbot because it would extend the existing Day 4 and Day 5 strengths.
 
 ---
 
-## ✅ Day 1 Objective Progress
+## ✅ Final Learning Outcome
 
-Day 1 produced the first concrete evidence toward these objectives:
+By the end of the completed course work, this repository demonstrates a progression from learning AI-agent concepts to documenting practical agent systems with tools, skills, workflows, tests, security controls, and production-aware architecture notes.
 
-- I used Antigravity to explore an agent-oriented development workspace.
-- I preserved a generated Node.js CLI project instead of only describing it from memory.
-- I documented a custom code-review skill demo using an intentionally broken Python file.
-- I used AI Studio to guide a browser-only app from prompt to working frontend code.
-- I tested the AI Studio app through Cloud Run and documented the cleanup/cost decision.
-- I organized screenshots, notes, source files, and reflections so the work can be reviewed from durable repository artifacts.
-
-This turned the initial learning objective into a documented implementation baseline for the rest of the course.
-
----
-
-## ✅ Day 2 Objective Progress
-
-Day 2 extended the learning from app generation into tool-connected agent workflows:
-
-- I documented how agents interact with tools and external systems.
-- I captured Antigravity CLI work as evidence instead of leaving it only in terminal history.
-- I documented the Google Developer Knowledge MCP codelab with setup, security notes, and validation evidence.
-- I treated MCP configuration as something that needs careful handling rather than a casual copy-paste step.
-- I connected tool access to reliability, permissions, troubleshooting, and safe public documentation.
-
-This made the tooling objective more practical: agents are powerful because they can act through tools, but that action surface needs control.
-
----
-
-## ✅ Day 3 Objective Progress
-
-Day 3 is now complete across both concept study and hands-on codelab work.
-
-Completed progress:
-
-- I completed the Unit 3 podcast and Agent Skills whitepaper study.
-- I used NoteGPT and NotebookLM for revision, quiz-style review, and explanation support.
-- I created visual study assets for procedural memory, progressive disclosure, and context reduction.
-- I documented the main vocabulary: `SKILL.md`, procedural memory, progressive disclosure, context rot, trigger descriptions, MCP vs Skills, evaluation-driven development, and skill failure modes.
-- I tested Antigravity workspace skills through practical tasks such as commit formatting, license headers, JSON-to-Pydantic conversion, and schema validation.
-- I installed and documented Agents CLI skills as part of the Day 3 tooling workflow.
-- I scaffolded and tested an ADK-based `customer-support-agent` graph workflow with classifier routing, a shipping FAQ path, and an unrelated-query decline path.
-- I captured linting, import validation, ADK playground traces, response-style refinement, and command-line execution evidence.
-- I documented runtime lessons around API key visibility, Windows ADK reload behavior, and Google Cloud billing limitations without exposing secrets.
-
-This objective moved from theory into practice: Agent Skills became a reusable procedural-memory pattern, and ADK turned routing into a visible workflow that could be tested and reviewed.
-
----
-
-
-## ✅ Day 4 Objective Progress
-
-Day 4 moved the security and evaluation objectives from theory into implementation.
-
-Completed progress:
-
-- I documented the Day 4 agent security and evaluation concepts through podcast, whitepaper, key-concept, and study-guide notes.
-- I built and documented an ADK ambient expense approval workflow with deterministic routing and human review.
-- I added and documented a pre-LLM security checkpoint that redacts PII and bypasses the LLM when prompt-injection behavior is detected.
-- I generated traces and validated route/security behavior through local/offline evaluation evidence.
-- I built and documented a secure shopping-assistant lifecycle using Antigravity project rules, Semgrep, pre-commit hooks, command validation, STRIDE threat modeling, a TDD planning gate, and outcome-based pytest tests.
-- I validated the shopping assistant through the ADK Playground using Gemini API environment authentication without committing secrets.
-- I preserved the security lifecycle evidence through curated source snapshots, screenshots, troubleshooting notes, and reflection.
-
-This day connected strongly with my cybersecurity background because it treated agent building like security engineering: define boundaries, block unsafe paths, test behavior, preserve evidence, and keep credentials out of source. It was also one of the most enjoyable course sections because it showed how agent applications can be built with security controls from the beginning instead of patched after the fact.
-
-## ⭐ Final Learning Outcome
-
-The final outcome I want from this course portfolio is:
-
-> A clean, structured, hands-on AI agents repository that shows how I studied the course, built practical outputs, documented evidence, and connected agentic AI concepts to real-world automation and security-aware engineering thinking.
+The remaining capstone should turn that progression into one focused applied build.
