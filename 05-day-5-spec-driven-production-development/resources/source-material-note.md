@@ -1,12 +1,12 @@
 # 📘 Source Material Note - Day 5
 
-This file documents what material was used for the Day 5 theory notes and what is intentionally kept out of the public documentation.
+This file documents what material was used for the Day 5 notes and what is intentionally kept out of the public documentation.
 
 ---
 
 ## Source material used
 
-The Day 5 theory notes were based on:
+The Day 5 notes were based on:
 
 - the official Unit 5 podcast / summary episode,
 - the official **Spec-Driven Production Grade Development in the Age of Vibe Coding** whitepaper,
@@ -17,7 +17,9 @@ The Day 5 theory notes were based on:
 - NotebookLM quiz / Q&A revision,
 - NotebookLM explainer video,
 - two visual infographics created during study revision,
-- and my own interpretation of the concepts before starting the optional codelabs.
+- the full Codelab 1 walkthrough for deploying an ADK agent to Agent Runtime,
+- the full Codelab 2 walkthrough for building a frontend dashboard and Pub/Sub event pipeline,
+- and my own interpretation of the concepts after reviewing the full Day 5 material.
 
 ---
 
@@ -28,22 +30,26 @@ This folder includes:
 - human-readable study notes,
 - compact key-concept notes,
 - a study guide summary,
+- codelab review notes,
+- a production architecture map,
 - official resource links,
 - source material hygiene notes,
 - and selected visual study assets.
 
-The goal is to keep the folder useful as a learning record without turning it into a raw dump of generated summaries.
+The goal is to keep the folder useful as a learning record without turning it into a raw dump of generated summaries or copied codelab pages.
 
 ---
 
 ## What is intentionally excluded
 
-The following are intentionally excluded for now:
+The following are intentionally excluded:
 
 - raw NoteGPT output files,
 - raw NotebookLM output files,
 - the full whitepaper PDF,
+- full codelab PDFs,
 - copied podcast transcripts,
+- copied codelab pages,
 - private email screenshots,
 - private account screenshots,
 - Google Cloud billing screenshots,
@@ -51,7 +57,11 @@ The following are intentionally excluded for now:
 - API keys or credentials,
 - `.env` files,
 - generated cloud config files,
-- and any codelab evidence that has not been produced yet.
+- live endpoint URLs,
+- runtime IDs,
+- deployment logs,
+- console screenshots,
+- and any evidence that was not produced through actual execution.
 
 ---
 
@@ -73,17 +83,17 @@ The documentation therefore uses the generated notes as input material and conve
 
 ---
 
-## Codelab boundary
+## Codelab documentation boundary
 
-The optional cloud codelabs are not documented as completed in this folder.
+The optional cloud codelabs are documented as reviewed architecture walkthroughs.
 
-When those are attempted later, I should add only real evidence:
+If I run them later in a prepared cloud environment, the follow-up documentation should add only real artifacts:
 
 - commands that were actually run,
-- screenshots that are safe to share,
+- safe screenshots,
 - troubleshooting notes,
 - cleanup notes,
-- billing-safety notes,
-- and deployment observations.
+- deployment observations,
+- and notes about any deviations from the official flow.
 
 No fake completion evidence should be added just to make the folder look full.
