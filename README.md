@@ -341,21 +341,26 @@ Built and documented two Day 4 security-focused agent workflows: an ambient expe
 
 ```text
 Kaggle-AI-Agents-Vibe-Coding-Portfolio/
-├── README.md
-├── .gitignore
-├── LICENSE
+├── README.md                                      # Main portfolio overview and navigation
+├── .gitignore                                    # Files and secrets excluded from Git tracking
+├── LICENSE                                       # Repository license
 │
-├── 00-course-overview/
-├── 01-day-1-intro-to-agents-and-vibe-coding/
-├── 02-day-2-agent-tools-and-interoperability/
-├── 03-day-3-agent-skills-procedural-memory/
-├── 04-day-4-agent-security-evaluation/
-└── resources/
+├── 00-course-overview/                           # Course roadmap, setup checklist, and learning objectives
+├── 01-day-1-intro-to-agents-and-vibe-coding/     # Day 1 notes, codelabs, screenshots, and reflections
+├── 02-day-2-agent-tools-and-interoperability/    # Day 2 agent tools, APIs, integrations, and workflows
+├── 03-day-3-agent-skills-procedural-memory/      # Day 3 skills, procedural memory, Antigravity Skills, and ADK workflow codelabs
+├── 04-day-4-agent-security-evaluation/           # Day 4 security, observability, evaluation, secure lifecycle codelabs, and reflections
+├── 05-day-5-production-agent-deployment/         # Day 5 deployment, production readiness, and wrap-up
+│
+├── capstone-project/                             # Final applied capstone project and submission evidence
+├── docs/                                         # Setup guides, troubleshooting logs, and deployment notes
+├── assets/                                       # Screenshots, diagrams, badges, and visual evidence
+└── resources/                                    # Official links, references, and useful learning material
 ```
 
-Each completed day folder follows a documentation-first structure with a day-level README, notes, resources, screenshots, codelab folders, source snapshots, and reflections where applicable.
+Each day folder follows a documentation-first structure with a day-level README, notes, resources, screenshots, codelab folders, source snapshots, and reflections where applicable.
 
-Day 5 and the capstone folders are not listed in the current repository structure because they are pending and will be added after that work is completed.
+Day 5 and the capstone are still pending in the current course timeline. The structure above shows the intended final repository layout so the README stays aligned with the full portfolio roadmap.
 
 ---
 
